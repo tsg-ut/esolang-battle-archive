@@ -1,0 +1,19 @@
+procedure main()
+	ai := read() 
+	d := 50
+	a :=  reverse(ai[1:d+1])
+	b := reverse(ai[d+1:d*2+1])
+	s := 0
+	
+	every i := 1 to d do {
+		s *:= 2
+		s +:= a % 10
+		a /:= 10
+	}
+	every i := 1 to d do {
+		s *:= 2
+		s +:= b % 10
+		b /:= 10
+	}
+	write(s)
+end
