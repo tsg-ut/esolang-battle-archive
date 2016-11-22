@@ -1,0 +1,3 @@
+ibase = 2;
+x = read();
+print x;
