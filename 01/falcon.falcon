@@ -1,0 +1,38 @@
+// your code goes here
+s = stdIn().grabLine()
+
+i = 0
+bin = arrayBuffer(100)
+dec = arrayBuffer(33)
+while i < 100
+	if s[i] == "0"
+		bin[i] = 0
+	else
+		bin[i] = 1
+	end
+	i++
+end
+
+i = 0
+while i < 33
+	rem = 0
+	j = 0
+	while j < 100
+		rem *= 2
+		rem += bin[j]
+		bin[j] = int(rem / 10)
+		rem %= 10
+		j++
+	end
+	dec[i] = rem
+	i++
+end
+
+i = 32
+str = ""
+while i >= 0
+	str += dec[i]
+	i--
+end
+
+printl(str)
