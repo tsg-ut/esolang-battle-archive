@@ -1,0 +1,1621 @@
+
+0 0 0
+0 0 0 
+1 1 1 
+Q
+U" 1
+K V" V"
+K U"
+L K W"
+X" 1
+M L X"
+A V" U"
+B V" A
+V" U" A
+V" B
+A W" K
+B W" A
+W" K A
+W" B
+A X" L
+B X" A
+X" L A
+X" B
+O M M
+I U" O
+I 1
+H I V"
+H 1
+A H O
+B H A
+H O A
+H B
+A W" H
+B W" A
+W" H A
+W" B
+A V" I
+B V" A
+V" I A
+V" B
+A U" O
+B U" A
+U" O A
+U" B
+Y" O O
+X" W" W"
+X" 1
+W" V" V"
+W" 1
+V" U" U"
+V" 1
+Q" 1
+K R" R"
+K Q"
+L K S"
+T" 1
+M L T"
+A R" Q"
+B R" A
+R" Q" A
+R" B
+A S" K
+B S" A
+S" K A
+S" B
+A T" L
+B T" A
+T" L A
+T" B
+O M M
+I Q" O
+I 1
+H I R"
+H 1
+A H O
+B H A
+H O A
+H B
+A S" H
+B S" A
+S" H A
+S" B
+A R" I
+B R" A
+R" I A
+R" B
+A Q" O
+B Q" A
+Q" O A
+Q" B
+U" O O
+T" S" S"
+T" 1
+S" R" R"
+S" 1
+R" Q" Q"
+R" 1
+M" 1
+K N" N"
+K M"
+L K O"
+P" 1
+M L P"
+A N" M"
+B N" A
+N" M" A
+N" B
+A O" K
+B O" A
+O" K A
+O" B
+A P" L
+B P" A
+P" L A
+P" B
+O M M
+I M" O
+I 1
+H I N"
+H 1
+A H O
+B H A
+H O A
+H B
+A O" H
+B O" A
+O" H A
+O" B
+A N" I
+B N" A
+N" I A
+N" B
+A M" O
+B M" A
+M" O A
+M" B
+Q" O O
+P" O" O"
+P" 1
+O" N" N"
+O" 1
+N" M" M"
+N" 1
+I" 1
+K J" J"
+K I"
+L K K"
+L" 1
+M L L"
+A J" I"
+B J" A
+J" I" A
+J" B
+A K" K
+B K" A
+K" K A
+K" B
+A L" L
+B L" A
+L" L A
+L" B
+O M M
+I I" O
+I 1
+H I J"
+H 1
+A H O
+B H A
+H O A
+H B
+A K" H
+B K" A
+K" H A
+K" B
+A J" I
+B J" A
+J" I A
+J" B
+A I" O
+B I" A
+I" O A
+I" B
+M" O O
+L" K" K"
+L" 1
+K" J" J"
+K" 1
+J" I" I"
+J" 1
+E" 1
+K F" F"
+K E"
+L K G"
+H" 1
+M L H"
+A F" E"
+B F" A
+F" E" A
+F" B
+A G" K
+B G" A
+G" K A
+G" B
+A H" L
+B H" A
+H" L A
+H" B
+O M M
+I E" O
+I 1
+H I F"
+H 1
+A H O
+B H A
+H O A
+H B
+A G" H
+B G" A
+G" H A
+G" B
+A F" I
+B F" A
+F" I A
+F" B
+A E" O
+B E" A
+E" O A
+E" B
+I" O O
+H" G" G"
+H" 1
+G" F" F"
+G" 1
+F" E" E"
+F" 1
+A" 1
+K B" B"
+K A"
+L K C"
+D" 1
+M L D"
+A B" A"
+B B" A
+B" A" A
+B" B
+A C" K
+B C" A
+C" K A
+C" B
+A D" L
+B D" A
+D" L A
+D" B
+O M M
+I A" O
+I 1
+H I B"
+H 1
+A H O
+B H A
+H O A
+H B
+A C" H
+B C" A
+C" H A
+C" B
+A B" I
+B B" A
+B" I A
+B" B
+A A" O
+B A" A
+A" O A
+A" B
+E" O O
+D" C" C"
+D" 1
+C" B" B"
+C" 1
+B" A" A"
+B" 1
+=" 1
+K >" >"
+K ="
+L K ?"
+@" 1
+M L @"
+A >" ="
+B >" A
+>" =" A
+>" B
+A ?" K
+B ?" A
+?" K A
+?" B
+A @" L
+B @" A
+@" L A
+@" B
+O M M
+I =" O
+I 1
+H I >"
+H 1
+A H O
+B H A
+H O A
+H B
+A ?" H
+B ?" A
+?" H A
+?" B
+A >" I
+B >" A
+>" I A
+>" B
+A =" O
+B =" A
+=" O A
+=" B
+A" O O
+@" ?" ?"
+@" 1
+?" >" >"
+?" 1
+>" =" ="
+>" 1
+9" 1
+K :" :"
+K 9"
+L K ;"
+<" 1
+M L <"
+A :" 9"
+B :" A
+:" 9" A
+:" B
+A ;" K
+B ;" A
+;" K A
+;" B
+A <" L
+B <" A
+<" L A
+<" B
+O M M
+I 9" O
+I 1
+H I :"
+H 1
+A H O
+B H A
+H O A
+H B
+A ;" H
+B ;" A
+;" H A
+;" B
+A :" I
+B :" A
+:" I A
+:" B
+A 9" O
+B 9" A
+9" O A
+9" B
+=" O O
+<" ;" ;"
+<" 1
+;" :" :"
+;" 1
+:" 9" 9"
+:" 1
+5" 1
+K 6" 6"
+K 5"
+L K 7"
+8" 1
+M L 8"
+A 6" 5"
+B 6" A
+6" 5" A
+6" B
+A 7" K
+B 7" A
+7" K A
+7" B
+A 8" L
+B 8" A
+8" L A
+8" B
+O M M
+I 5" O
+I 1
+H I 6"
+H 1
+A H O
+B H A
+H O A
+H B
+A 7" H
+B 7" A
+7" H A
+7" B
+A 6" I
+B 6" A
+6" I A
+6" B
+A 5" O
+B 5" A
+5" O A
+5" B
+9" O O
+8" 7" 7"
+8" 1
+7" 6" 6"
+7" 1
+6" 5" 5"
+6" 1
+1" 1
+K 2" 2"
+K 1"
+L K 3"
+4" 1
+M L 4"
+A 2" 1"
+B 2" A
+2" 1" A
+2" B
+A 3" K
+B 3" A
+3" K A
+3" B
+A 4" L
+B 4" A
+4" L A
+4" B
+O M M
+I 1" O
+I 1
+H I 2"
+H 1
+A H O
+B H A
+H O A
+H B
+A 3" H
+B 3" A
+3" H A
+3" B
+A 2" I
+B 2" A
+2" I A
+2" B
+A 1" O
+B 1" A
+1" O A
+1" B
+5" O O
+4" 3" 3"
+4" 1
+3" 2" 2"
+3" 1
+2" 1" 1"
+2" 1
+-" 1
+K ." ."
+K -"
+L K /"
+0" 1
+M L 0"
+A ." -"
+B ." A
+." -" A
+." B
+A /" K
+B /" A
+/" K A
+/" B
+A 0" L
+B 0" A
+0" L A
+0" B
+O M M
+I -" O
+I 1
+H I ."
+H 1
+A H O
+B H A
+H O A
+H B
+A /" H
+B /" A
+/" H A
+/" B
+A ." I
+B ." A
+." I A
+." B
+A -" O
+B -" A
+-" O A
+-" B
+1" O O
+0" /" /"
+0" 1
+/" ." ."
+/" 1
+." -" -"
+." 1
+)" 1
+K *" *"
+K )"
+L K +"
+," 1
+M L ,"
+A *" )"
+B *" A
+*" )" A
+*" B
+A +" K
+B +" A
++" K A
++" B
+A ," L
+B ," A
+," L A
+," B
+O M M
+I )" O
+I 1
+H I *"
+H 1
+A H O
+B H A
+H O A
+H B
+A +" H
+B +" A
++" H A
++" B
+A *" I
+B *" A
+*" I A
+*" B
+A )" O
+B )" A
+)" O A
+)" B
+-" O O
+," +" +"
+," 1
++" *" *"
++" 1
+*" )" )"
+*" 1
+%" 1
+K &" &"
+K %"
+L K '"
+(" 1
+M L ("
+A &" %"
+B &" A
+&" %" A
+&" B
+A '" K
+B '" A
+'" K A
+'" B
+A (" L
+B (" A
+(" L A
+(" B
+O M M
+I %" O
+I 1
+H I &"
+H 1
+A H O
+B H A
+H O A
+H B
+A '" H
+B '" A
+'" H A
+'" B
+A &" I
+B &" A
+&" I A
+&" B
+A %" O
+B %" A
+%" O A
+%" B
+)" O O
+(" '" '"
+(" 1
+'" &" &"
+'" 1
+&" %" %"
+&" 1
+!" 1
+K "" ""
+K !"
+L K #"
+$" 1
+M L $"
+A "" !"
+B "" A
+"" !" A
+"" B
+A #" K
+B #" A
+#" K A
+#" B
+A $" L
+B $" A
+$" L A
+$" B
+O M M
+I !" O
+I 1
+H I ""
+H 1
+A H O
+B H A
+H O A
+H B
+A #" H
+B #" A
+#" H A
+#" B
+A "" I
+B "" A
+"" I A
+"" B
+A !" O
+B !" A
+!" O A
+!" B
+%" O O
+$" #" #"
+$" 1
+#" "" ""
+#" 1
+"" !" !"
+"" 1
+{ 1
+K | |
+K {
+L K }
+~ 1
+M L ~
+A | {
+B | A
+| { A
+| B
+A } K
+B } A
+} K A
+} B
+A ~ L
+B ~ A
+~ L A
+~ B
+O M M
+I { O
+I 1
+H I |
+H 1
+A H O
+B H A
+H O A
+H B
+A } H
+B } A
+} H A
+} B
+A | I
+B | A
+| I A
+| B
+A { O
+B { A
+{ O A
+{ B
+!" O O
+~ } }
+~ 1
+} | |
+} 1
+| { {
+| 1
+w 1
+K x x
+K w
+L K y
+z 1
+M L z
+A x w
+B x A
+x w A
+x B
+A y K
+B y A
+y K A
+y B
+A z L
+B z A
+z L A
+z B
+O M M
+I w O
+I 1
+H I x
+H 1
+A H O
+B H A
+H O A
+H B
+A y H
+B y A
+y H A
+y B
+A x I
+B x A
+x I A
+x B
+A w O
+B w A
+w O A
+w B
+{ O O
+z y y
+z 1
+y x x
+y 1
+x w w
+x 1
+s 1
+K t t
+K s
+L K u
+v 1
+M L v
+A t s
+B t A
+t s A
+t B
+A u K
+B u A
+u K A
+u B
+A v L
+B v A
+v L A
+v B
+O M M
+I s O
+I 1
+H I t
+H 1
+A H O
+B H A
+H O A
+H B
+A u H
+B u A
+u H A
+u B
+A t I
+B t A
+t I A
+t B
+A s O
+B s A
+s O A
+s B
+w O O
+v u u
+v 1
+u t t
+u 1
+t s s
+t 1
+o 1
+K p p
+K o
+L K q
+r 1
+M L r
+A p o
+B p A
+p o A
+p B
+A q K
+B q A
+q K A
+q B
+A r L
+B r A
+r L A
+r B
+O M M
+I o O
+I 1
+H I p
+H 1
+A H O
+B H A
+H O A
+H B
+A q H
+B q A
+q H A
+q B
+A p I
+B p A
+p I A
+p B
+A o O
+B o A
+o O A
+o B
+s O O
+r q q
+r 1
+q p p
+q 1
+p o o
+p 1
+k 1
+K l l
+K k
+L K m
+n 1
+M L n
+A l k
+B l A
+l k A
+l B
+A m K
+B m A
+m K A
+m B
+A n L
+B n A
+n L A
+n B
+O M M
+I k O
+I 1
+H I l
+H 1
+A H O
+B H A
+H O A
+H B
+A m H
+B m A
+m H A
+m B
+A l I
+B l A
+l I A
+l B
+A k O
+B k A
+k O A
+k B
+o O O
+n m m
+n 1
+m l l
+m 1
+l k k
+l 1
+g 1
+K h h
+K g
+L K i
+j 1
+M L j
+A h g
+B h A
+h g A
+h B
+A i K
+B i A
+i K A
+i B
+A j L
+B j A
+j L A
+j B
+O M M
+I g O
+I 1
+H I h
+H 1
+A H O
+B H A
+H O A
+H B
+A i H
+B i A
+i H A
+i B
+A h I
+B h A
+h I A
+h B
+A g O
+B g A
+g O A
+g B
+k O O
+j i i
+j 1
+i h h
+i 1
+h g g
+h 1
+c 1
+K d d
+K c
+L K e
+f 1
+M L f
+A d c
+B d A
+d c A
+d B
+A e K
+B e A
+e K A
+e B
+A f L
+B f A
+f L A
+f B
+O M M
+I c O
+I 1
+H I d
+H 1
+A H O
+B H A
+H O A
+H B
+A e H
+B e A
+e H A
+e B
+A d I
+B d A
+d I A
+d B
+A c O
+B c A
+c O A
+c B
+g O O
+f e e
+f 1
+e d d
+e 1
+d c c
+d 1
+_ 1
+K ` `
+K _
+L K a
+b 1
+M L b
+A ` _
+B ` A
+` _ A
+` B
+A a K
+B a A
+a K A
+a B
+A b L
+B b A
+b L A
+b B
+O M M
+I _ O
+I 1
+H I `
+H 1
+A H O
+B H A
+H O A
+H B
+A a H
+B a A
+a H A
+a B
+A ` I
+B ` A
+` I A
+` B
+A _ O
+B _ A
+_ O A
+_ B
+c O O
+b a a
+b 1
+a ` `
+a 1
+` _ _
+` 1
+[ 1
+K \ \
+K [
+L K ]
+^ 1
+M L ^
+A \ [
+B \ A
+\ [ A
+\ B
+A ] K
+B ] A
+] K A
+] B
+A ^ L
+B ^ A
+^ L A
+^ B
+O M M
+I [ O
+I 1
+H I \
+H 1
+A H O
+B H A
+H O A
+H B
+A ] H
+B ] A
+] H A
+] B
+A \ I
+B \ A
+\ I A
+\ B
+A [ O
+B [ A
+[ O A
+[ B
+_ O O
+^ ] ]
+^ 1
+] \ \
+] 1
+\ [ [
+\ 1
+W 1
+K X X
+K W
+L K Y
+Z 1
+M L Z
+A X W
+B X A
+X W A
+X B
+A Y K
+B Y A
+Y K A
+Y B
+A Z L
+B Z A
+Z L A
+Z B
+O M M
+I W O
+I 1
+H I X
+H 1
+A H O
+B H A
+H O A
+H B
+A Y H
+B Y A
+Y H A
+Y B
+A X I
+B X A
+X I A
+X B
+A W O
+B W A
+W O A
+W B
+[ O O
+Z Y Y
+Z 1
+Y X X
+Y 1
+X W W
+X 1
+S 1
+K T T
+K S
+L K U
+V 1
+M L V
+A T S
+B T A
+T S A
+T B
+A U K
+B U A
+U K A
+U B
+A V L
+B V A
+V L A
+V B
+O M M
+I S O
+I 1
+H I T
+H 1
+A H O
+B H A
+H O A
+H B
+A U H
+B U A
+U H A
+U B
+A T I
+B T A
+T I A
+T B
+A S O
+B S A
+S O A
+S B
+W O O
+V U U
+V 1
+U T T
+U 1
+T S S
+T 1
+< 1
+K = =
+K <
+L K >
+@ 1
+M L @
+A = <
+B = A
+= < A
+= B
+A > K
+B > A
+> K A
+> B
+A @ L
+B @ A
+@ L A
+@ B
+O M M
+I < O
+I 1
+H I =
+H 1
+A H O
+B H A
+H O A
+H B
+A > H
+B > A
+> H A
+> B
+A = I
+B = A
+= I A
+= B
+A < O
+B < A
+< O A
+< B
+S O O
+@ > >
+@ 1
+> = =
+> 1
+= < <
+= 1
+8 1
+K 9 9
+K 8
+L K :
+; 1
+M L ;
+A 9 8
+B 9 A
+9 8 A
+9 B
+A : K
+B : A
+: K A
+: B
+A ; L
+B ; A
+; L A
+; B
+O M M
+I 8 O
+I 1
+H I 9
+H 1
+A H O
+B H A
+H O A
+H B
+A : H
+B : A
+: H A
+: B
+A 9 I
+B 9 A
+9 I A
+9 B
+A 8 O
+B 8 A
+8 O A
+8 B
+< O O
+; : :
+; 1
+: 9 9
+: 1
+9 8 8
+9 1
+4 1
+K 5 5
+K 4
+L K 6
+7 1
+M L 7
+A 5 4
+B 5 A
+5 4 A
+5 B
+A 6 K
+B 6 A
+6 K A
+6 B
+A 7 L
+B 7 A
+7 L A
+7 B
+O M M
+I 4 O
+I 1
+H I 5
+H 1
+A H O
+B H A
+H O A
+H B
+A 6 H
+B 6 A
+6 H A
+6 B
+A 5 I
+B 5 A
+5 I A
+5 B
+A 4 O
+B 4 A
+4 O A
+4 B
+8 O O
+7 6 6
+7 1
+6 5 5
+6 1
+5 4 4
+5 1
+. 1
+K / /
+K .
+L K 2
+3 1
+M L 3
+A / .
+B / A
+/ . A
+/ B
+A 2 K
+B 2 A
+2 K A
+2 B
+A 3 L
+B 3 A
+3 L A
+3 B
+O M M
+I . O
+I 1
+H I /
+H 1
+A H O
+B H A
+H O A
+H B
+A 2 H
+B 2 A
+2 H A
+2 B
+A / I
+B / A
+/ I A
+/ B
+A . O
+B . A
+. O A
+. B
+4 O O
+3 2 2
+3 1
+2 / /
+2 1
+/ . .
+/ 1
+* 1
+K + +
+K *
+L K ,
+- 1
+M L -
+A + *
+B + A
++ * A
++ B
+A , K
+B , A
+, K A
+, B
+A - L
+B - A
+- L A
+- B
+O M M
+I * O
+I 1
+H I +
+H 1
+A H O
+B H A
+H O A
+H B
+A , H
+B , A
+, H A
+, B
+A + I
+B + A
++ I A
++ B
+A * O
+B * A
+* O A
+* B
+. O O
+- , ,
+- 1
+, + +
+, 1
++ * *
++ 1
+& 1
+K ' '
+K &
+L K (
+) 1
+M L )
+A ' &
+B ' A
+' & A
+' B
+A ( K
+B ( A
+( K A
+( B
+A ) L
+B ) A
+) L A
+) B
+O M M
+I & O
+I 1
+H I '
+H 1
+A H O
+B H A
+H O A
+H B
+A ( H
+B ( A
+( H A
+( B
+A ' I
+B ' A
+' I A
+' B
+A & O
+B & A
+& O A
+& B
+* O O
+) ( (
+) 1
+( ' '
+( 1
+' & &
+' 1
+" 1
+K # #
+K "
+L K $
+% 1
+M L %
+A # "
+B # A
+# " A
+# B
+A $ K
+B $ A
+$ K A
+$ B
+A % L
+B % A
+% L A
+% B
+O M M
+I " O
+I 1
+H I #
+H 1
+A H O
+B H A
+H O A
+H B
+A $ H
+B $ A
+$ H A
+$ B
+A # I
+B # A
+# I A
+# B
+A " O
+B " A
+" O A
+" B
+& O O
+% $ $
+% 1
+$ # #
+$ 1
+# " "
+# 1
+Q Q Q Q Q Q Q Q R
+" R R
+" 1
+D 0
+E D ]"
+E 1
+A D ]"
+B D A
+C ]" A
+]" B C
+D E E
+D 1
+E D ^"
+E 1
+A D ^"
+B D A
+C ^" A
+^" B C
+D E E
+D 1
+E D _"
+E 1
+A D _"
+B D A
+C _" A
+_" B C
+D E E
+D 1
+E D `"
+E 1
+A D `"
+B D A
+C `" A
+`" B C
+D E E
+D 1
+E D a"
+E 1
+A D a"
+B D A
+C a" A
+a" B C
+D E E
+D 1
+E D b"
+E 1
+A D b"
+B D A
+C b" A
+b" B C
+D E E
+D 1
+E D c"
+E 1
+A D c"
+B D A
+C c" A
+c" B C
+D E E
+D 1
+Q 1 1
+A ]" 0
+B ]" A
+C 0 A
+F B C
+Q 1
+F 1
+Q F
+A ^" 0
+B ^" A
+C 0 A
+F B C
+Q 1
+F 1
+Q F
+A _" 1
+B _" A
+C 1 A
+F B C
+Q 1
+F 1
+Q F
+A `" 0
+B `" A
+C 0 A
+F B C
+Q 1
+F 1
+Q F
+A a" 0
+B a" A
+C 0 A
+F B C
+Q 1
+F 1
+Q F
+A b" 1
+B b" A
+C 1 A
+F B C
+Q 1
+F 1
+Q F
+A c" 1
+B c" A
+C 1 A
+F B C
+Q 1
+F 1
+Q F
+Q
+0 0 1 1 \" [" Z" Y"
+0 0 1 1 X" W" V" U"
+0 0 1 1 T" S" R" Q"
+0 0 1 1 P" O" N" M"
+0 0 1 1 L" K" J" I"
+0 0 1 1 H" G" F" E"
+0 0 1 1 D" C" B" A"
+0 0 1 1 @" ?" >" ="
+0 0 1 1 <" ;" :" 9"
+0 0 1 1 8" 7" 6" 5"
+0 0 1 1 4" 3" 2" 1"
+0 0 1 1 0" /" ." -"
+0 0 1 1 ," +" *" )"
+0 0 1 1 (" '" &" %"
+0 0 1 1 $" #" "" !"
+0 0 1 1 ~ } | {
+0 0 1 1 z y x w
+0 0 1 1 v u t s
+0 0 1 1 r q p o
+0 0 1 1 n m l k
+0 0 1 1 j i h g
+0 0 1 1 f e d c
+0 0 1 1 b a ` _
+0 0 1 1 ^ ] \ [
+0 0 1 1 Z Y X W
+0 0 1 1 V U T S
+0 0 1 1 @ > = <
+0 0 1 1 ; : 9 8
+0 0 1 1 7 6 5 4
+0 0 1 1 3 2 / .
+0 0 1 1 - , + *
+0 0 1 1 ) ( ' &
+0 0 1 1 % $ # "
