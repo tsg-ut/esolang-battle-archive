@@ -1,0 +1,21 @@
+circ xor(a,b)->(!(a&b))&(a|b)
+circ nz(a)->cond a->1/0
+circ eq(a,b)->!(nz(xor(a,b)))
+circ add3ge5(a)->[
+	var b4=(a<)|((a><)&nz(a>>))
+	var b3=eq(a,1001)
+	var b2=eq(a,0111)|eq(a,1000)
+	var b1=!((~a)<)
+	cond b4->b4+b3+b2+b1/a
+]
+circ car4(a)->(a<)+(a><)+(a>><)+(a>>><)
+circ add3ge5l(a)->cond eq(1+a,1)->0/0+add3ge5l(~((~a)>>>>))>+add3ge5(~(car4(~a)))
+circ trim4(a)->cond nz(car4(a))->a/a>>>>
+circ main(o,i)->[
+	var o2=add3ge5l(o)>
+	cond o2<->var o2=000+o2+i</var o2=o2>+i<
+	cond eq(1+i>,1)->o2/main(o2,i>)
+]
+circ decp(a)->@(11+a)
+circ dec(a)->cond eq(1+a,1)->0/0+decp(car4(a))+dec(a>>>>)>
+out dec(main(0000,binp))>
