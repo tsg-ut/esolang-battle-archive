@@ -1,0 +1,4 @@
+IO.exec("echo 'obase=10;ibase=2;' > i.txt");
+IO.exec("cat input >> i.txt");
+IO.exec("echo '' >> i.txt");
+print IO.exec("cat i.txt | bc");
