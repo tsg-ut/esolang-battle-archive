@@ -1,0 +1,3 @@
+v=fgets(0);
+v = sort(v);
+disp(v);
