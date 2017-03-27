@@ -3,10 +3,8 @@ I have a A
 I have no B
 I have 100 C
 I have 10 E
-
 I have no Z
 I have no T
-
 B
 Uh! Pick-Z
 Uh! Rip-Z-Y
@@ -21,7 +19,6 @@ Uh! Append-T-A
 Uh! Push-T-D
 Uh! Append-B-A
 Uh! Compare-B-C-B!?
-
 I have no D
 A
 Uh! Pull-T-D
