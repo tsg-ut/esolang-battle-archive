@@ -1,1 +1,1 @@
-char c,s[100],i;main(){read(0,&s,100);for(;10-c++;)for(i=100;1+i--;write(1,s+i,s[i]==c+47));}
+char c,s[100],i;main(){read(0,&s,100);for(;10-c++;)for(i=100;i--;write(1,s+i,s[i]==c+47));}
