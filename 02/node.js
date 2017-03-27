@@ -1,1 +1,1 @@
-process.stdin.on('data',s=>console.log([...s+""].sort().join(""))).resume()
+console.log(require('fs').readFileSync(0).sort().toString())
