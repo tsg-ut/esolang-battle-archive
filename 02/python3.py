@@ -1,1 +1,1 @@
-print(''.join(map(str,sorted(map(int,input())))))
+print(''.join(sorted(input())))
