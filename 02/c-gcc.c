@@ -1,0 +1,1 @@
+char l[100],i,j;main(){for(;i<100;i++){read(0,&j,1);l[j]++;}for(i=48;i<58;i++)for(j=0;j<l[i];j++)write(1,&i,1);}
