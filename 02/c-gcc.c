@@ -1,1 +1,1 @@
-char c,s[100],i=100;main(){while(i--){read(0,&c,1);s[c]++;}while(58-i++){while(s[i]--)write(1,&i,1);}}
+char c,s[1],i=100;main(){while(i--){read(0,&c,1);s[c]++;}while(58-i++){while(s[i]--)write(1,&i,1);}}
