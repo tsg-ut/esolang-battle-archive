@@ -1,1 +1,1 @@
-char c,s[1],i;main(){read(0,s,100);for(;10-c++;)for(i=100;i--;write(1,s+i,s[i]==c+47));}
+f(char*a,char*b){return*a-*b;}s[100];main(){gets(s);qsort(s,100,1,f);puts(s);}
