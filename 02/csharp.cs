@@ -1,1 +1,1 @@
-using System;public class Test{public static void Main(){var l=Console.ReadLine().ToCharArray();Array.Sort(l);Console.WriteLine(string.Join("",l));}}
+using System;class Hello{static void Main(){var p = Console.ReadLine().ToCharArray();Array.Sort(p);Console.WriteLine(p);}}
