@@ -1,1 +1,1 @@
-import std.stdio,std.array;void main(){write(split(readln(),"").sort.join);}
+import std.stdio,std.array;void main(){write(readln.split("").sort.join);}
