@@ -1,1 +1,1 @@
-print join"",sort<>=~/./g
+print sort<>=~/./g
