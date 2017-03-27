@@ -1,1 +1,1 @@
-$><<gets.split("").sort*''
+$><<gets.chars.sort*''
