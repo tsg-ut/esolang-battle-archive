@@ -1,1 +1,1 @@
-char l[100],i,j;main(){for(;i<100;i++){read(0,&j,1);l[j]++;}for(i=48;i<58;i++)for(j=0;j<l[i];j++)write(1,&i,1);}
+char c,s[10],i=100;main(){while(i--){read(0,&c,1);s[c-48]++;}for(i=0;i<10;i++){while(s[i]--)printf("%d",i);}}
