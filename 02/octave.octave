@@ -1,1 +1,1 @@
-disp(sort(fgets(0)));
+disp(sort(fgets(0)))
