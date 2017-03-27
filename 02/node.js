@@ -1,1 +1,1 @@
-process.stdin.on('data',d=>console.log(`${d.sort()}`))
+process.stdin.on('data',d=>console.log(d.sort()+''))
