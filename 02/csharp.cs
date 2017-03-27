@@ -1,0 +1,1 @@
+using System;public class Test{public static void Main(){var l=Console.ReadLine().ToCharArray();Array.Sort(l);Console.WriteLine(string.Join("",l));}}
