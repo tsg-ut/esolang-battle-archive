@@ -1,1 +1,1 @@
-f(char*a,char*b){return*a-*b;}s[100];main(){gets(s);qsort(s,100,1,f);puts(s);}
+f(char*a,char*b){return*a-*b;}s[1];main(){qsort(gets(s),100,1,f);puts(s);}
