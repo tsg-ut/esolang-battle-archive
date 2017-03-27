@@ -1,1 +1,1 @@
-console.log(require('fs').readFileSync(0).sort().toString())
+process.stdin.on('data',d=>console.log(`${d.sort()}`))
