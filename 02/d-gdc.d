@@ -1,0 +1,1 @@
+import std.stdio;import std.array;import std.algorithm;void main(){write(join(sort!("a<b")(split(readln(),""))));}
