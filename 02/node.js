@@ -1,1 +1,1 @@
-process.stdin.on('data',d=>console.log(d.sort()+''))
+(q=require("fs")).write(1,q.readFileSync(0).sort())
