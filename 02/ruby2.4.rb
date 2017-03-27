@@ -1,1 +1,1 @@
-$><<gets.chars.sort*''
+$><<$<.chars.sort*''
