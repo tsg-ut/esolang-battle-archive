@@ -1,1 +1,1 @@
-input = require('fs').readFileSync('/dev/stdin', 'utf8');console.log(input.split("").sort().join(""))
+console.log(require('fs').readFileSync('/dev/stdin','utf8').split("").sort().join(""))
