@@ -1,1 +1,1 @@
-print join"",sort<STDIN>=~/./g
+print sort split(//,<STDIN>);
