@@ -1,1 +1,1 @@
-(q=require("fs")).write(1,q.readFileSync(0).sort())
+with(require("fs"))write(1,readFileSync(0).sort())
