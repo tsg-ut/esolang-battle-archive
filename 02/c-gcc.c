@@ -1,1 +1,1 @@
-s[1];main(){strcmp();qsort(gets(s),100,1,strcmp);puts(s);}
+s[1];main(){strcmp(qsort(gets(s),100,1,strcmp));puts(s);}
