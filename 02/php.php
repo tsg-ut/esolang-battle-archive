@@ -1,1 +1,1 @@
-<?php $a=str_split(fgets(STDIN));sort($a)?><?=join($a)?>
+<?= ($a=str_split(readline()))|sort($a)?implode($a):0;
