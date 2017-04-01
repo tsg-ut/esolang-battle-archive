@@ -1,1 +1,1 @@
-while read -s -n 1 C;do $((++a[C]));done;for i in {0..10};do for((j=a[i];j>0;j--));do o+=$i;done;done;echo $o
+while read -s -n 1 C;do $((++a[C]));done;for i in {0..10};do for((j=a[i];j;j--));do o+=$i;done;done;echo $o
