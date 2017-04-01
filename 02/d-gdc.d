@@ -1,1 +1,1 @@
-import std.stdio;void main(){write(readln.dup.sort);}
+import std.stdio;void main(){readln.dup.sort.write;}
