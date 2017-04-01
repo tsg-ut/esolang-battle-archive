@@ -1,1 +1,1 @@
-<?= ($a=str_split(readline()))|sort($a)?implode($a):0;
+<?=($a=str_split(readline()))|sort($a)?implode($a):0;
