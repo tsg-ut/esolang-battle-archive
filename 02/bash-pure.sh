@@ -1,3 +1,1 @@
-a=()
-while read -n 1 c;do a[$c]=$((a[c]+1));done
-for((i=0;i<10;i++));do for((j=0;j<${a[i]};j++));do echo -n $i;done;done
+a=();while read -s -n 1 C;do $((++a[C]));done;for i in {0..10};do for((j=a[i];j>0;j--));do o+=$i;done;done;echo $o
