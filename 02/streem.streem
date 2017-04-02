@@ -1,6 +1,5 @@
-a={case[],s->""
-case[x],s->" "+x
-case[x,*y],s->x+" "+s+a(y,s)}
+a={case[x],s->x
+case[x,*y],s->x+" "+s+" "+a(y,s)}
 j={case[]->""
 case[x,*y]->x+j(y)}
 f={n->{x->a(split(x,n),n)}}
