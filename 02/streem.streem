@@ -1,6 +1,6 @@
-a={case [],s->""
+a={case[],s->""
 case[x],s->" "+x
 case[x,*y],s->x+" "+s+a(y,s)}
 j={case[]->""
 case[x,*y]->x+j(y)}
-stdin|map{x -> j(sort(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(x,"0"),"0"),"1"),"1"),"2"),"2"),"3"),"3"),"4"),"4"),"5"),"5"),"6"),"6"),"7"),"7"),"8"),"8"),"9"),"9"))))}|stdout
+stdin|map{x->j(sort(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(a(split(x,"0"),"0"),"1"),"1"),"2"),"2"),"3"),"3"),"4"),"4"),"5"),"5"),"6"),"6"),"7"),"7"),"8"),"8"),"9"),"9"))))}|stdout
