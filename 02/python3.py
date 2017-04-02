@@ -1,1 +1,1 @@
-print(''.join(sorted(input())))
+print(*sorted(input()),sep="")
