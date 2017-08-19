@@ -1,12 +1,5 @@
 while a=gets()
-c=a.to_i
-b=0
-i=0
-while i<8
-b+=(c%10)*(2**i)
-c/=10
-i+=1
-end
+b=a.to_i 2
 i=1
 while b>0
 b-=i
