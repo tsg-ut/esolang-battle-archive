@@ -1,1 +1,1 @@
-for i in range(50):print(0 if(1+(1+8*int(input(),2))**0.5)%2 else 1)
+while 1:x=eval("0b"+input())*8+1;y=int(x**0.5);print(int(y*y==x))
