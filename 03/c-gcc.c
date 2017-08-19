@@ -1,1 +1,1 @@
-i;a;b;main(){for(;a++<50;){for(i=0,b=9;b--;)i+=i+getchar()%2;for(i/=2;i>0;)i-=++b;putchar(48+!i);}}
+i;a;b;main(){for(;a++<50;putchar(48+!i)){for(i=0,b=9;b--;)i+=i+getchar()%2;for(i/=2;i>0;)i-=++b;}}
