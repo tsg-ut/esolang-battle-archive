@@ -1,2 +1,1 @@
-using System;
-class E{static void Main(){for(int i=0;i<50;++i)Console.Write(0<=Array.IndexOf(new int[] {0,1,3,6,10,15,21,28,36,45,55,66,78,91,105,120,136,153,171,190,210,231,253},Convert.ToInt32(Console.ReadLine(),2))?1:0);}}
+using System;class E{static void Main(){for(int i=0;i<50;++i)Console.Write(0<=Array.IndexOf(new int[] {0,1,3,6,10,15,21,28,36,45,55,66,78,91,105,120,136,153,171,190,210,231,253},Convert.ToInt32(Console.ReadLine(),2))?1:0);}}
