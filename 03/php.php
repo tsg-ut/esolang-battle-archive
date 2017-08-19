@@ -1,1 +1,1 @@
-<?php for($i=0;$i<50;$i++){$j=bindec(fgets(STDIN));$n=0;while(++$n<24)if($n*($n-1)==$j*2)break;echo $n==24?0:1;}?>
+<?php for($i=0;$i<50;$i++){$j=(sqrt(8*bindec(fgets(STDIN))+1)-1)/2.0;echo 1^$j<=>floor($j);}?>
