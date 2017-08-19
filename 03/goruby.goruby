@@ -1,0 +1,2 @@
+a=255.times.map{|i|i.times.inject(&:+)}
+50.times{puts a.index(gets.to_i(2))?1:0}
