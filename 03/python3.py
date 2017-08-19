@@ -1,1 +1,1 @@
-while 1:print(0 if(1+8*int(input(),2))**.5%2-1 else 1)
+while 1:print(+((1+8*int(input(),2))**.5%2==1))
