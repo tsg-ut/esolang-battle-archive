@@ -1,1 +1,1 @@
-i;a;b;main(){for(;a++<50;putchar(48+!i)){for(i=0,b=9;b--;)i+=i+getchar()%2;for(i/=2;i>0;)i-=++b;}}
+s[9];main(j,a,t){for(;gets(s);putchar(a+48)){t=strtol(s,a=0,2);for(j=t+1;j--;)a+=j*j+j==t*2;}}
