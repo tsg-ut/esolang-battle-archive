@@ -1,1 +1,1 @@
-module c;integer c,i,d,s;initial begin s=1<<31; c=$fgetc(s); while(!(&c))begin d=0;while(c!=10)begin d=d*2;d=d+c-48;c=$fgetc(s);end i=1;while(d>0)begin d=d-i;	i=i+1;end if(d)begin $write("0 ");end else begin $write("1 ");end c=$fgetc(s);end end endmodule
+module c;integer c,i,d,s;initial begin s=1<<31;c=$fgetc(s);while(!(&c))begin d=0;while(c!=10)begin d=d*2;d=d+c-48;c=$fgetc(s);end i=1;while(d>0)begin d=d-i;i=i+1;end if(d)begin $write("0 ");end else begin $write("1 ");end c=$fgetc(s);end end endmodule
