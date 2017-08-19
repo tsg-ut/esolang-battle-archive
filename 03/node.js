@@ -1,1 +1,1 @@
-console.log(require('fs').readFileSync(0,'utf8').split("\n").map(q=>{a=parseInt(q,2);for(i=1;a>0;i++)a-=i;return a==0?1:0}).splice(0,50).join(""))
+with(require("fs"))readFileSync(0,"utf8").match(/\d+/g).map(q=>write(1,+!((1+`0b${q}001`**0.5)%2)))
