@@ -1,1 +1,1 @@
-for i=0:49 disp(mod((8*base2dec(fgetl(stdin),2)+1)^0.5,2)==1) endfor
+for i=0:49 disp(mod((8*base2dec(fgetl(stdin),2)+1)^.5,2)==1) endfor
