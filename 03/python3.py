@@ -1,1 +1,1 @@
-while 1:x=eval("0b"+input())*8+1;y=int(x**0.5);print(y*y//x)
+while 1:x=eval("0b"+input())*8+1;print(int(x**0.5)**2//x)
