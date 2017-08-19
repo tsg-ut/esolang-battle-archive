@@ -1,1 +1,14 @@
-module c;integer c,d,s;initial begin s=1<<31;c=$fgetc(s);while(!(&c))begin d=0;while(c!=10)begin d=d*2;d=d+c-48;c=$fgetc(s);end c=1;while(d>0)begin d=d-c;c=c+1;end if(d)begin $write("0 ");end else begin $write("1 ");end c=$fgetc(s);end end endmodule
+module a;
+	integer i,j,x,c;
+	initial begin
+		for (i=0;i<50;i=i+1) begin
+			c = $fscanf(32'h8000_0000,"%b",x);
+			for(j=0;j<=x;j=j+1) begin
+				if (j*(j+1)/2==x) begin
+					c = 0;
+				end
+			end
+			$write("%d",1-c);
+		end
+	end
+endmodule
