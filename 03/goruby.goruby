@@ -1,2 +1,1 @@
-a=255.times.map{|i|i.times.inject(&:+)}
-50.times{puts a.index(gets.to_i(2))?1:0}
+50.times{a=(((8*gets.to_i(2)+1)**(0.5)-1)/2);p(a.to_i==a ?1:0)}
