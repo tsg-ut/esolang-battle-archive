@@ -1,1 +1,1 @@
-while 1:x=eval("0b"+input())*8+1;print(int(x**0.5)**2//x)
+while 1:print(0 if(1+8*int(input(),2))**.5%2-1 else 1)
