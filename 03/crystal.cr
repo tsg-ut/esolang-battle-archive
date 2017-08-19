@@ -4,5 +4,4 @@ i=0
 while b>0
 b-=i+=1
 end
-p b==0 ?1:0
-end
+p b==0 ?1:0end
