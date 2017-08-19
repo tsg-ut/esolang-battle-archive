@@ -3,10 +3,7 @@
 
 module cat;
 	integer c,i,d;
-	initial begin
-	c = 48;
-			c = $fgetc(`STDIN);
-
+	initial begin c = $fgetc(`STDIN);
 		while (c != `EOF) begin
 			d = 0;
 			i = 1;
@@ -15,9 +12,7 @@ module cat;
 				d = d + c - 48; 
 				c = $fgetc(`STDIN);
 			end
-		    // $write("%d\n", d);
 			i = 1;
-
 			while(d > 0)begin 
 				d = d - i;
 				i = i + 1;
