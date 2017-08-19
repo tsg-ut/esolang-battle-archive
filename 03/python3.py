@@ -1,5 +1,1 @@
-s=[0]
-for i in range(1,23):
-	s.append(s[-1]+i)
-for i in range(0,50):
-	print(int(int(input(),2) in s))
+for i in range(50):print("0"if(1+(1+8*int(input(),2))**0.5)%2 else"1")
