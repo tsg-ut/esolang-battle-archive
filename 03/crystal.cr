@@ -5,8 +5,5 @@ while b>0
 b-=i
 i+=1
 end
-if b==0
-puts 1
-else
-puts 0 end
+puts b==0 ?1:0
 end
