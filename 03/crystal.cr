@@ -5,5 +5,5 @@ while b>0
 b-=i
 i+=1
 end
-puts b==0 ?1:0
+p b==0 ?1:0
 end
