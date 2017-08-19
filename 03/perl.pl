@@ -1,1 +1,1 @@
-use POSIX qw(floor);while(defined($l=<STDIN>)){$x=1+8*unpack("C",pack("B8",$l));$y=int((sqrt($x)));print int($y*$y/$x);}
+$A=((1+8*(oct"0b".$_))**0.5+1)/2,print $A-($A|0)?0:1for<>
