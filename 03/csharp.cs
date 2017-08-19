@@ -1,1 +1,1 @@
-using System;public class M{public static void Main(){for(int i=50;i-->0;)Console.Write((1==Math.Sqrt(Convert.ToInt32(Console.In.ReadLine(),2)*8+1)%2)?1:0);}}
+using System;class M{static void Main(){for(int i=50;i-->0;)Console.Write((1==Math.Sqrt(Convert.ToInt32(Console.In.ReadLine(),2)*8+1)%2)?1:0);}}
