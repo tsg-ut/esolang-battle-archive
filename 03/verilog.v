@@ -1,5 +1,5 @@
 module a;
-	integer i,j,x,c;
+integer i,j,x,c;
 	initial begin
 		for (i=0;i<50;i=i+1) begin
 			c = $fscanf(32'h8000_0000,"%b",x);
