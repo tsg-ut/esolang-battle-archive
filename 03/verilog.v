@@ -1,1 +1,1 @@
-module c;integer c,d;initial begin repeat(50)begin d=0;c=2;repeat(9)begin d=d*2+c%2;c=1<<31;c=$fgetc(c);end for(c=1;d>0;c=c+1)d=d-c;$write(~|d);end end endmodule
+module c;integer c,d;initial begin repeat(50)begin d=0;c=0;repeat(9)begin d=d*2+c%2;c=$fgetc(1<<31);end for(c=1;d>0;c=c+1)d=d-c;$write(~|d);end end endmodule
