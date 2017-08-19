@@ -1,1 +1,1 @@
-s[9];main(j,a,t){for(;gets(s);puts(&a))for(t=strtol(s,0,2),j=a=48;j;j--)a+=j*j-j==t*2;}
+s[9];main(j,a,t){for(;gets(s);puts(&a))for(t=strtol(s,0,2),j=a=48;--j;)a+=j*j-j==t*2;}
