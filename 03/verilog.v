@@ -1,1 +1,1 @@
-module a;integer i,j,x,c;initial begin for(i=0;i<50;i=i+1)begin c=$fscanf(32'h80000000,"%b",x);for(j=0;j<=x;j=j+1)begin c=c+(j*(j+1)/2==x);end $write("%d",c-1);end end endmodule
+module c;integer c,d,s;initial begin s=1<<31;repeat(50)begin d=0;c=48;repeat(9)begin d=d*2+c-48;c=$fgetc(s);end for(c=1;d>0;c=c+1)d=d-c;$write("%d ",~|d);end end endmodule
