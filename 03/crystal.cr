@@ -13,8 +13,7 @@ b-=i
 i+=1
 end
 if b==0
-puts(1)
+puts 1
 else
-puts(0)
-end
+puts 0 end
 end
