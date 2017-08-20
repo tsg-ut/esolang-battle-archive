@@ -1,29 +1,28 @@
-I have 0 Pn
+I have 0 Z
 I have P
-I have 2 Pt
-I have 48 Pz
-I have 51 Ip
+I have 2 T
+I have 48 Y
 Pi
-I have 0 Ap
-I have Bp
-I have 9 Kp
+I have 0 A
+I have B
+I have 9 K
 Pk
-Uh! Pick-Bp
-Uh! Multiply-Ap-Pt
-Uh! Rip-Bp-Pz
-Uh! Append-Ap-Bp
-Uh! Rip-Kp-P
-Uh! Compare-Kp-P-Pk!?
-Uh! Pick-Bp
-I have 0 Fp
-I have 0 Jp
-I have 24 Gp
+Uh! Pick-B
+Uh! Multiply-A-T
+Uh! Rip-B-Y
+Uh! Append-A-B
+Uh! Rip-K-P
+Uh! Compare-K-P-Pk!?
+Uh! Pick-B
+I have 0 F
+I have 0 J
+I have 24 G
 Pj
-Uh! Rip-Ap-Jp
-Uh! Append-Jp-P
-Uh! Compare-Ap-Pn-PJ!?
-Uh! Append-Fp-P
+Uh! Rip-A-J
+Uh! Append-J-P
+Uh! Compare-A-Z-PJ!?
+Uh! Append-F-P
 PJ
-Uh! Compare-Jp-Gp-Pj!?
-Uh! Print-Fp
-Uh! Compare-Ip-P-Pi!?
+Uh! Compare-J-G-Pj!?
+Uh! Print-F
+Uh! Jump-Pi
