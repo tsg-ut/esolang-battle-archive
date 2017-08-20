@@ -1,6 +1,5 @@
-I have 0 Z
+I have 0 M
 I have P
-I have 2 T
 I have 24 G
 X
 I have 0 A
@@ -8,17 +7,17 @@ I have B
 I have 9 K
 Y
 Uh! Pick-B
-Uh! Multiply-A-T
-Uh! Rip-B-G
-Uh! Rip-B-G
-Uh! Append-A-B
+Uh! Append-A-A
+I have 48 H
+Uh! Rip-H-B
+Uh! Rip-A-H
 Uh! Rip-K-P
 Uh! Compare-K-P-Y!?
 Uh! Pick-B
 I have 0 F
 I have J
 Z
-Uh! Compare-A-Z-W!?
+Uh! Compare-A-M-W!?
 Uh! Append-F-P
 W
 Uh! Rip-A-J
