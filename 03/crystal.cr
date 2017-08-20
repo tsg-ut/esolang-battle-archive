@@ -1,1 +1,1 @@
-while a=gets;p (1+8*a.to_i 2)**0.5%1>0?0:1;end
+loop{p (gets.to_s.to_i(2)*8+1)**0.5%2==1?1:0}
