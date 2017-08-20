@@ -1,1 +1,1 @@
-begin integer a,b,r,i;while i<50do begin a:=inint;b:=0;r:=1;while a>0do begin b:=b+r*(a-a//10*10);r:=r*2;a:=a/10;end;a:=sqrt(b*8+1);if a*a=b*8+1then outchar('1')else outchar('0');i:=i+1;end;end
+begin integer a,b,r,i,c;while i<50do begin a:=inint;b:=0;r:=1;while a>0do begin b:=b+r*(a-a//10*10);r:=r*2;a:=a/10;end;a:=sqrt(b*8+1);if a*a=b*8+1then c:=1else c:=0;outint(c,0);i:=i+1;end;end
