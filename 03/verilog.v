@@ -1,1 +1,1 @@
-module c;integer d;initial while($fscanf(1<<31,"%b",d))$write($sqrt(d*8+1)%2==1);endmodule
+module c;real d;initial while($fscanf(1<<31,"%b",d))$write($sqrt(d*8+1)%2==1);endmodule
