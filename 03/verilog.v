@@ -1,1 +1,1 @@
-module a;real x;initial repeat(50)$write("%d",$fscanf(1<<31,"%b",x)==(8*x+1)**0.5%2);endmodule
+module c;integer d;initial while($fscanf(1<<31,"%b",d))$write($sqrt(d*8+1)%2==1);endmodule
