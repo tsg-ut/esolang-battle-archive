@@ -1,1 +1,1 @@
-for i=0:49 disp(mod((8*base2dec(fgetl(stdin),2)+1)^.5,2)==1) endfor
+while(1)printf("%d",rem((bin2dec(fgetl(0))*8+1)^.5,1)==0)endwhile
