@@ -1,28 +1,28 @@
 I have 0 Z
 I have P
 I have 2 T
-I have 48 Y
-Pi
+I have 24 G
+X
 I have 0 A
 I have B
 I have 9 K
-Pk
+Y
 Uh! Pick-B
 Uh! Multiply-A-T
-Uh! Rip-B-Y
+Uh! Rip-B-G
+Uh! Rip-B-G
 Uh! Append-A-B
 Uh! Rip-K-P
-Uh! Compare-K-P-Pk!?
+Uh! Compare-K-P-Y!?
 Uh! Pick-B
 I have 0 F
-I have 0 J
-I have 24 G
-Pj
+I have J
+Z
+Uh! Compare-A-Z-W!?
+Uh! Append-F-P
+W
 Uh! Rip-A-J
 Uh! Append-J-P
-Uh! Compare-A-Z-PJ!?
-Uh! Append-F-P
-PJ
-Uh! Compare-J-G-Pj!?
+Uh! Compare-J-G-Z!?
 Uh! Print-F
-Uh! Jump-Pi
+Uh! Jump-X
