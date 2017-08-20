@@ -1,1 +1,4 @@
-module c;integer c,d;initial begin while($fscanf(1<<31,"%b",d))begin for(c=1;d>0;c=c+1)d=d-c;$write(~|d);end end endmodule
+module a;real x,y;initial repeat(50)begin
+y=$fscanf(1<<31,"%b",x);
+$write("%d",(8*x+1)**0.5%2==1);
+end endmodule
