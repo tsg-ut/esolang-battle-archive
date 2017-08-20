@@ -1,1 +1,1 @@
-do disp(mod((8*base2dec(fgetl(stdin),2)+1)^.5,2)==1) until 0
+do disp(mod((8*base2dec(fgetl(stdin),2)+1)^.5,2)==1)until 0
