@@ -1,1 +1,5 @@
-importPackage(java.io);importPackage(java.lang);s=new BufferedReader(new InputStreamReader(System.in));while(l=s.readLine()){print(+!((Math.sqrt(8*parseInt(l,2)+1)-1)%2))}
+cin=new java.util.Scanner(java.lang.System.in);
+for(;cin.hasNext();){
+   l= cin.nextLine();
+    print(+!((Math.sqrt(8*parseInt(l,2)+1)-1)%2)); 
+}
