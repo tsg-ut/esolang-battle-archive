@@ -1,1 +1,1 @@
-while(1)disp(!rem((bin2dec(fgetl(0))*8+1)^.5,1))endwhile
+do disp(!rem((1+8*bin2dec(fgetl(0)))^.5,1))until 0
