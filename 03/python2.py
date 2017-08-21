@@ -1,0 +1,1 @@
+while 1:print+((1+8*int(raw_input(),2))**.5%2==1)
