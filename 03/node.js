@@ -1,1 +1,1 @@
-with(require("fs"))(""+readFileSync(0)).match(/.+/g).map(q=>write(1,+!(`0b${q}001`**.5%1)))
+with(require("fs"))(""+readFileSync(0)).replace(/.+/g,q=>write(1,+!(`0b${q}001`**.5%1)))
