@@ -1,2 +1,2 @@
 f={x->if(x>0)f(int(x/10))*2+x%2else 0}
-stdin|{x->if(sqrt(f(number(x))*8+1)%1>0)0else 1}|puts
+stdin|{x->int(1-sqrt(f(number(x))*8+1)%1)}|puts
