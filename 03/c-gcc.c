@@ -1,1 +1,1 @@
-a;main(i){for(;gets(&i);putchar(48+!i))for(i=strtol(&i,a=0,2);i>0;i-=++a);}
+main(s,a){for(;gets(&s);putchar(48+(a*a/s)))a=sqrt(s=strtol(&s,0,2)*8+1);}
