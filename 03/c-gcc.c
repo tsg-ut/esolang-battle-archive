@@ -1,1 +1,1 @@
-a;main(i){for(;gets(&i);putchar(48+!i))for(i=strtol(&i,0,2),a=0;i>0;i-=++a);}
+a;main(i){for(;gets(&i);putchar(48+!i))for(i=strtol(&i,a=0,2);i>0;i-=++a);}
