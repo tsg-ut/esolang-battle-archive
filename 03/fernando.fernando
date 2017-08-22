@@ -1,5 +1,5 @@
 1 0 _ _ _ _ _ _ a
-R
+.
 _ _ _ _ _ _ _ _ b
 _ _ _ _ _ _ _ _ c
 _ _ _ _ _ _ _ _ d
@@ -7,7 +7,7 @@ _ _ _ _ _ _ _ _ e
 _ _ _ _ _ _ _ _ f
 _ _ _ _ _ _ _ _ g
 _ _ _ _ _ _ _ _ h
-_ _ _ _ _ _ _ _ y
+_ _ _ _ _ _ _ _ _
 A a a
 B b b
 C c c
@@ -16,317 +16,287 @@ E e e
 F f f
 G g g
 H h h
-z g H
-z A
-z z
-z B
-z z
-z C
-z z
-z D
-z z
-z E
-z z
-z F
-y A B
-y y
-y C
-y y
-y D
-y y
-y E
-y y
-y f
-y y
-y g
-y y
-y H
-z y
-y A B
-y y
-y C
-y y
-y D
-y y
-y e
-y y
-y F
-y y
-y g
-y y
-y H
-z z
-z y
-y A B
-y y
-y C
-y y
-y D
-y y
-y e
-y y
-y f
-y y
-y g
-y y
-y h
-z z
-z y
-y A B
-y y
-y C
-y y
-y d
-y y
-y E
-y y
-y f
-y y
-y G
-y y
-y h
-z z
-z y
-y A B
-y y
-y C
-y y
-y d
-y y
-y e
-y y
-y f
-y y
-y G
-y y
-y H
-z z
-z y
-y A B
-y y
-y c
-y y
-y D
-y y
-y E
-y y
-y f
-y y
-y G
-y y
-y H
-z z
-z y
-y A B
-y y
-y c
-y y
-y D
-y y
-y e
-y y
-y f
-y y
-y G
-y y
-y h
-z z
-z y
-y A B
-y y
-y c
-y y
-y d
-y y
-y E
-y y
-y f
-y y
-y g
-y y
-y h
-z z
-z y
-y A b
-y y
-y C
-y y
-y D
-y y
-y E
-y y
-y F
-y y
-y g
-y y
-y H
-z z
-z y
-y A b
-y y
-y C
-y y
-y D
-y y
-y e
-y y
-y f
-y y
-y g
-y y
-y H
-z z
-z y
-y A b
-y y
-y C
-y y
-y d
-y y
-y e
-y y
-y F
-y y
-y g
-y y
-y h
-z z
-z y
-y A b
-y y
-y c
-y y
-y D
-y y
-y e
-y y
-y F
-y y
-y G
-y y
-y h
-z z
-z y
-y A b
-y y
-y c
-y y
-y d
-y y
-y e
-y y
-y F
-y y
-y G
-y y
-y H
-z z
-z y
-y a B
-y y
-y C
-y y
-y D
-y y
-y e
-y y
-y F
-y y
-y G
-y y
-y H
-z z
-z y
-y a B
-y y
-y C
-y y
-y d
-y y
-y e
-y y
-y F
-y y
-y G
-y y
-y h
-z z
-z y
-y a B
-y y
-y c
-y y
-y D
-y y
-y e
-y y
-y F
-y y
-y g
-y y
-y h
-z z
-z y
-y a B
-y y
-y c
-y y
-y d
-y y
-y e
-y y
-y f
-y y
-y g
-y y
-y H
-z z
-z y
-y a b
-y y
-y C
-y y
-y d
-y y
-y E
-y y
-y F
-y y
-y g
-y y
-y H
-z z
-z y
-y a b
-y y
-y c
-y y
-y D
-y y
-y E
-y y
-y f
-y y
-y g
-y y
-y h
-z z
-z y
-y a b
-y y
-y c
-y y
-y d
-y y
-y e
-y y
-y f
-y y
-y G
-y y
-y h
-z z
-z y
-0 0 1 1 0 0 0 z
-R _ _ _ _ _ _ _ a
-R
+j a b
+j j
+k a B
+k k
+J A b
+J J
+K A B
+K K
+| g H
+| A
+| |
+| B
+| |
+| C
+| |
+| D
+| |
+| E
+| |
+| F
+| |
+& K C
+& &
+& D
+& &
+& E
+& &
+& f
+& &
+& g
+& &
+& H
+| |
+| &
+& K C
+& &
+& D
+& &
+& e
+& &
+& F
+& &
+& g
+& &
+& H
+| |
+| &
+& K C
+& &
+& D
+& &
+& e
+& &
+& f
+& &
+& g
+& &
+& h
+| |
+| &
+& K C
+& &
+& d
+& &
+& E
+& &
+& f
+& &
+& G
+& &
+& h
+| |
+| &
+& K C
+& &
+& d
+& &
+& e
+& &
+& f
+& &
+& G
+& &
+& H
+| |
+| &
+& K c
+& &
+& D
+& &
+& E
+& &
+& f
+& &
+& G
+& &
+& H
+| |
+| &
+& K c
+& &
+& D
+& &
+& e
+& &
+& f
+& &
+& G
+& &
+& h
+| |
+| &
+& K c
+& &
+& d
+& &
+& E
+& &
+& f
+& &
+& g
+& &
+& h
+| |
+| &
+& J C
+& &
+& D
+& &
+& E
+& &
+& F
+& &
+& g
+& &
+& H
+| |
+| &
+& J C
+& &
+& D
+& &
+& e
+& &
+& f
+& &
+& g
+& &
+& H
+| |
+| &
+& J C
+& &
+& d
+& &
+& e
+& &
+& F
+& &
+& g
+& &
+& h
+| |
+| &
+& J c
+& &
+& D
+& &
+& e
+& &
+& F
+& &
+& G
+& &
+& h
+| |
+| &
+& J c
+& &
+& d
+& &
+& e
+& &
+& F
+& &
+& G
+& &
+& H
+| |
+| &
+& k C
+& &
+& D
+& &
+& e
+& &
+& F
+& &
+& G
+& &
+& H
+| |
+| &
+& k C
+& &
+& d
+& &
+& e
+& &
+& F
+& &
+& G
+& &
+& h
+| |
+| &
+& k c
+& &
+& D
+& &
+& e
+& &
+& F
+& &
+& g
+& &
+& h
+| |
+| &
+& k c
+& &
+& d
+& &
+& e
+& &
+& f
+& &
+& g
+& &
+& H
+| |
+| &
+& j C
+& &
+& d
+& &
+& E
+& &
+& F
+& &
+& g
+& &
+& H
+| |
+| &
+& j c
+& &
+& D
+& &
+& E
+& &
+& f
+& &
+& g
+& &
+& h
+| |
+| &
+& j c
+& &
+& d
+& &
+& e
+& &
+& f
+& &
+& G
+& &
+& h
+| |
+| &
+0 0 1 1 0 0 0 |
+. _ _ _ _ _ _ _ a
+.
