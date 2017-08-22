@@ -1,1 +1,1 @@
-for i in {0..49};do read j;k=0;y=1;for x in {0..7};do if [ ${j:$[7-$x]:1} = 1 ];then k=$[$k+$y];fi;y=$[2 * $y];done;s=0;for x in {0..22};do s=$[$s+$x];if [ $s -eq $k ];then echo 1;break;elif [ $x -eq 22 ];then echo 0;fi;done;done
+while read a;do b=$[2#$a*8+1];for ((c=$b;c*c>b;c--));do :;done;echo $[c*c==b];done;
