@@ -1,1 +1,1 @@
-import std.stdio;import std.conv;import std.math;void main(){for(;;){write(sqrt(to!int(readln()[0..8],2)*8+1.)%2==1?1:0);}}
+import std.stdio,std.math;void main(){int a,i;for(;i++<50;write(1-(sqrt(1+a*8.)%1>0)))readf("%b ",&a);}
