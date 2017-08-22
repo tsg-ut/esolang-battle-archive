@@ -1,1 +1,1 @@
-while read a;do for ((i=0,b=2#$a;b>0;b-=++i));do :;done;echo $[!b];done
+while read a;do for((i=0,b=2#$a;b>0;b-=++i));do :;done;echo $[!b];done
