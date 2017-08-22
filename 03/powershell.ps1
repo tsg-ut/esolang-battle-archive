@@ -1,1 +1,1 @@
-$Input|%{+([Math]::Sqrt([Convert]::ToByte($_,2)*8+1)%1-eq0)}
+$Input|%{+!([Math]::Sqrt([Convert]::ToByte($_,2)*8+1)%1)}
