@@ -1,1 +1,1 @@
-for(c=new java.util.Scanner(java.lang.System.in);;)print(+!(Math.sqrt(8*c.nextInt(2)+1)%1))
+for(a=java.util.Scanner(java.lang.System.in);;)print(+!(Math.sqrt(a.nextInt(2)*8+1)%1))
