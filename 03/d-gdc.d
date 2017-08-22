@@ -1,1 +1,1 @@
-import std.stdio,std.math;void main(){int a,i;for(;i++<50;write(1-(sqrt(1+a*8.)%1>0)))readf("%b ",&a);}
+import std.stdio,std.math;void main(){int a;for(;readf(" %b",&a);)write(1-(sqrt(1+a*8.)%1>0));}
