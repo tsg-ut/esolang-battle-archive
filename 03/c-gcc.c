@@ -1,1 +1,1 @@
-main(s){for(;gets(&s);puts(fmod(sqrt(strtol(&s,0,2)*8+1),1)?"0":"1"));}
+main(s){for(;gets(&s);putchar(48+!fmod(sqrt(strtol(&s,0,2)*8+1),1)));}
