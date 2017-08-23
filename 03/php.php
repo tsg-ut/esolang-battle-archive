@@ -1,1 +1,1 @@
-<?php for(;$c=fgets(STDIN);){$j=sqrt(8*bindec($c)+1);echo 1^$j<=>$j%50;}
+<?php for(;$c=fgets(STDIN);)echo +!(fmod(sqrt(8*bindec($c)+1),1)>0);
