@@ -1,1 +1,1 @@
-<?php for(;$c=fgets(STDIN);){$j=sqrt(8*bindec($c)+1);echo 1^$j<=>floor($j);}
+<?php for(;$c=fgets(STDIN);){$j=sqrt(8*bindec($c)+1);echo 1^$j<=>$j%50;}
