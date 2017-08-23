@@ -1,1 +1,1 @@
-<?php for(;$c=fgets(STDIN);)echo+!fmod(sqrt(8*bindec($c)+1),1);
+<?php while($_=readline())print+!(sqrt(1+8*bindec($_))*99%99);
