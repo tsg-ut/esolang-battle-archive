@@ -1,2 +1,2 @@
-:%s/.\+/\=!(float2nr(sqrt(("0b".submatch(0))*8+1)*99)%99)/
-ZZ
+qzcc=fmod(sqrt(str2nr(@@,2)*8+1),1)==0
+wq49@zZZ
