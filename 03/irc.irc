@@ -1,0 +1,30 @@
+* main has joined #code
+* a has joined #code
+* b has joined #code
+* main sets mode: +v a
+* main sets mode: +v b
+* main changes topic to 'a'
+<b> I'm 0.
+* main changes topic to 'i'
+<input> Hey, a.
+<if> a, are you equal to 0?
+<jump> Let's talk about z.
+<if> a, are you equal to 10?
+<jump> Let's talk about m.
+<a> I'm a and 1.
+<b> I'm b times 2.
+<b> I'm b or a.
+<jump> Let's talk about i.
+* main changes topic to 'm'
+<b> I'm b times 8.
+<b> I'm b plus 1.
+<b> I'm b to the power of .5.
+<a> I'm b or 0.
+<b> I'm b minus a.
+<a> I'm 0.
+<if> b, are you equal to 0?
+<a> I'm 1.
+<output> What's your value, a?
+<jump> Let's talk about a.
+* main changes topic to 'z'
+* main has quit IRC (Quit: )
