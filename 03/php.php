@@ -1,1 +1,1 @@
-<?php while($_=readline())print+!(sqrt(1+8*bindec($_))*99%99);
+<?php while($_=readline())echo+!(sqrt(1+8*bindec($_))*99%99);
