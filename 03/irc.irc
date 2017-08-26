@@ -4,18 +4,17 @@
 * main sets mode: +v a
 * main sets mode: +v b
 * main changes topic to 'a'
+<a> I'm 0.
 <b> I'm 0.
 * main changes topic to 'i'
-<input> Hey, a.
-<if> a, are you equal to 0?
-* main has quit IRC (Quit: )
-<if> a, are you equal to 10?
-<jump> Let's talk about m.
 <a> I'm a and 1.
 <b> I'm b times 2.
 <b> I'm b or a.
+<input> Hey, a.
+<if> a, are you equal to 0?
+* main has quit IRC (Quit: )
+<if> a, are you not equal to 10?
 <jump> Let's talk about i.
-* main changes topic to 'm'
 <b> I'm b times 8.
 <b> I'm b plus 1.
 <b> I'm b to the power of .5.
