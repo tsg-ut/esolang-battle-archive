@@ -8,7 +8,7 @@
 * main changes topic to 'i'
 <input> Hey, a.
 <if> a, are you equal to 0?
-<jump> Let's talk about z.
+* main has quit IRC (Quit: )
 <if> a, are you equal to 10?
 <jump> Let's talk about m.
 <a> I'm a and 1.
@@ -26,5 +26,3 @@
 <a> I'm 1.
 <output> What's your value, a?
 <jump> Let's talk about a.
-* main changes topic to 'z'
-* main has quit IRC (Quit: )
