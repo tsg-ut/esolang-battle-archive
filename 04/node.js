@@ -1,2 +1,2 @@
-let[,,,a,b,c,d,e,f,g,h,i]=(""+require("fs").readFileSync(0)).split(/\s/).map((e,i,x)=>(e|0)-x[i%3]);
+let[,,,a,b,c,d,e,f,g,h,i]=(""+require("fs").readFileSync(0)).split(/\s/).map((e,i,x)=>e/1-x[i%3]);
 console.log((a*e*i+b*f*g+c*d*h-a*f*h-b*d*i-c*e*g)/6)
