@@ -2,10 +2,9 @@ x=[]
 i=0
 while gets()
     for w in $_.split('/\s/')
-    a=w.split(" ")
+    x[i]=w.split(" ")
     end
-x[i]=a 
-i=i+1
+    i=i+1
 end
 a=x[1][0].to_i - x[0][0].to_i
 b=x[1][1].to_i - x[0][1].to_i
