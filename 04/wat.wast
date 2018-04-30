@@ -1,38 +1,65 @@
 (module(import"env""memory"(memory 8192))
 (func(export"main")(result i32)
+    (local $a i32)(local $b i32)(local $c i32)
+    (local $d i32)(local $e i32)(local $f i32)
+    (local $g i32)(local $h i32)(local $i i32)
+    (local $j i32)(local $k i32)(local $l i32)
     (i32.const 4096)
-    (call $l)
+    (set_local $a(call $m))
     (i32.const 4099)
-    (call $l)
+    (set_local $b(call $m))
     (i32.const 4102)
-    (call $l)
+    (set_local $c(call $m))
     (i32.const 4105)
-    (call $l)
+    (set_local $d(i32.sub(call $m)(get_local $a)))
     (i32.const 4108)
-    (call $l)
+    (set_local $e(i32.sub(call $m)(get_local $b)))
     (i32.const 4111)
-    (call $l)
+    (set_local $f(i32.sub(call $m)(get_local $c)))
     (i32.const 4114)
-    (call $l)
+    (set_local $g(i32.sub(call $m)(get_local $a)))
     (i32.const 4117)
-    (call $l)
+    (set_local $h(i32.sub(call $m)(get_local $b)))
     (i32.const 4120)
-    (call $l)
+    (set_local $i(i32.sub(call $m)(get_local $c)))
     (i32.const 4123)
-    (call $l)
+    (set_local $j(i32.sub(call $m)(get_local $a)))
     (i32.const 4126)
-    (call $l)
+    (set_local $k(i32.sub(call $m)(get_local $b)))
     (i32.const 4129)
-    (call $l)
-    (call $a)
-    (call $p)
+    (set_local $l(i32.sub(call $m)(get_local $c)))
+    (set_local $b(i32.div_u
+        (i32.sub
+            (i32.sub
+                (i32.sub
+                    (i32.add 
+                        (i32.add 
+                            (i32.mul(i32.mul(get_local $d)(get_local $h))(get_local $l))
+                            (i32.mul(i32.mul(get_local $e)(get_local $i))(get_local $j)))
+                        (i32.mul(i32.mul(get_local $f)(get_local $g))(get_local $k)))
+                    (i32.mul(i32.mul (get_local $d)(get_local $k))(get_local $i)))
+                (i32.mul(i32.mul (get_local $e)(get_local $l))(get_local $g)))
+               (i32.mul(i32.mul(get_local $f)(get_local $j))(get_local $h)))
+    (i32.const 6)))
+
+    (set_local $i(i32.const 7))
+    (block $r(loop $s
+        (i32.store8(get_local $i)
+            (i32.add
+                (i32.sub(get_local $b)(i32.mul(i32.div_s(get_local $b)(i32.const 10))(i32.const 10)))
+                (i32.const 48)
+            )
+        )
+        (set_local $b(i32.div_u(get_local $b)(i32.const 10)))
+        (br_if $r(i32.eq(get_local $i)(i32.const 0)))
+        (set_local $i(i32.sub(get_local $i)(i32.const 1)))
+    (br $s)))
+
     (i32.const 0)
     return
 )
 
-(func $mod(param $i i32)(param $n i32)(result i32)(i32.sub(get_local $i)(i32.mul(i32.div_s(get_local $i)(get_local $n))(get_local $n))))
-
-(func $l(param $i i32)(result i32)
+(func $m(param $i i32)(result i32)
     (i32.add
         (i32.mul
             (i32.const 10)
@@ -45,50 +72,6 @@
             (i32.load8_s(i32.add(get_local $i)(i32.const 1)))
             (i32.const 48)
         )
-    )
-)
-
-(func $p(param $x i32)
-    (local $i i32)
-    (local $b i32)
-    (set_local $b(i32.const 0))
-    (set_local $i(i32.const 7))
-    (block $r(loop $c
-        (i32.store8(get_local $i)(i32.add(i32.const 48)(call $mod(get_local $x)(i32.const 10))))
-        (set_local $x(i32.div_u(get_local $x)(i32.const 10)))
-        (br_if $r(i32.eq(get_local $i)(i32.const 0)))
-        (set_local $i(i32.sub(get_local $i)(i32.const 1)))
-        (br $c)))
-)
-
-(func $a(param $a i32)(param $b i32)(param $c i32)
-    (param $d i32)(param $e i32)(param $f i32)
-    (param $g i32)(param $h i32)(param $i i32)
-    (param $j i32)(param $k i32)(param $l i32)
-    (result i32)
-    (set_local $d(i32.sub(get_local $d)(get_local $a)))
-    (set_local $g(i32.sub(get_local $g)(get_local $a)))
-    (set_local $j(i32.sub(get_local $j)(get_local $a)))
-    (set_local $e(i32.sub(get_local $e)(get_local $b)))
-    (set_local $h(i32.sub(get_local $h)(get_local $b)))
-    (set_local $k(i32.sub(get_local $k)(get_local $b)))
-    (set_local $f(i32.sub(get_local $f)(get_local $c)))
-    (set_local $i(i32.sub(get_local $i)(get_local $c)))
-    (set_local $l(i32.sub(get_local $l)(get_local $c)))
-    (i32.div_u
-        (i32.sub
-            (i32.sub
-                (i32.sub
-                    (i32.add 
-                        (i32.add 
-                            (i32.mul(i32.mul(get_local $d)(get_local $h))(get_local $l))
-                            (i32.mul(i32.mul(get_local $e)(get_local $i))(get_local $j)))
-                        (i32.mul(i32.mul(get_local $f)(get_local $g))(get_local $k)))
-                    (i32.mul(i32.mul (get_local $d)(get_local $k))(get_local $i)))
-                (i32.mul(i32.mul (get_local $e)(get_local $l))(get_local $g)))
-               (i32.mul(i32.mul(get_local $f)(get_local $j))(get_local $h))
-        )
-        (i32.const 6)
     )
 )
 )
