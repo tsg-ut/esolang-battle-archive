@@ -4,8 +4,7 @@ i resb 4
 a resb 40
 SECTION .text
 mov ebp,esp
-mov byte[i],0
-B:movsx ebx,byte[i]
+B:mov bl,[i]
 cmp bl,11
 jg C
 push ebx
