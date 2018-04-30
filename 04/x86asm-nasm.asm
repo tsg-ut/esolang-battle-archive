@@ -1,26 +1,23 @@
 SECTION .bss
-        buf  resb 200
-        i resb 4
-        a resb 40
-
+buf  resb 200
+i resb 4
+a resb 40
 SECTION .text
-        global main
-        global get_int
-        global write_int
-
+global main
+global get_int
+global write_int
 main:   ; Function begin
-start:
-        lea     ecx, [esp+4H]
-        and     esp, 0FFFFFFF0H
-        push    dword [ecx-4H]
-        push    ebp
-        mov     ebp, esp
-        push    esi
-        push    ebx
-        push    ecx
-        sub     esp, 28
-        mov     dword [ebp-1CH], 0
-        jmp     ?_006
+lea     ecx, [esp+4H]
+and     esp, 0FFFFFFF0H
+push    dword [ecx-4H]
+push    ebp
+mov     ebp, esp
+push    esi
+push    ebx
+push    ecx
+sub     esp, 28
+mov     dword [ebp-1CH], 0
+jmp     ?_006
 
 ?_004:  call    get_int
         mov     edx, eax
@@ -194,6 +191,3 @@ write_int:; Function begin
 ?_003:  nop
         leave
         ret
-; write_int End of function
-
-; main End of function
