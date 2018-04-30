@@ -1,3 +1,4 @@
-set/Ps=
-set/a"g=%s:~18,2%-(a=%s:~0,2%),h=%s:~21,2%-(b=%s:~3,2%),i=%s:~24,2%-(c=%s:~6,2%),j=%s:~27,2%-a,k=%s:~30,2%-b,l=%s:~33%-c,w=(%s:~12,2%-b)*(i*j-g*l),w+=(%s:~15,2%-c)*(g*k-h*j),y=(w+(%s:~9,2%-a)*(h*l-i*k))/6"
-echo %y%
+set/pq=
+for /f "tokens=1-12 delims=%q:~8,1% " %%a in ("%q%") do set/aa=%%d-%%a,b=%%e-%%b,c=%%f-%%c,d=%%g-%%a,e=%%h-%%b,f=%%i-%%c,g=%%j-%%a,h=%%k-%%b,i=%%l-%%c
+set/av=(a*e*i+b*f*g+c*d*h-a*h*f-b*i*d-c*g*e)/6
+echo %v%
