@@ -1,6 +1,4 @@
-@s=constant [25 x i8] c"%d%d%d%d%d%d%d%d%d%d%d%d\00"@a=global i32 0@b=global i32 0@c=global i32 0@d=global i32 0@e=global i32 0@f=global i32 0@g=global i32 0@h=global i32 0@i=global i32 0@j=global i32 0@k=global i32 0@l=global i32 0@t=constant[3 x i8]c"%d\00"
-define i8@main(){
-call i32(i8*,...)@scanf(i8* getelementptr([25 x i8],[25 x i8]*@s,i64 0,i64 0),i32*@a,i32*@b,i32*@c,i32*@d,i32*@e,i32*@f,i32*@g,i32*@h,i32*@i,i32*@j,i32*@k,i32*@l)
+@s=constant [25 x i8] c"%d%d%d%d%d%d%d%d%d%d%d%d\00"@a=global i32 0@b=global i32 0@c=global i32 0@d=global i32 0@e=global i32 0@f=global i32 0@g=global i32 0@h=global i32 0@i=global i32 0@j=global i32 0@k=global i32 0@l=global i32 0@t=constant[3 x i8]c"%d\00"define i8@main(){call i32(i8*,...)@scanf(i8* getelementptr([25 x i8],[25 x i8]*@s,i64 0,i64 0),i32*@a,i32*@b,i32*@c,i32*@d,i32*@e,i32*@f,i32*@g,i32*@h,i32*@i,i32*@j,i32*@k,i32*@l)
 load i32,i32*@a
 load i32,i32*@d
 sub i32%3,%2
