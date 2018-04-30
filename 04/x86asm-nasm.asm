@@ -61,11 +61,10 @@ imul ebx,esi
 movsx esi,byte[a+5]
 add ebx,edx
 sub ecx,eax
-mov eax,ecx
-mov ecx,6
-imul eax,esi
-lea eax,[ebx+eax]
+imul ecx,esi
+lea eax,[ebx+ecx]
 cdq
+mov ecx,6
 idiv ecx
 push eax
 call w
@@ -85,12 +84,12 @@ mov ebx,edx
 push eax
 call w
 add esp,12
-lea eax,[ebx+30H]
+lea ax,[ebx+30H]
 mov[u],al
-mov edx,1
+mov dx,1
 mov ecx,u
-mov ebx,1
-mov eax,4
+mov bx,1
+mov ax,4
 int 0x80
 add esp,16
 A:mov ebx,[ebp-4]
