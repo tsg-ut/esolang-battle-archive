@@ -19,9 +19,9 @@ movsx eax,byte[u]
 mov dl,10
 sub eax,48
 imul eax,edx
-mov dl,byte[u+1H]
+mov dl,[u+1H]
 lea eax,[eax+edx-30H]
-mov byte[a+ebx],al
+mov[a+ebx],al
 movsx ebx,byte[i]
 mov cl,3
 movsx ax,bl
@@ -33,8 +33,8 @@ movsx ecx,al
 setg al
 inc edx
 mul byte[a+ecx]
-mov byte[i],dl
-sub byte[a+ebx],al
+mov[i],dl
+sub[a+ebx],al
 jmp B
 C:movsx eax,byte[a+7H]
 movsx ebx,byte[a+8H]
@@ -91,7 +91,7 @@ push eax
 call w
 add esp,12
 lea eax,[ebx+30H]
-mov byte[u],al
+mov[u],al
 mov edx,1
 mov ecx,u
 mov ebx,1
