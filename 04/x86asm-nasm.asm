@@ -1,5 +1,5 @@
 SECTION .bss
-u resb 200
+u resb 20
 i resb 4
 a resb 40
 SECTION .text
