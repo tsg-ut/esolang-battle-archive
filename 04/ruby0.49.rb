@@ -6,8 +6,6 @@ while gets()
     end
     i=i+1
 end
-#x= x.flatten
-# print
 y =x[0]
 j =y[0].to_i
 k =y[1].to_i
