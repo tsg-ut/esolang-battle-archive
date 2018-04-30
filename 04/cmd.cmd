@@ -1,7 +1,7 @@
 set /p q=
-set /a j=%q:~0,2%
-set /a k=%q:~3,2%
-set /a l=%q:~6,2%
+set j=%q:~0,2%
+set k=%q:~3,2%
+set l=%q:~6,2%
 set /a a=%q:~9,2%-%j%
 set /a b=%q:~12,2%-%k%
 set /a c=%q:~15,2%-%l%
