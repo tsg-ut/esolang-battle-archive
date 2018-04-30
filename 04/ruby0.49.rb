@@ -6,17 +6,20 @@ while gets()
     end
     i=i+1
 end
-y =x[0]
-j =y[0].to_i
-k =y[1].to_i
-l =y[2].to_i
-a=x[1][0].to_i-j
-b=x[1][1].to_i-k
-c=x[1][2].to_i-l
-d=x[2][0].to_i-j
-e=x[2][1].to_i-k
-f=x[2][2].to_i-l
-g=x[3][0].to_i-j
-h=x[3][1].to_i-k
-i=x[3][2].to_i-l
+p=x[0]
+q=x[1]
+r=x[2]
+s=x[3]
+j=p[0].to_i
+k=p[1].to_i
+l=p[2].to_i
+a=q[0].to_i-j
+b=q[1].to_i-k
+c=q[2].to_i-l
+d=r[0].to_i-j
+e=r[1].to_i-k
+f=r[2].to_i-l
+g=s[0].to_i-j
+h=s[1].to_i-k
+i=s[2].to_i-l
 print ((a*e*i+b*f*g+c*d*h-a*f*h-b*d*i-c*e*g)/6)
