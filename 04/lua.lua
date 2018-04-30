@@ -1,5 +1,11 @@
-a={}for k=1,4 do for s in string.gmatch(io.read(),"%w+")do a[#a+1]=s end end
-for z=1,9 do a[z]=a[z]-a[10+~-z%3]end
-s=0
-for z=1,3 do q=-~z%3;s=s+a[z]*(a[7+z%3]*a[4+q]-a[4+z%3]*a[7+q])end
-print(math.floor(s/6))
+X={0,0}
+X[0]=0
+i=0
+c=1
+while 1 do
+c=io.read("*n")
+if not(c) then break end
+X[i]=c-X[i%3]
+i=i+1
+end
+print((X[3]*X[7]*X[11]+X[4]*X[8]*X[9]+X[5]*X[6]*X[10]-X[3]*X[8]*X[10]-X[4]*X[6]*X[11]-X[5]*X[7]*X[9])//6)
