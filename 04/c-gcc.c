@@ -1,2 +1,1 @@
-a,b,c,d,e,f,g,h,i,j,k;
-main(l){scanf("%d%d%d%d%d%d%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j,&k,&l);g-=a;h-=b;i-=c;j-=a;k-=b;l-=c;printf("%d",((e-b)*(i*j-g*l)+(f-c)*(g*k-h*j)+(d-a)*(h*l-i*k))/6);}
+int i,j,a[12];main(){for(i=0;i<12;i++){scanf("%d", &a[i]);a[i]-=a[i%3]*(i>2);}printf("%d\n",(a[3]*a[7]*a[11]+a[4]*a[8]*a[9]+a[5]*a[10]*a[6]-a[5]*a[7]*a[9]-a[8]*a[10]*a[3]-a[4]*a[11]*a[6])/6);}
