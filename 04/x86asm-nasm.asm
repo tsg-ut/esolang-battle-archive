@@ -27,8 +27,7 @@ movsx ax,bl
 mov edx,ebx
 idiv cl
 cmp bl,2
-movsx eax,ah
-movsx ecx,al
+movsx ecx,ah
 setg al
 inc edx
 mul byte[a+ecx]
@@ -75,7 +74,6 @@ ret
 w:push   ebp
 mov ebp,esp
 push ebx
-push eax
 mov edx,[ebp+8]
 test dx,dx
 jz A
@@ -84,7 +82,6 @@ mov eax,edx
 xor edx,edx
 div cx
 sub esp,12
-movzx eax,ax
 mov ebx,edx
 push eax
 call w
