@@ -10,5 +10,5 @@ set /a g=%%j-%%a
 set /a h=%%k-%%b
 set /a i=%%l-%%c
 )
-set /a v=(%a%*%e%*%i%+%b%*%f%*%g%+%c%*%d%*%h%-%a%*%h%*%f%-%b%*%i%*%d%-%c%*%g%*%e%)/6
+set /a v=(a*e*i+b*f*g+c*d*h-a*h*f-b*i*d-c*g*e)/6
 echo %v%
