@@ -1,2 +1,1 @@
-#define Z(a,b,c) int a,b,c;scanf(A,&a,&b,&c);a-=j;b-=k;c-=l;
-*A="%d%d%d";j,k,l;main(){scanf(A,&j,&k,&l);Z(a,b,c)Z(d,e,f)Z(g,h,i)printf("%d",(a*e*i+b*f*g+c*d*h-a*h*f-b*i*d-c*g*e)/6);}
+main(y,z){int a[z=12];for(;z--;)scanf("%d",a+z);for(z=9;z--;)a[z]-=a[9+z%3];printf("%d",(a[3]*a[7]*a[2]+a[6]*a[1]*a[5]+*a*a[4]*a[8]-a[6]*a[4]*a[2]-*a*a[7]*a[5]-a[3]*a[1]*a[8])/6);}
