@@ -3,14 +3,24 @@ u resb 200
 i resb 4
 a resb 40
 SECTION .text
-lea ecx,[esp+4H]
 mov ebp,esp
-sub esp,24
 mov byte[i],0
-B:movsx  ebx,byte[i]
+B:movsx ebx,byte[i]
 cmp bl,11
 jg C
-call g
+push ebx
+mov edx,3
+mov ecx,u
+mov ebx,0
+mov eax,3
+int 0x80
+pop ebx
+movsx eax,byte[u]
+mov dl,10
+sub eax,48
+imul eax,edx
+mov dl,byte[u+1H]
+lea eax,[eax+edx-30H]
 mov byte[a+ebx],al
 movsx ebx,byte[i]
 mov cl,3
@@ -26,7 +36,7 @@ mul byte[a+ecx]
 mov byte[i],dl
 sub byte[a+ebx],al
 jmp B
-C:movsx  eax,byte[a+7H]
+C:movsx eax,byte[a+7H]
 movsx ebx,byte[a+8H]
 sub esp,12
 movsx edi,byte[a+0AH]
@@ -62,31 +72,8 @@ idiv ecx
 movzx eax,ax
 push eax
 call w
-add esp,16
-lea esp,[ebp-10H]
-lea esp,[ecx-4H]
 ret
-g:
-push ebp
-mov ebp,esp
-sub esp,12
-push ebx
-mov edx,3
-mov ecx,u
-mov ebx,0
-mov eax,3
-int 0x80
-pop ebx
-movsx eax,byte[u]
-mov dl,10
-sub eax,48
-imul eax,edx
-mov dl,byte[u+1H]
-leave
-lea eax,[eax+edx-30H]
-ret
-w:
-push ebp
+w:push   ebp
 mov ebp,esp
 push ebx
 push eax
