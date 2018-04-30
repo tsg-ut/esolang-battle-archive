@@ -1,4 +1,4 @@
-j,k,l,a,b,c,d,e,f,g,h,i=[int(_)for _ in open("/dev/stdin").read().split()]
+j,k,l,a,b,c,d,e,f,g,h,i=map(int,open("/dev/stdin").read().split())
 a-=j
 b-=k
 c-=l
