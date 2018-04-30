@@ -42,13 +42,13 @@ sub esp,12
 movsx edi,byte[a+0AH]
 movsx esi,byte[a+0BH]
 movsx ecx,byte[a+6H]
-mov dword[ebp-1CH],eax
+mov [ebp-1CH],eax
 movsx eax,byte[a+9H]
 mov edx,ebx
 imul edx,edi
-mov dword[ebp-20H],eax
-mov eax,dword[ebp-1CH]
-imul ebx,dword[ebp-20H]
+mov [ebp-20H],eax
+mov eax,[ebp-1CH]
+imul ebx,[ebp-20H]
 imul eax,esi
 sub eax,edx
 movsx edx,byte[a+3H]
@@ -57,8 +57,8 @@ imul ecx,edi
 sub ebx,esi
 movsx esi,byte[a+4H]
 imul edx,eax
-mov eax,dword[ebp-1CH]
-imul eax,dword[ebp-20H]
+mov eax,[ebp-1CH]
+imul eax,[ebp-20H]
 imul ebx,esi
 movsx esi,byte[a+5H]
 add ebx,edx
@@ -77,7 +77,7 @@ w:push   ebp
 mov ebp,esp
 push ebx
 push eax
-mov edx,dword[ebp+8H]
+mov edx,[ebp+8H]
 test dx,dx
 jz A
 mov ecx,10
@@ -98,6 +98,6 @@ mov ebx,1
 mov eax,4
 int 0x80
 add esp,16
-A:mov ebx,dword[ebp-4H]
+A:mov ebx,[ebp-4H]
 leave
 ret
