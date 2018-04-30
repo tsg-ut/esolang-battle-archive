@@ -1,1 +1,1 @@
-Y=`dd`.split;a,b,c,d,e,f,g,h,i=(0..8).map{|e|Y[e+3].to_i-Y[e%3].to_i};p (a*(e*i-h*f)+b*(f*g-i*d)+c*(d*h-g*e))/6
+a=`dd`.split.map &.to_i;p (0..8).map{|z|z/6*(a[z]-=a[9+z%3])*(a[s=3+-~z%3]*a[t= ~-z%3]-a[t+3]*a[s-3])}.sum/6
