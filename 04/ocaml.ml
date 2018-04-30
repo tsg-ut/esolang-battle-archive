@@ -1,0 +1,1 @@
+Scanf.scanf"%d %d %d "(fun j k l->let f()=Scanf.scanf"%d %d %d "(fun x y z->(x-j,y-k,z-l))in let(a,b,c)=f()and(d,e,f)=f()and(g,h,i)=f()in Printf.printf"%d"((a*e*i+b*f*g+c*d*h-a*h*f-b*i*d-c*g*e)/6))
