@@ -1,1 +1,1 @@
-<?php [$a,$b,$c]=explode(" ",readline());[$d,$e,$f]=explode(" ",readline());[$g,$h,$i]=explode(" ",readline());[$j,$k,$l]=explode(" ",readline());$g-=$a;$h-=$b;$i-=$c;$j-=$a;$k-=$b;$l-=$c;echo(($e-$b)*($i*$j-$g*$l)+($f-$c)*($g*$k-$h*$j)+($d-$a)*($h*$l-$i*$k))/6;
+<?php [$a,$b,$c,$d,$e,$f,$g,$h,$i,$j,$k,$l]=explode(" ",readline()." ".readline()." ".readline()." ".readline());$g-=$a;$h-=$b;$i-=$c;$j-=$a;$k-=$b;$l-=$c;echo(($e-$b)*($i*$j-$g*$l)+($f-$c)*($g*$k-$h*$j)+($d-$a)*($h*$l-$i*$k))/6;
