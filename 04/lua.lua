@@ -1,6 +1,5 @@
-X={0,0,[0]=0}
-for i=1,12 do
-X[i-1]=io.read("*n")-X[(i-1)%3]
-i=i+1
-end
-print((X[3]*X[7]*X[11]+X[4]*X[8]*X[9]+X[5]*X[6]*X[10]-X[3]*X[8]*X[10]-X[4]*X[6]*X[11]-X[5]*X[7]*X[9])//6)
+a={}for k=1,12 do a[#a+1]=io.read("*n")end
+for z=1,9 do a[z]=a[z]-a[10+~-z%3]end
+s=0
+for z=1,3 do q=-~z%3;s=s+a[z]*(a[7+z%3]*a[4+q]-a[4+z%3]*a[7+q])end
+print(math.ceil(s/6))
