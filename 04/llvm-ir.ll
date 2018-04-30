@@ -35,4 +35,4 @@ mul i32%33,%18
 add i32%34,%30
 add i32%35,%32
 sdiv i32%36,6
-call i32(i8*,...)@printf(i8* getelementptr([3 x i8],[3 x i8]*@t,i64 0,i64 0),i32%37)ret i8 0}declare i32@scanf(i8*,...)declare i32@printf(i8*,...)
+call i32(i8*,...)@printf(i8* getelementptr([3 x i8],[3 x i8]*@t,i8 0,i8 0),i32%37)ret i8 0}declare i32@scanf(i8*,...)declare i32@printf(i8*,...)
