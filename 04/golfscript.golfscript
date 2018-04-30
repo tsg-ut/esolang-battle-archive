@@ -1,1 +1,1 @@
-n/{' '/{{48-}%10base}%}%);zip{([.;]3*[\]zip{~\-}%}%[]*~8$5$*1$*8$5$*4$*+7$7$*3$*+9$5$*3$*- 8$7$*2$*- 7$6$*4$*-{\;}9*6/
+"#{require'matrix';a,*b=$stack[0].to_s.lines.map &:split;p Matrix[*b.map{|x|x.zip(a).map{|e|eval e*?-}}].det/6}";;
