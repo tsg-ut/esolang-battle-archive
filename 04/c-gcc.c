@@ -1,1 +1,1 @@
-z=12;a[12];s,q;main(p){for(;z--;a[z%9]-=a[9+z%3],s+=a[z%3]*=a[p=3+-~z%3]*a[q=z?5+z:8]-a[q-3]*a[p+3])scanf("%d",a+z);printf("%d",s/6);}
+i,j,a[8];main(s){for(i=36;scanf("%d",a+j++),i--;)s-=a[i/2]*a[(i+3)/2%3+3+((i/6+1)&2)*3]*a[8-i/12*6-i%3]*(1-i%2*2);printf("%d",s/6);}
