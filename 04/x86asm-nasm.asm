@@ -112,7 +112,6 @@ push 0
 pop ebx
 push 3
 pop eax
-;call read
 int 0x80
 add esp, 16
 movzx eax, byte [buf]
