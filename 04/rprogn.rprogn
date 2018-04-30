@@ -1,0 +1,5 @@
+read "%d+" ↔ pop "l" = pop "k" = pop "j" = [
+read "%d+" ↔ pop l - "c" = pop k - "b" = pop j - "a" = [
+read "%d+" ↔ pop l - "f" = pop k - "e" = pop j - "d" = [
+read "%d+" ↔ pop l - "i" = pop k - "h" = pop j - "g" = [
+a e i * * b f g * * c d h * * + + a h f * * b i d * * c g e * * + + - 6 //
