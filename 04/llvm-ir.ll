@@ -1,1 +1,56 @@
-@S=global[25x i8]c"%d%d%d%d%d%d%d%d%d%d%d%d\00"@j=global i32 0@k=global i32 0@l=global i32 0@a=global i32 0@b=global i32 0@c=global i32 0@d=global i32 0@e=global i32 0@f=global i32 0@g=global i32 0@h=global i32 0@i=global i32 0@T=global[3x i8]c"%d\00"define i8@main(){%1=tail call i8(i8*,...)@scanf(i8*getelementptr([25x i8],[25x i8]*@S,i8 0,i8 0),i32*@j,i32*@k,i32*@l,i32*@a,i32*@b,i32*@c,i32*@d,i32*@e,i32*@f,i32*@g,i32*@h,i32*@i)%2=load i32,i32*@j%3=load i32,i32*@a%4=sub nsw i32%3,%2store i32%4,i32*@a%5=load i32,i32*@k%6=load i32,i32*@b%7=sub nsw i32%6,%5store i32%7,i32*@b%8=load i32,i32*@l%9=load i32,i32*@c%10=sub nsw i32%9,%8store i32%10,i32*@c%11=load i32,i32*@d%12=sub nsw i32%11,%2store i32%12,i32*@d%13=load i32,i32*@e%14=sub nsw i32%13,%5store i32%14,i32*@e%15=load i32,i32*@f%16=sub nsw i32%15,%8store i32%16,i32*@f%17=load i32,i32*@g%18=sub nsw i32%17,%2store i32%18,i32*@g%19=load i32,i32*@h%20=sub nsw i32%19,%5store i32%20,i32*@h%21=load i32,i32*@i%22=sub nsw i32%21,%8store i32%22,i32*@i%23=mul i32%4,%22%24=mul i32%23,%14%25=mul i32%18,%16%26=mul i32%20,%12%27=mul i32%16,%4%28=mul i32%27,%20%29=mul i32%12,%22%30=mul i32%18,%14%31=sub i32%26,%30%32=mul i32%31,%10%33=sub i32%25,%29%34=mul i32%33,%7%35=sub i32%24,%28%36=add i32%35,%32%37=add i32%36,%34%38=sdiv i32%37,6%39=tail call i8(i8*,...)@printf(i8*getelementptr([3x i8],[3x i8]*@T,i8 0,i8 0),i32%38)ret i8 0}declare i8@scanf(i8*,...)declare i8@printf(i8*,...)
+@s=constant [25 x i8] c"%d%d%d%d%d%d%d%d%d%d%d%d\00"
+@a=global i32 0
+@b=global i32 0
+@c=global i32 0
+@d=global i32 0
+@e=global i32 0
+@f=global i32 0
+@g=global i32 0
+@h=global i32 0
+@i=global i32 0
+@j=global i32 0
+@k=global i32 0
+@l=global i32 0
+@t=constant[3 x i8]c"%d\00"
+define i8@main(){
+call i32(i8*,...)@scanf(i8* getelementptr([25 x i8],[25 x i8]*@s,i64 0,i64 0),i32*@a,i32*@b,i32*@c,i32*@d,i32*@e,i32*@f,i32*@g,i32*@h,i32*@i,i32*@j,i32*@k,i32*@l)
+load i32,i32*@a
+load i32,i32*@d
+sub i32%3,%2
+load i32,i32*@b
+load i32,i32*@e
+sub i32%6,%5
+load i32,i32*@c
+load i32,i32*@f
+sub i32%9,%8
+load i32,i32*@g
+sub i32%11,%2
+load i32,i32*@h
+sub i32%13,%5
+load i32,i32*@i
+sub i32%15,%8
+load i32,i32*@j
+sub i32%17,%2
+load i32,i32*@k
+sub i32%19,%5
+load i32,i32*@l
+sub i32%21,%8
+mul i32%16,%7
+mul i32%20,%10
+mul i32%22,%14
+mul i32%14,%10
+mul i32%22,%7
+mul i32%20,%16
+sub i32%25,%28
+mul i32%29,%4
+sub i32%24,%27
+mul i32%31,%12
+sub i32%23,%26
+mul i32%33,%18
+add i32%34,%30
+add i32%35,%32
+sdiv i32%36,6
+call i32(i8*,...)@printf(i8* getelementptr([3 x i8],[3 x i8]*@t,i64 0,i64 0),i32%37)
+ret i8 0}
+declare i32@scanf(i8*,...)
+declare i32@printf(i8*,...)
