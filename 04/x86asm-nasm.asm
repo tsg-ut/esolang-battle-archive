@@ -18,8 +18,8 @@ movsx eax,byte[u]
 mov dl,10
 sub eax,48
 imul eax,edx
-mov dl,[u+1H]
-lea eax,[eax+edx-30H]
+mov dl,[u+1]
+lea eax,[eax+edx-30]
 mov[a+ebx],al
 movsx ebx,byte[i]
 mov cl,3
@@ -35,14 +35,14 @@ mul byte[a+ecx]
 mov[i],dl
 sub[a+ebx],al
 jmp B
-C:movsx eax,byte[a+7H]
-movsx ebx,byte[a+8H]
+C:movsx eax,byte[a+7]
+movsx ebx,byte[a+8]
 sub esp,12
 movsx edi,byte[a+0AH]
 movsx esi,byte[a+0BH]
-movsx ecx,byte[a+6H]
+movsx ecx,byte[a+6]
 mov [ebp-1CH],eax
-movsx eax,byte[a+9H]
+movsx eax,byte[a+9]
 mov edx,ebx
 imul edx,edi
 mov [ebp-20H],eax
@@ -50,16 +50,16 @@ mov eax,[ebp-1CH]
 imul ebx,[ebp-20H]
 imul eax,esi
 sub eax,edx
-movsx edx,byte[a+3H]
+movsx edx,byte[a+3]
 imul esi,ecx
 imul ecx,edi
 sub ebx,esi
-movsx esi,byte[a+4H]
+movsx esi,byte[a+4]
 imul edx,eax
 mov eax,[ebp-1CH]
 imul eax,[ebp-20H]
 imul ebx,esi
-movsx esi,byte[a+5H]
+movsx esi,byte[a+5]
 add ebx,edx
 sub ecx,eax
 mov eax,ecx
@@ -76,7 +76,7 @@ w:push   ebp
 mov ebp,esp
 push ebx
 push eax
-mov edx,[ebp+8H]
+mov edx,[ebp+8]
 test dx,dx
 jz A
 mov ecx,10
@@ -97,6 +97,6 @@ mov ebx,1
 mov eax,4
 int 0x80
 add esp,16
-A:mov ebx,[ebp-4H]
+A:mov ebx,[ebp-4]
 leave
 ret
