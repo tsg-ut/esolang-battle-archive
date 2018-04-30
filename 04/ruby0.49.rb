@@ -6,13 +6,19 @@ while gets()
     end
     i=i+1
 end
-a=x[1][0].to_i - x[0][0].to_i
-b=x[1][1].to_i - x[0][1].to_i
-c=x[1][2].to_i - x[0][2].to_i
-d=x[2][0].to_i - x[0][0].to_i
-e=x[2][1].to_i - x[0][1].to_i
-f=x[2][2].to_i - x[0][2].to_i
-g=x[3][0].to_i - x[0][0].to_i
-h=x[3][1].to_i - x[0][1].to_i
-i=x[3][2].to_i - x[0][2].to_i
+#x= x.flatten
+# print
+y =x[0]
+j =y[0].to_i
+k =y[1].to_i
+l =y[2].to_i
+a=x[1][0].to_i-j
+b=x[1][1].to_i-k
+c=x[1][2].to_i-l
+d=x[2][0].to_i-j
+e=x[2][1].to_i-k
+f=x[2][2].to_i-l
+g=x[3][0].to_i-j
+h=x[3][1].to_i-k
+i=x[3][2].to_i-l
 print ((a*e*i+b*f*g+c*d*h-a*f*h-b*d*i-c*e*g)/6)
