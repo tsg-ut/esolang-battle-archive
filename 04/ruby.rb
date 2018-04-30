@@ -1,3 +1,3 @@
-#!ruby -rmatrix
-a,*b=$<.map &:split
-p Matrix[*b.map{|x|x.zip(a).map{|e|eval e*?-}}].det/6
+require'matrix'
+x=$<.map{|l|Vector[*l.split.map(&:to_i),1]}
+p -Matrix.rows(x).det/6
