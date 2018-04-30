@@ -1,1 +1,1 @@
-Y=`dd`.split;i=2;a,b,c,d,e,f,g,h,i=Y.map{|e|i+=1;e.to_i-Y[i%3].to_i}[3,9];p (a*e*i+b*f*g+c*d*h-a*h*f-b*i*d-c*g*e)/6
+Y=`dd`.split;a,b,c,d,e,f,g,h,i=(0..8).map{|e|Y[e+3].to_i-Y[e%3].to_i};p (a*(e*i-h*f)+b*(f*g-i*d)+c*(d*h-g*e))/6
