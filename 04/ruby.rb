@@ -1,3 +1,3 @@
-require'matrix'
-a,b,c,d=STDIN.lines.map{|l|Vector[*l.split.map(&:to_i)]}
-p Matrix[b-a,c-a,d-a].det/6
+#!ruby -rmatrix
+a,*b=$<.map &:split
+p Matrix[*b.map{|x|x.zip(a).map{|e,f|e.to_i-f.to_i}}].det/6
