@@ -7,13 +7,13 @@ mov ebp,esp
 B:mov bl,[i]
 cmp bl,11
 jg C
-push ebx
-mov edx,3
+push bx
+mov dx,3
 mov ecx,u
-mov ebx,0
-mov eax,3
+mov bx,0
+mov ax,3
 int 0x80
-pop ebx
+pop bx
 movsx eax,byte[u]
 mov dl,10
 sub eax,48
@@ -29,23 +29,23 @@ idiv cl
 cmp bl,2
 movsx ecx,ah
 setg al
-inc edx
+inc dx
 mul byte[a+ecx]
 mov[i],dl
 sub[a+ebx],al
 jmp B
-C:movsx eax,byte[a+7]
+C:movsx ax,[a+7]
 movsx ebx,byte[a+8]
 sub esp,12
 movsx edi,byte[a+0AH]
 movsx esi,byte[a+0BH]
 movsx ecx,byte[a+6]
 mov [ebp-1CH],eax
-movsx eax,byte[a+9]
+movsx ax,[a+9]
 mov edx,ebx
 imul edx,edi
-mov [ebp-20H],eax
-mov eax,[ebp-1CH]
+mov [ebp-20H],ax
+mov ax,[ebp-1CH]
 imul ebx,[ebp-20H]
 imul eax,esi
 sub eax,edx
@@ -67,7 +67,6 @@ imul eax,esi
 lea eax,[ebx+eax]
 cdq
 idiv ecx
-movzx eax,ax
 push eax
 call w
 ret
