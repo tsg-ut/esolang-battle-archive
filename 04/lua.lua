@@ -1,2 +1,5 @@
-X={}for i=-3,8 do X[i]=io.read("*n")-(X[i%3-3]or 0)end
-print((X[0]*X[4]*X[8]+X[1]*X[5]*X[6]+X[2]*X[3]*X[7]-X[0]*X[5]*X[7]-X[1]*X[3]*X[8]-X[2]*X[4]*X[6])//6)
+s=0
+a={}for k=12,1,-1 do
+a[k]=io.read("*n")-(k<=9 and a[10+~-k%3]or 0);q=-~k%3
+s=s+(k<4 and a[k]*(a[4+k%3]*a[7+q]-a[7+k%3]*a[4+q])or 0)end
+print(s//6)
