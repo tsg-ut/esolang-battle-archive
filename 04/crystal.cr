@@ -1,1 +1,1 @@
-Y=`dd`.split.map(&.to_i);X=Y.map_with_index{|e,i|e-Y[i%3]};p (X[3]*X[7]*X[11]+X[4]*X[8]*X[9]+X[5]*X[6]*X[10]-X[3]*X[8]*X[10]-X[4]*X[6]*X[11]-X[5]*X[7]*X[9])/6
+Y=`dd`.split;X=Y.map_with_index{|e,i|e.to_i-Y[i%3].to_i};p (X[3]*X[7]*X[11]+X[4]*X[8]*X[9]+X[5]*X[6]*X[10]-X[3]*X[8]*X[10]-X[4]*X[6]*X[11]-X[5]*X[7]*X[9])/6
