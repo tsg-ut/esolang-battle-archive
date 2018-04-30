@@ -1,15 +1,18 @@
-set /p q=
-set j=%q:~0,2%
-set k=%q:~3,2%
-set l=%q:~6,2%
-set /a a=%q:~9,2%-%j%
-set /a b=%q:~12,2%-%k%
-set /a c=%q:~15,2%-%l%
-set /a d=%q:~18,2%-%j%
-set /a e=%q:~21,2%-%k%
-set /a f=%q:~24,2%-%l%
-set /a g=%q:~27,2%-%j%
-set /a h=%q:~30,2%-%k%
-set /a i=%q:~33,2%-%l%
-set /a v=(%a%*%e%*%i%+%b%*%f%*%g%+%c%*%d%*%h%-%a%*%h%*%f%-%b%*%i%*%d%-%c%*%g%*%e%)/6
-echo %v%
+set /P s=
+set /a a=%s:~0,2%
+set /a b=%s:~3,2%
+set /a c=%s:~6,2%
+set /a d=%s:~9,2%
+set /a e=%s:~12,2%
+set /a f=%s:~15,2%
+set /a g=%s:~18,2%-a
+set /a h=%s:~21,2%-b
+set /a i=%s:~24,2%-c
+set /a j=%s:~27,2%-a
+set /a k=%s:~30,2%-b
+set /a l=%s:~33,2%-c
+set /a w=(e-b)*(i*j-g*l)
+set /a x=(f-c)*(g*k-h*j)
+set /a y=(d-a)*(h*l-i*k)
+set /a z=(w+x+y)/6
+echo %z%
