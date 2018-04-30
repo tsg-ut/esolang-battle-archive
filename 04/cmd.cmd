@@ -1,4 +1,4 @@
-set/p q=
+set/pq=
 for /f "tokens=1-12 delims=%q:~8,1% " %%a in ("%q%") do (
 set/aa=%%d-%%a
 set/ab=%%e-%%b
