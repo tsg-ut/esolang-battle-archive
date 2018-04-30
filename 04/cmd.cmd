@@ -1,13 +1,3 @@
-set/pq=
-for /f "tokens=1-12 delims=%q:~8,1% " %%a in ("%q%") do (
-set/aa=%%d-%%a
-set/ab=%%e-%%b
-set/ac=%%f-%%c
-set/ad=%%g-%%a
-set/ae=%%h-%%b
-set/af=%%i-%%c
-set/ag=%%j-%%a
-set/ah=%%k-%%b
-set/ai=%%l-%%c)
-set/av=(a*e*i+b*f*g+c*d*h-a*h*f-b*i*d-c*g*e)/6
-echo %v%
+set /P s=
+set /a "(g=%s:~18,2%-(a=%s:~0,2%))&(h=%s:~21,2%-(b=%s:~3,2%))&(i=%s:~24,2%-(c=%s:~6,2%))&(j=%s:~27,2%-a)&(k=%s:~30,2%-b)&(l=%s:~33,2%-c)&(w=(%s:~12,2%-b)*(i*j-g*l))&(x=(%s:~15,2%-c)*(g*k-h*j))&(y=(%s:~9,2%-a)*(h*l-i*k))&(z=(w+x+y)/6)"
+echo %z%
