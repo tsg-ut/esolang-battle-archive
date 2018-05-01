@@ -62,13 +62,13 @@ get_local $i
 i32.mul
 get_local $j
 i32.mul
-i32.add 
+i32.add
 get_local $f
 get_local $g
 i32.mul
 get_local $k
 i32.mul
-i32.add 
+i32.add
 get_local $d
 get_local $k
 i32.mul
@@ -119,11 +119,11 @@ i32.load8_s
 i32.const 48
 i32.sub
 i32.const 10
-i32.mul 
+i32.mul
 i32.const 1
 get_local $i
 i32.add
 i32.load8_s
 i32.const 48
-i32.sub 
+i32.sub
 i32.add))
