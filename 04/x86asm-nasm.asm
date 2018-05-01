@@ -36,7 +36,6 @@ mov[i],dl
 sub[a+ebx],al
 jmp B
 C:  movsx   ebx,byte[a+8]
-sub esp,12
 movsx edi,byte[a+10]
 movsx esi,byte[a+11]
 movsx ecx,byte[a+6]
