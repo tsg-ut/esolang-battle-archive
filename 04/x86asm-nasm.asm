@@ -1,6 +1,8 @@
 SECTION .bss
 u resb 20
 i resb 4
+z resb 4
+x resb 4
 a resb 40
 SECTION .text
 mov ebp,esp
@@ -34,19 +36,18 @@ mul byte[a+ecx]
 mov[i],dl
 sub[a+ebx],al
 jmp B
-C:movsx ax,[a+7]
-movsx ebx,byte[a+8]
+C:  movsx   ebx,byte[a+8]
 sub esp,12
 movsx edi,byte[a+10]
 movsx esi,byte[a+11]
 movsx ecx,byte[a+6]
-mov [ebp-28],eax
 movsx ax,[a+9]
 mov edx,ebx
 imul edx,edi
-mov [ebp-32],ax
-mov ax,[ebp-28]
-imul ebx,[ebp-32]
+mov [z],ax
+movsx eax, byte[a+7]
+mov [x],eax
+imul ebx,[z]
 imul eax,esi
 sub eax,edx
 movsx edx,byte[a+3]
@@ -55,8 +56,8 @@ imul ecx,edi
 sub ebx,esi
 movsx esi,byte[a+4]
 imul edx,eax
-mov eax,[ebp-28]
-imul eax,[ebp-32]
+mov eax,[x]
+imul eax,[z]
 imul ebx,esi
 movsx esi,byte[a+5]
 add ebx,edx
