@@ -1,1 +1,1 @@
-import java.util.*;interface A{static void main(String[]a){Scanner s=new Scanner(System.in);int i=0,X[];X=new int[12];for(;i<12;)X[i]=s.nextInt()-X[i++%3];System.out.printf("%d",((X[4]*X[8]-X[5]*X[7])*X[9]+(X[5]*X[6]-X[3]*X[8])*X[10]+(X[3]*X[7]-X[4]*X[6])*X[11])/6);}}
+import java.util.*;interface A{static void main(String[]a){Scanner s=new Scanner(System.in);int i=0,X[]=new int[12];for(;i<12;)X[i]=s.nextInt()-X[i++%3];System.out.printf("%d",((X[4]*X[8]-X[5]*X[7])*X[9]+(X[5]*X[6]-X[3]*X[8])*X[10]+(X[3]*X[7]-X[4]*X[6])*X[11])/6);}}
