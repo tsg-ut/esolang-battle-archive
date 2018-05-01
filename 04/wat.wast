@@ -84,12 +84,8 @@ i32.div_u
 set_local $a(block $r(loop $s
 get_local $i
 get_local $a
-get_local $a
 i32.const 10
-i32.div_s
-i32.const 10
-i32.mul
-i32.sub
+i32.rem_s
 i32.const 48
 i32.add
 i32.store8
