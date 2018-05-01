@@ -80,11 +80,9 @@ mov ecx,10
 mov eax,edx
 xor edx,edx
 div cx
-sub esp,12
 mov ebx,edx
 push eax
 call w
-add esp,12
 lea ax,[ebx+48]
 mov[u],al
 mov dx,1
