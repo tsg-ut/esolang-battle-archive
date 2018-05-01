@@ -1,3 +1,2 @@
-s=open(0).read().split()
-a,b,c,d,e,f,g,h,i=[int(s[i+3])-int(s[i%3])for i in range(9)]
-print((a*(e*i-h*f)+b*(f*g-i*d)+c*(d*h-g*e))//6)
+a=[*map(int,open(0).read().split())]
+print(-sum(a[i//2]*a[8-i//12*6-i%3]*a[[3,9][5<i<18]+(i+3)//2%3]^-(i%2)for i in range(24))//6-2)
