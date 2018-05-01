@@ -1,1 +1,1 @@
-"\\#{require'matrix';b=$<.map{|x|x.split.map(\&:to_i)<<1};p -Matrix[*b].det/6}"
+"\\#{require'matrix';p Matrix[*$<.map{|x|[1]+x.split.map(\&:to_i)}].det/6}"
