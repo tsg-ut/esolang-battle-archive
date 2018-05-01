@@ -12,7 +12,7 @@ mov dx,3
 mov ecx,u
 mov bx,0
 mov ax,3
-int 0x80
+int 128
 pop bx
 movsx eax,byte[u]
 mov dl,10
@@ -37,16 +37,16 @@ jmp B
 C:movsx ax,[a+7]
 movsx ebx,byte[a+8]
 sub esp,12
-movsx edi,byte[a+0AH]
-movsx esi,byte[a+0BH]
+movsx edi,byte[a+10]
+movsx esi,byte[a+11]
 movsx ecx,byte[a+6]
-mov [ebp-1CH],eax
+mov [ebp-28],eax
 movsx ax,[a+9]
 mov edx,ebx
 imul edx,edi
-mov [ebp-20H],ax
-mov ax,[ebp-1CH]
-imul ebx,[ebp-20H]
+mov [ebp-32],ax
+mov ax,[ebp-28]
+imul ebx,[ebp-32]
 imul eax,esi
 sub eax,edx
 movsx edx,byte[a+3]
@@ -55,8 +55,8 @@ imul ecx,edi
 sub ebx,esi
 movsx esi,byte[a+4]
 imul edx,eax
-mov eax,[ebp-1CH]
-imul eax,[ebp-20H]
+mov eax,[ebp-28]
+imul eax,[ebp-32]
 imul ebx,esi
 movsx esi,byte[a+5]
 add ebx,edx
@@ -84,7 +84,7 @@ mov ebx,edx
 push eax
 call w
 add esp,12
-lea ax,[ebx+30H]
+lea ax,[ebx+48]
 mov[u],al
 mov dx,1
 mov ecx,u
