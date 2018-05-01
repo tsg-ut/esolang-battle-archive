@@ -1,1 +1,1 @@
-a=`dd`.split.map &.to_i;p (0..8).map{|z|z/6*(a[z]-=a[9+z%3])*(a[s=3+-~z%3]*a[t= ~-z%3]-a[t+3]*a[s-3])}.sum/6
+a=`dd`.split.map &.to_i;p (0..8).map{|z|z/6*(a[z]-=a[9+z%3])*(a[s=3+-~z%3]*a[t=-~s%3]-a[t+3]*a[s-3])}.sum/6
