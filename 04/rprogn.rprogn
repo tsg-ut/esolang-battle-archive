@@ -2,4 +2,4 @@ read "%d+" ↔ O "l" = O "k" = O "j" = [
 read "%d+" ↔ O l - "c" = O k - "b" = O j - "a" = [
 read "%d+" ↔ O l - "f" = O k - "e" = O j - "d" = [
 read "%d+" ↔ O l - "i" = O k - "h" = O j - "g" = [
-a e i * * b f g * * c d h * * + + a h f * * b i d * * c g e * * + + - 6 //
+a e i * h f * - * b f g * i d * - * c d h * g e * - * + + 6 //
