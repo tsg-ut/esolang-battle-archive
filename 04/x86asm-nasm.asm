@@ -5,7 +5,6 @@ z resb 4
 x resb 4
 a resb 40
 SECTION .text
-mov ebp,esp
 B:mov bl,[i]
 cmp bl,11
 jg C
@@ -89,7 +88,7 @@ mov dx,1
 mov ecx,u
 mov bx,1
 mov ax,4
-int 0x80
+int 128
 add esp,16
 A:mov ebx,[ebp-4]
 leave
