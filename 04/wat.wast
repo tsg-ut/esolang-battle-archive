@@ -81,9 +81,7 @@ i32.mul
 i32.add
 i32.const 6
 i32.div_u
-set_local $a
-i32.const 7
-set_local $i(block $r(loop $s
+set_local $a(block $r(loop $s
 get_local $i
 get_local $a
 get_local $a
