@@ -1,5 +1,6 @@
-c>1-:fia*iv
-v^?:p@~i+ <
->2>:fgffp>3+::fgffgv
-v8^?+1:-a^?(9:pf$- <
->fgafg*7fgbfg*-3fg*6fgbfg*8fg9fg*-4fg*7fg9fg*6fgafg*-5fg*++6,n;
+v
+4
+
+>>1-:::3>1-:@:3$gia*v
+v^?:   ~^?:~ip@-$+i <
+>11g22g*12g21g*-00g*12g20g*10g22g*-01g*10g21g*11g20g*-02g*++6,n;
