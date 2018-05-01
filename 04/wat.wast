@@ -1,4 +1,4 @@
-(module(import"env""memory"(memory 8192))(func(export"main")(result i32)(local $a i32)(local $d i32)(local $e i32)(local $f i32)(local $g i32)(local $h i32)(local $i i32)(local $j i32)(local $k i32)(local $l i32)i32.const 4096
+(module(import"env""memory"(memory 8192))(func(export"main")(result i32)(local $a i32)(local $d i32)(local $e i32)(local $g i32)(local $h i32)(local $i i32)(local $j i32)(local $k i32)(local $l i32)i32.const 4096
 call $m
 set_local $a
 i32.const 4105
@@ -37,11 +37,6 @@ set_local $k
 i32.const 4102
 call $m
 set_local $a
-i32.const 4111
-call $m
-get_local $a
-i32.sub
-set_local $f
 i32.const 4120
 call $m
 get_local $a
@@ -52,6 +47,18 @@ call $m
 get_local $a
 i32.sub
 set_local $l
+i32.const 4111
+call $m
+get_local $a
+i32.sub
+get_local $g
+get_local $k
+i32.mul
+get_local $j
+get_local $h
+i32.mul
+i32.sub
+i32.mul
 get_local $h
 get_local $l
 i32.mul
@@ -61,6 +68,7 @@ i32.mul
 i32.sub
 get_local $d
 i32.mul
+i32.add
 get_local $i
 get_local $j
 i32.mul
@@ -69,16 +77,6 @@ get_local $g
 i32.mul
 i32.sub
 get_local $e
-i32.mul
-i32.add
-get_local $g
-get_local $k
-i32.mul
-get_local $j
-get_local $h
-i32.mul
-i32.sub
-get_local $f
 i32.mul
 i32.add
 i32.const 6
