@@ -1,28 +1,26 @@
 SECTION .bss
-u resb 20
-i resb 4
 z resb 4
 x resb 4
-a resb 40
+a rest 4
 SECTION .text
-B:mov bl,[i]
+B:mov bl,[x]
 cmp bl,11
 jg C
 push bx
 mov dx,3
-mov ecx,u
+mov ecx,a+20
 mov bx,0
 mov ax,3
 int 128
 pop bx
-movsx eax,byte[u]
+movsx eax,byte[a+20]
 mov dl,10
 sub eax,48
 imul eax,edx
-mov dl,[u+1]
+mov dl,[a+21]
 lea eax,[eax+edx-30]
 mov[a+ebx],al
-movsx ebx,byte[i]
+movsx ebx,byte[x]
 mov cl,3
 movsx ax,bl
 mov edx,ebx
@@ -32,7 +30,7 @@ movsx ecx,ah
 setg al
 inc dx
 mul byte[a+ecx]
-mov[i],dl
+mov[x],dl
 sub[a+ebx],al
 jmp B
 C:  movsx   ebx,byte[a+8]
@@ -82,9 +80,9 @@ mov ebx,edx
 push eax
 call w
 lea ax,[ebx+48]
-mov[u],al
+mov[a],al
 mov dx,1
-mov ecx,u
+mov ecx,a
 mov bx,1
 mov ax,4
 int 128
