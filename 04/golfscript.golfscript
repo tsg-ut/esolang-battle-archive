@@ -1,2 +1,1 @@
-"
-"/);{' '/}%(\{\.@[\]zip{{~}%{-}*}%}%.(([+]\((+{([+]++zip{{*}*}%{+}*}:p~\((+([+]\(p- 6/\;
+;"#{require'matrix';-Matrix[*$stack[0].to_s.lines.map{|l|l.split.map(&:to_i)<<1}].det/6}"
