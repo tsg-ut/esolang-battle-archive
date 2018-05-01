@@ -52,41 +52,35 @@ call $m
 get_local $a
 i32.sub
 set_local $l
-get_local $d
 get_local $h
-i32.mul
 get_local $l
 i32.mul
-get_local $e
-get_local $i
-i32.mul
-get_local $j
-i32.mul
-i32.add
-get_local $f
-get_local $g
-i32.mul
 get_local $k
-i32.mul
-i32.add
-get_local $d
-get_local $k
-i32.mul
 get_local $i
 i32.mul
 i32.sub
-get_local $e
-get_local $l
+get_local $d
 i32.mul
+get_local $i
+get_local $j
+i32.mul
+get_local $l
 get_local $g
 i32.mul
 i32.sub
-get_local $f
-get_local $j
+get_local $e
 i32.mul
+i32.add
+get_local $g
+get_local $k
+i32.mul
+get_local $j
 get_local $h
 i32.mul
 i32.sub
+get_local $f
+i32.mul
+i32.add
 i32.const 6
 i32.div_u
 set_local $a
