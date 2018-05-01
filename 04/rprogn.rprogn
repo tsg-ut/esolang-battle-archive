@@ -1,5 +1,4 @@
 read "%d+" ↔ O "l" = O "k" = O "j" = [
-read "%d+" ↔ O l - "c" = O k - "b" = O j - "a" = [
 read "%d+" ↔ O l - z = O k - y = O j - x = [
 read "%d+" ↔ O l - Z = O k - Y = O j - X = [
-a y Z * Y z * - * b z X * Z x * - * c x Y * X y * - * + + 6 //
+read "%d+" ↔ O l - x Y * X y * - * P → O k - z X * Z x * - * P → O j - y Z * Y z * - * P + 6 //
