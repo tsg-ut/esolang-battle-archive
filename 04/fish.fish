@@ -1,3 +1,5 @@
 c>1-:fia*iv
 v^?:p@~i+ <
->0fg:3fg-3fp:6fg-6fp9fg-9fp1fg:4fg-4fp:7fg-7fpafg-afp2fg:5fg-5fp:8fg-8fpbfg-bfp7fgbfg*8fgafg*-3fg*8fg9fg*6fgbfg*-4fg*6fgafg*7fg9fg*-5fg*++6,n;
+>3>1-::3+:fg@@fg-$fp::6+:fg@v
+v8^?:pf$-gf@@gf:+9::pf$-gf@ <
+>fgafg*7fgbfg*-3fg*6fgbfg*8fg9fg*-4fg*7fg9fg*6fgafg*-5fg*++6,n;
