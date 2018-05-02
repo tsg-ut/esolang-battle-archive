@@ -1,5 +1,4 @@
-VGJ:let l=[]
-:let l+=map(split(getline(1),'\_s'),'str2nr(v:val)')
+VGJ:let l=map(split(getline(1),'\_s'),'str2nr(v:val)')
 :%d
 :for i in range(9)
 let l[i+3]-=l[i%3]
