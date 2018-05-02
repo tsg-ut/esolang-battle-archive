@@ -1,1 +1,1 @@
-i;X[15];main(s){for(;~scanf("%d",X+i+3);)s-=i/9*(X[i]-=X[i+3])*(X[++i%3+3]*X[6-~i%3]-X[i%3+6]*X[3-~i%3]);printf("%d",s/6);}
+i;X[12];main(s){for(;~scanf("%d",X+i);)s-=i/9*(X[i-3]-=X[i])*(X[++i%3]*X[3-~i%3]-X[i%3+3]*X[-~i%3]);printf("%d",s/6);}
