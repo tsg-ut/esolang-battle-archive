@@ -1,4 +1,4 @@
-VGJ:let l=map(split(getline(1),' '),'str2nr(v:val)')
+VGJ:let l=map(split(getline(1),' '),'str2nr')
 :for i in range(9)
 let l[i+3]-=l[i%3]
 endfor
