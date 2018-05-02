@@ -1,1 +1,1 @@
-my($a,$b,$c,$d,$e,$f,$g,$h,$i,$j,$k,$l)=map{split' '}<>;$d-=$a;$e-=$b;$f-=$c;$g-=$a;$h-=$b;$i-=$c;$j-=$a;$k-=$b;$l-=$c;print+($g*$k*$f+$j*$e*$i+$d*$h*$l-$j*$h*$f-$d*$k*$i-$g*$e*$l)/6
+my($a,$b,$c,$d,$e,$f,$g,$h,$i,$j,$k,$l)=map{split' '}<>;$e-=$b;$f-=$c;$h-=$b;$i-=$c;$k-=$b;$l-=$c;print+(($g-$a)*($k*$f-$e*$l)+($j-$a)*($e*$i-$h*$f)+($d-$a)*($h*$l-$k*$i))/6
