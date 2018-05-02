@@ -1,1 +1,1 @@
-"\\#{require'matrix';p Matrix[*$<.map{|x|[1]+x.split.map(\&:to_i)}].det/6}"
+"\\#{require'matrix';p Matrix[*$<.map{|x|eval'A=1,'+x.split*?,}].det/6}"
