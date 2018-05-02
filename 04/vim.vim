@@ -1,8 +1,8 @@
 :let l=[]
 :for i in range(4)
 let l+=map(split(getline(i+1),'\_s'),'str2nr(v:val)')
-call setline(i+1,'')
 endfor
+:%d
 :for i in range(9)
 let l[i+3]-=l[i%3]
 endfor
