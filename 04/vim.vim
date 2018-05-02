@@ -1,8 +1,6 @@
 :let l=[]
 :for i in range(4)
-for c in split(getline(i+1),'\_s')
-call add(l,str2nr(c))
-endfor
+let l+=map(split(getline(i+1),'\_s'),'str2nr(v:val)')
 call setline(i+1,'')
 endfor
 :for i in range(9)
