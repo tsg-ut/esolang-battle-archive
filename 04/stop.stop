@@ -1,102 +1,93 @@
 PUSH "NOOP" $stdin
-  PUSH "ADD" $0 " "
-    PUSH "ASNUMBER" $0
-      INJECT "NOOP" $0
-    POP
-    PUSH "SHIFT" $0 3
-      PUSH "ASNUMBER" $0
-        INJECT "NOOP" $0
-      POP
-    POP
-    PUSH "SHIFT" $0 6
-      PUSH "ASNUMBER" $0
-        INJECT "NOOP" $0
-      POP
-    POP
-  POP
+PUSH "ADD" $0 " "
+PUSH "ASNUMBER" $0
+INJECT "NOOP" $0
+POP
+PUSH "SHIFT" $0 3
+PUSH "ASNUMBER" $0
+INJECT "NOOP" $0
+POP
+POP
+PUSH "SHIFT" $0 6
+PUSH "ASNUMBER" $0
+INJECT "NOOP" $0
+POP
+POP
+POP
 POP
 PUSH "NOOP" $stdin
-  PUSH "ADD" $0 " "
-    PUSH "ASNUMBER" $0
-      INJECT "SUB" $0 $-3
-    POP
-    PUSH "SHIFT" $0 3
-      PUSH "ASNUMBER" $0
-        INJECT "SUB" $0 $-3
-      POP
-    POP
-    PUSH "SHIFT" $0 6
-      PUSH "ASNUMBER" $0
-        INJECT "SUB" $0 $-3
-      POP
-    POP
-  POP
+PUSH "ADD" $0 " "
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-3
+POP
+PUSH "SHIFT" $0 3
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-3
+POP
+POP
+PUSH "SHIFT" $0 6
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-3
+POP
+POP
+POP
 POP
 PUSH "NOOP" $stdin
-  PUSH "ADD" $0 " "
-    PUSH "ASNUMBER" $0
-      INJECT "SUB" $0 $-6
-    POP
-    PUSH "SHIFT" $0 3
-      PUSH "ASNUMBER" $0
-        INJECT "SUB" $0 $-6
-      POP
-    POP
-    PUSH "SHIFT" $0 6
-      PUSH "ASNUMBER" $0
-        INJECT "SUB" $0 $-6
-      POP
-    POP
-  POP
+PUSH "ADD" $0 " "
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-6
+POP
+PUSH "SHIFT" $0 3
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-6
+POP
+POP
+PUSH "SHIFT" $0 6
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-6
+POP
+POP
+POP
 POP
 PUSH "NOOP" $stdin
-  PUSH "ADD" $0 " "
-    PUSH "ASNUMBER" $0
-      INJECT "SUB" $0 $-9
-    POP
-    PUSH "SHIFT" $0 3
-      PUSH "ASNUMBER" $0
-        INJECT "SUB" $0 $-9
-      POP
-    POP
-    PUSH "SHIFT" $0 6
-      PUSH "ASNUMBER" $0
-        INJECT "SUB" $0 $-9
-      POP
-    POP
-  POP
+PUSH "ADD" $0 " "
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-9
 POP
-
+PUSH "SHIFT" $0 3
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-9
+POP
+POP
+PUSH "SHIFT" $0 6
+PUSH "ASNUMBER" $0
+INJECT "SUB" $0 $-9
 INJECT "MUL" $-1 $-6
-  PUSH "MUL" $-1 $-9 ; -8の気持ち
+PUSH "MUL" $-1 $-9  
 EJECT
 INJECT "MUL" $-2 $-4
-  PUSH "MUL" $-1 $-10 ; -9の気持ち
+PUSH "MUL" $-1 $-10  
 EJECT
 INJECT "MUL" $-3 $-5
-  PUSH "MUL" $-1 $-8 ; -7の気持ち
+PUSH "MUL" $-1 $-8  
 EJECT
 INJECT "MUL" $-1 $-5
-  PUSH "MUL" $-1 $-10 ; -9の気持ち
+PUSH "MUL" $-1 $-10  
 EJECT
 INJECT "MUL" $-2 $-6
-  PUSH "MUL" $-1 $-8 ; -7の気持ち
+PUSH "MUL" $-1 $-8  
 EJECT
 INJECT "MUL" $-3 $-4
-  PUSH "MUL" $-1 $-9 ; -8の気持ち
+PUSH "MUL" $-1 $-9  
 EJECT
-
 INJECT "ADD" $0 $1
 INJECT "ADD" $-1 $2
 INJECT "SUB" $-1 $3
 INJECT "SUB" $-1 $4
 INJECT "SUB" $-1 $5
-
 INJECT "DIV" $-1 6
-
 INJECT "ASSTRING" $-1
 WRITE $-1
-
 INJECT "NOOP"
 ALTER "EXIT" -1
 (EXIT) GOTO "EXIT"
