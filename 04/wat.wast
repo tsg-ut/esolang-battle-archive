@@ -1,5 +1,4 @@
-(module(memory(import"env""memory")1)(func(export"main")(result i32)(local i32)(local i32)(local i32)i32.const 0
-set_local 1(loop
+(module(memory(import"env""memory")1)(func(export"main")(result i32)(local i32)(local i32)(local i32)(loop
 get_local 0
 get_local 1
 i32.load8_s offset=4097
@@ -108,5 +107,5 @@ i32.const -1
 i32.ne
 br_if 0)i32.const 5
 i32.const 0
-i32.store8
+i32.store
 i32.const 0))
