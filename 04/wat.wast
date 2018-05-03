@@ -1,5 +1,4 @@
 (module(memory(import"env""memory")1)(func(export"main")(result i32)(local i32)(local i32)(local i32)i32.const 0
-tee_local 0
 set_local 1(loop
 get_local 0
 get_local 1
