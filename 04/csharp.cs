@@ -1,1 +1,1 @@
-using System;using System.Linq;class A{static void Main(){char[]c={' ','\n'};int[]a=Console.In.ReadToEnd().Trim().Split(c).Select(Int32.Parse).ToArray();for(int z=9;z-->0;)a[z]-=a[9+z%3];Console.Write((a[7]*(a[0]*a[5]-a[3]*a[2])+a[6]*(a[4]*a[2]-a[1]*a[5])+a[8]*(a[3]*a[1]-a[0]*a[4]))/6);}}
+using System;class _{static void Main(){int x=0,i=0,p,q;int[]X=new int[12];for(;i<12;Console.Read())x+=i/9*(X[i]=Console.Read()*10+Console.Read()-528-X[i%3])*(X[p=++i%3+3]*X[q=-~i%3+6]-X[p+3]*X[q-3]);Console.Write(x/6);}}
