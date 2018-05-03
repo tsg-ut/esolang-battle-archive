@@ -1,1 +1,1 @@
-using System;class _{static void Main(){int x=0,i=0,p,q;int[]X=new int[12];for(;i<12;Console.Read())x+=i/9*(X[i]=Console.Read()*10+Console.Read()-528-X[i%3])*(X[p=++i%3+3]*X[q=-~i%3+6]-X[p+3]*X[q-3]);Console.Write(x/6);}}
+using static System.Console;class _{static void Main(){int x=0,i=0,p,q;int[]X=new int[12];for(;i<12;Read())x+=i/9*(X[i]=Read()*10+Read()-528-X[i%3])*(X[p=++i%3+3]*X[q=-~i%3+6]-X[p+3]*X[q-3]);Write(x/6);}}
