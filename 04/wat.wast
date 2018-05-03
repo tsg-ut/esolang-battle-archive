@@ -84,9 +84,14 @@ br_if 0)get_local 3
 i32.const 6
 i32.div_s
 set_local 0
-i32.const 4
-set_local 1(loop
+i32.const 5
+tee_local 1
+i32.const 0
+i32.store(loop
 get_local 1
+i32.const 1
+i32.sub
+tee_local 1
 get_local 0
 i32.const 10
 i32.rem_s
@@ -98,11 +103,4 @@ i32.const 10
 i32.div_s
 set_local 0
 get_local 1
-get_local 1
-i32.const 1
-i32.sub
-set_local 1
-br_if 0)i32.const 5
-i32.const 0
-i32.store
-i32.const 0))
+br_if 0)i32.const 0))
