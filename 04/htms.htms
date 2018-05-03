@@ -1,0 +1,36 @@
+<htms id="htms">
+<var name ="s"><q><code><q>stdin</q></code></q></var>
+<var name ="x"><a><ol><li><q><span>s</span><sub><i>0</i></sub></q></li><li><q><span>s</span><sub><i>1</i></sub></q></li></ol></a></var>
+<var name ="y"><a><ol><li><q><span>s</span><sub><i>3</i></sub></q></li><li><q><span>s</span><sub><i>4</i></sub></q></li></ol></a></var>
+<var name ="z"><a><ol><li><q><span>s</span><sub><i>6</i></sub></q></li><li><q><span>s</span><sub><i>7</i></sub></q></li></ol></a></var>
+<var name ="a"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>9</i></sub></q></li><li><q><span>s</span><sub><i>10</i></sub></q></li></ol></a></i></li><li><span>x</span></li></ol></s></var>
+<var name ="b"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>12</i></sub></q></li><li><q><span>s</span><sub><i>13</i></sub></q></li></ol></a></i></li><li><span>y</span></li></ol></s></var>
+<var name ="c"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>15</i></sub></q></li><li><q><span>s</span><sub><i>16</i></sub></q></li></ol></a></i></li><li><span>z</span></li></ol></s></var>
+<var name ="d"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>18</i></sub></q></li><li><q><span>s</span><sub><i>19</i></sub></q></li></ol></a></i></li><li><span>x</span></li></ol></s></var>
+<var name ="e"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>21</i></sub></q></li><li><q><span>s</span><sub><i>22</i></sub></q></li></ol></a></i></li><li><span>y</span></li></ol></s></var>
+<var name ="f"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>24</i></sub></q></li><li><q><span>s</span><sub><i>25</i></sub></q></li></ol></a></i></li><li><span>z</span></li></ol></s></var>
+<var name ="g"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>27</i></sub></q></li><li><q><span>s</span><sub><i>28</i></sub></q></li></ol></a></i></li><li><span>x</span></li></ol></s></var>
+<var name ="h"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>30</i></sub></q></li><li><q><span>s</span><sub><i>31</i></sub></q></li></ol></a></i></li><li><span>y</span></li></ol></s></var>
+<var name ="i"><s><ol><li><i><a><ol><li><q><span>s</span><sub><i>33</i></sub></q></li><li><q><span>s</span><sub><i>34</i></sub></q></li></ol></a></i></li><li><span>z</span></li></ol></s></var>
+
+        <div><ol><li><s><ol>
+<li><s>
+        <ol>
+        <li><i>0</i></li>
+        <li><em><ol><li><span>a</span></li><li><span>f</span></li><li><span>h</span></li></ol></em></span></li>
+        <li><em><ol><li><span>b</span></li><li><span>d</span></li><li><span>i</span></li></ol></em></span></li>
+        <li><em><ol><li><span>c</span></li><li><span>e</span></li><li><span>g</span></li></ol></em></span></li>
+        </ol>
+    </s></li>
+    <li>    
+            <s>
+                <ol>
+                <li><i>0</i></li>
+                <li><em><ol><li><span>a</span></li><li><span>e</span></li><li><span>i</span></li></ol></em></span></li>
+                <li><em><ol><li><span>b</span></li><li><span>f</span></li><li><span>g</span></li></ol></em></span></li>
+                <li><em><ol><li><span>c</span></li><li><span>d</span></li><li><span>h</span></li></ol></em></span></li>
+                </ol>
+            </s></li>   
+ </ol></s></li>
+ <li><i>6</i></li></ol></div>   
+</htms>
