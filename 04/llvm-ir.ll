@@ -1,4 +1,4 @@
-@s=constant[24 x i8]c"%d%d%d%d%d%d%d%d%d%d%d%d"@a=global i32 0@b=global i32 0@c=global i32 0@d=global i32 0@e=global i32 0@f=global i32 0@g=global i32 0@h=global i32 0@i=global i32 0@j=global i32 0@k=global i32 0@l=global i32 0@t=constant[2 x i8]c"%d"define i8@main(){call i8(...)@scanf(i8* getelementptr([24 x i8],[24 x i8]*@s,i8 0,i8 0),i32*@a,i32*@b,i32*@c,i32*@d,i32*@e,i32*@f,i32*@g,i32*@h,i32*@i,i32*@j,i32*@k,i32*@l)
+@s=constant[24x i8]c"%d%d%d%d%d%d%d%d%d%d%d%d"@a=global i32 0@b=global i32 0@c=global i32 0@d=global i32 0@e=global i32 0@f=global i32 0@g=global i32 0@h=global i32 0@i=global i32 0@j=global i32 0@k=global i32 0@l=global i32 0@t=constant[2x i8]c"%d"define i8@main(){call i8(...)@scanf(i8*getelementptr([24x i8],[24x i8]*@s,i8 0,i8 0),i32*@a,i32*@b,i32*@c,i32*@d,i32*@e,i32*@f,i32*@g,i32*@h,i32*@i,i32*@j,i32*@k,i32*@l)
 load i32,i32*@a
 load i32,i32*@d
 sub i32%3,%2
@@ -35,4 +35,4 @@ mul i32%33,%18
 add i32%34,%30
 add i32%35,%32
 sdiv i32%36,6
-call i8(...)@printf(i8* getelementptr([2 x i8],[2 x i8]*@t,i8 0,i8 0),i32%37)ret i8 0}declare i8@scanf(...)declare i8@printf(...)
+call i8(...)@printf(i8*getelementptr([24x i8],[24x i8]*@s,i8 0,i8 24),i32%37)ret i8 0}declare i8@scanf(...)declare i8@printf(...)
