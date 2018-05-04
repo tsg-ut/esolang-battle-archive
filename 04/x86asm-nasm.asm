@@ -32,7 +32,7 @@ mul byte[a+ecx]
 mov[x],dl
 sub[a+ebx],al
 jmp B
-C:  movsx   ebx,byte[a+8]
+C:movsx ebx,byte[a+8]
 movsx edi,byte[a+10]
 movsx esi,byte[a+11]
 movsx ecx,byte[a+6]
@@ -65,7 +65,7 @@ idiv ecx
 push eax
 call w
 ret
-w:push   ebp
+w:push ebp
 mov ebp,esp
 push ebx
 mov edx,[ebp+8]
