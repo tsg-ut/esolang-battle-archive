@@ -1,1 +1,1 @@
-use std::io::*;fn main(){let mut b=String::new();stdin().read_to_string(&mut b);let mut x:Vec<i32>=b.trim().split(|c|c<'!').map(|e|e.parse().unwrap()).collect();for i in 0..9{x[i]-=x[9+i%3]}print!("{}",(x[0]*(x[5]*x[7]-x[4]*x[8])+x[1]*(x[3]*x[8]-x[5]*x[6])+x[2]*(x[4]*x[6]-x[3]*x[7]))/6)}
+use std::io::Read;fn main(){let mut b=[0;36];let _=std::io::stdin().read_exact(&mut b);let mut m=[0;12];let mut x=0;for i in 0..12{m[i]=b[i*3]as i32*10+b[i*3+1]as i32-m[i%3];if i>8{x+=m[i]*(m[(i+1)%3+3]*m[(i+2)%3+6]-m[(i+1)%3+6]*m[(i+2)%3+3])}}print!("{}",x/6)}
