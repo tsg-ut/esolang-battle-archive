@@ -1,1 +1,1 @@
-[,,,a,b,c,d,e,f,g,h,i]=(""+require("fs").readFileSync(0)).split(/\s/).map((e,i,x)=>e-x[i%3]);console.log((a*e*i+b*f*g+c*d*h-a*f*h-b*d*i-c*e*g)/6)
+for(a=(""+require("fs").readFileSync(z=v=0)).split(/\s/);z<9;)v+=(a[z]-=a[z+3])*(z++>5&&a[3+z%3]*a[t=-~z%3]-a[z%3]*a[t+3]);console.log(v/6)
