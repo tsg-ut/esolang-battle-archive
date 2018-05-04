@@ -1,67 +1,8 @@
-sub esp,48
-mov esi,0
-lea ecx,[esp-48]
-mov eax,3
-mov ebx,0
-mov edx,36
-int 128
-lea eax,[esp-47]
-A:movsx ecx,byte[eax-1]
-movsx edx,byte[eax]
-lea ecx,[5*ecx]
-lea ecx,[edx+2*ecx]
-mov[esp+4*esi],ecx
-sub[esp+4*esi-12],ecx
-inc esi
-add eax,3
-cmp esi,12
-jl A
-mov ecx,0
-mov edi,9
-B:lea eax,[edi+4]
-mov edx,0
-mov ebx,9
-div ebx
-mov esi,edx
-lea eax,[edi+2]
-mov edx,0
-div ebx
-mov eax,edx
-mov ebx,[esp+4*eax]
-imul ebx,[esp+4*esi]
-lea eax,[edi+1]
-mov edx,0
-mov esi,9
-div esi
-mov esi,edx
-lea eax,[edi+5]
-mov edx,0
-mov ebp,9
-div ebp
-mov edx,[esp+4*edx]
-imul edx,[esp+4*esi]
-sub ebx,edx
-imul ebx,[esp+4*edi-12]
-add ecx,ebx
-add edi,-3
-jg B
-mov edx,0
-mov ebx,6
-mov eax,ecx
-div ebx
-mov ecx,eax
-mov esi,5
-mov edi,10
-C:mov eax,ecx
-mov edx,0
-div edi
-mov ecx,eax
-lea eax,[edx+48]
-mov[esp+esi-49],al
-dec esi
-jne C
-lea ecx,[esp-48]
-mov eax,4
-mov ebx,1
-mov edx,5
-int 128
+SECTION .bss
+a rest 100
+SECTION .data
+V: dd 22,34,25,31, 25,28,19,34, 19,31,22,28,0
+SECTION .text
+mov ebp,a
+mov esp,V
+db `�\x03\x00\x00\x00�\x00\x00\x00\x00��(\x00\x00\x00̀�$\x00\x00\x00��\x03�D\x0d\x00,0�\n��\x00D\x0d\x01��u�\x09\x00\x00\x00��\x03�D\x01�\x00\x00\x00��\x09\x01�(D\x0d\n)х�u��u�\x0c\x00\x00\x00�\x03\x00\x00\x00��\x04N��\x0f�D\x00�T�\x04\x0f�\\\x00����T�\x08\x0f�D\x00�T�\x0c\x0f�\\\x00��)��Dv\n\x0f�D\x05\x00��D=$��u��E$\x03E(\x03E,�\x00\x00\x00\x00�\x06\x00\x00\x00��\n\x00\x00\x00�\x06\x00\x00\x00K���0�T\x00�\x00\x00\x00\x00��u��\x04\x00\x00\x00�\x01\x00\x00\x00��\x06\x00\x00\x00̀`
