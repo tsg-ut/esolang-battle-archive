@@ -1,17 +1,17 @@
-sub esp,96
+sub esp,48
 mov esi,0
-mov ecx,esp
+lea ecx,[esp-48]
 mov eax,3
 mov ebx,0
 mov edx,36
 int 128
-lea eax,[esp+1]
+lea eax,[esp-47]
 A:movsx ecx,byte[eax-1]
 movsx edx,byte[eax]
 lea ecx,[5*ecx]
 lea ecx,[edx+2*ecx]
-mov[esp+4*esi+48],ecx
-sub[esp+4*esi+36],ecx
+mov[esp+4*esi],ecx
+sub[esp+4*esi-12],ecx
 inc esi
 add eax,3
 cmp esi,12
@@ -27,8 +27,8 @@ lea eax,[edi+2]
 mov edx,0
 div ebx
 mov eax,edx
-mov ebx,[esp+4*eax+48]
-imul ebx,[esp+4*esi+48]
+mov ebx,[esp+4*eax]
+imul ebx,[esp+4*esi]
 lea eax,[edi+1]
 mov edx,0
 mov esi,9
@@ -38,10 +38,10 @@ lea eax,[edi+5]
 mov edx,0
 mov ebp,9
 div ebp
-mov edx,[esp+4*edx+48]
-imul edx,[esp+4*esi+48]
+mov edx,[esp+4*edx]
+imul edx,[esp+4*esi]
 sub ebx,edx
-imul ebx,[esp+4*edi+36]
+imul ebx,[esp+4*edi-12]
 add ecx,ebx
 add edi,-3
 jg B
@@ -57,10 +57,10 @@ mov edx,0
 div edi
 mov ecx,eax
 lea eax,[edx+48]
-mov[esp+esi-1],al
+mov[esp+esi-49],al
 dec esi
 jne C
-lea ecx,[esp]
+lea ecx,[esp-48]
 mov eax,4
 mov ebx,1
 mov edx,5
