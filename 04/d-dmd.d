@@ -1,1 +1,1 @@
-import std.stdio;void main(){int[30]a;for(int i;readf(" %d",&a[i]);)a[i]-=a[i%3]*(i++>2);write=(a[11]*(a[7]*a[3]-a[4]*a[6])+a[10]*(a[5]*a[6]-a[3]*a[8])+a[9]*(a[4]*a[8]-a[7]*a[5]))/6;}
+import std.stdio;void main(){int p,q,x,i;for(int[12]X;readf("%d ",p);)x+=i/9*(X[i]=p-X[i%3])*(X[p=++i%3+3]*X[q=-~i%3+6]-X[p+3]*X[q-3]);write(x/6);}
