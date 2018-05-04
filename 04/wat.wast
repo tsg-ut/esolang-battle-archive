@@ -26,40 +26,32 @@ i32.add
 tee_local 1
 i32.const 36
 i32.ne
-br_if 0)i32.const 14
+br_if 0)i32.const 56
 set_local 0(loop
 get_local 2
 get_local 0
-i32.const 9
+i32.const 36
 i32.rem_s
-i32.const 2
-i32.shl
 i32.load offset=12
 get_local 0
-i32.const 4
+i32.const 16
 i32.sub
-i32.const 9
+i32.const 36
 i32.rem_s
-i32.const 2
-i32.shl
 i32.load offset=12
 i32.mul
 get_local 0
-i32.const 3
+i32.const 12
 i32.sub
 tee_local 0
-i32.const 9
+i32.const 36
 i32.rem_s
-i32.const 2
-i32.shl
 i32.load offset=12
 get_local 0
-i32.const 2
+i32.const 8
 i32.add
-i32.const 9
+i32.const 36
 i32.rem_s
-i32.const 2
-i32.shl
 i32.load offset=12
 i32.mul
 i32.sub
@@ -72,7 +64,8 @@ get_local 1
 i32.const 12
 i32.sub
 tee_local 1
-br_if 0)get_local 0
+br_if 0)i32.const 5
+tee_local 0
 i32.const 0
 i32.store
 get_local 2
