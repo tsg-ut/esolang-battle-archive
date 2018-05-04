@@ -1,0 +1,240 @@
+4 is waiting at Starchild Numerology.
+10 is waiting at Starchild Numerology.
+6 is waiting at Starchild Numerology.
+Go to the Post Office: west 1st left, 1st right, 1st left.
+Pickup a passenger going to Chop Suey.
+Go to Chop Suey: north 1st right, 1st left, 4th right, 1st left.
+[a]
+Pickup a passenger going to KonKat's.
+Pickup a passenger going to KonKat's.
+Switch to plan "c" if no one is wating.
+Pickup a passenger going to Riverview Bridge.
+[c]
+Go to KonKat's: north 1st left, 1st left.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left.
+Go to Riverview Bridge: west 1st left, 1st right.
+Go to Chop Suey: east 2nd right.
+Switch to plan "b" if no one is wating.
+Switch to plan "a".
+[b]
+Go to Narrow Path Park: north 1st left, 1st right, 1st left.
+Pickup a passenger going to The Babelfishery.
+Pickup a passenger going to The Babelfishery.
+Pickup a passenger going to The Babelfishery.
+Go to Fueler Up: east 1st right.
+Go to The Babelfishery :south.
+Pickup a passenger going to Sunny Skies Park.
+Pickup a passenger going to Sunny Skies Park.
+Pickup a passenger going to Sunny Skies Park.
+Go to Sunny Skies Park: north 1st left, 1st left, 1st right.
+Go to Starchild Numerology: east 3rd left.
+Pickup a passenger going to The Underground.
+Go to The Underground: west 1st right, 2nd right, 1st right, 2nd left.
+[input]
+Go to Post Office: south 1st right, 1st left.
+Pickup a passenger going to Chop Suey.
+Go to Chop Suey: north 1st right, 1st left, 4th right, 1st left.
+[d0]
+Pickup a passenger going to KonKat's.
+Pickup a passenger going to KonKat's.
+Switch to plan "f0" if no one is wating.
+Pickup a passenger going to Riverview Bridge.
+[f0]
+Go to KonKat's: north 1st left, 1st left.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left.
+Go to Riverview Bridge: west 1st left, 1st right.
+Go to Chop Suey: east 2nd right.
+Switch to plan "e0" if no one is wating.
+Switch to plan "d0".
+[e0]
+Go to Narrow Path Park: north 1st left, 1st right, 1st left.
+Pickup a passenger going to The Babelfishery.
+Pickup a passenger going to The Babelfishery.
+Pickup a passenger going to The Babelfishery.
+Go to Fueler Up: east 1st right.
+Go to The Babelfishery :south.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Joyless Park: north 5th right.
+Go to The Underground: west 1st left.
+Pickup a passenger going to The Underground.
+Go to Fueler Up: south.
+Go to The Underground: north.
+Switch to plan "input_fin" if no one is wating. 
+Switch to plan "input".
+[input_fin]
+
+Go to Starchild Numerology: south 2nd right, 1st left, 1st left, 2nd left.
+Pickup a passenger going to The Underground.
+Go to The Underground: west 1st right, 2nd right, 1st right, 2nd left.
+[minus]
+Go to Joyless Park: north 1st right.
+Pickup a passenger going to What's The Difference.
+Go to Fueler Up: west 1st left.
+Go to Sunny Skies Park: south 2nd right, 1st left, 1st right.
+Pickup a passenger going to Cyclone.
+Go to Cyclone: west 1st left.
+Pickup a passenger going to What's The Difference.
+Pickup a passenger going to Sunny Skies Park.
+Go to What's The Difference: north 1st left.
+Pickup a passenger going to Cyclone.
+Go to Cyclone: east 1st right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Sunny Skies Park: north 1st right.
+Go to The Underground: east 1st left, 1st right, 2nd left.
+Pickup a passenger going to The Underground.
+Go to Fueler Up: south.
+Go to The Underground: north.
+Switch to plan "minus_fin" if no one is wating.
+Switch to plan "minus".
+[minus_fin]
+
+Go to Joyless Park: north 1st right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Multiplication Station.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Multiplication Station.
+
+Go to Multiplication Station: west 1st left, 1st left, 1st right.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left, 1st right, 4th left.
+Go to Joyless Park: east 1st right, 3rd left.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Multiplication Station.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Multiplication Station.
+
+Go to Multiplication Station: west 1st left, 1st left, 1st right.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left, 1st right, 4th left.
+Go to Joyless Park: east 1st right, 3rd left.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Multiplication Station.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Multiplication Station.
+
+
+Go to Multiplication Station: west 1st left, 1st left, 1st right.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left, 1st right, 4th left.
+Go to Joyless Park: east 1st right, 3rd left.
+
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Multiplication Station.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Multiplication Station.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Multiplication Station.
+
+Go to Multiplication Station: west 1st left, 1st left, 1st right.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left, 1st right, 4th left.
+Go to Joyless Park: east 1st right, 3rd left.
+
+
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Joyless Park.
+Go to Fueler Up: west 1st left.
+Go to Joyless Park: north 2nd right.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Multiplication Station.
+Go to Multiplication Station: west 1st left, 1st left, 1st right.
+Pickup a passenger going to Narrow Path Park.
+Go to Narrow Path Park: north 2nd left, 1st right, 4th left.
+Go to Joyless Park: east 1st right, 3rd left.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Multiplication Station.
+Pickup a passenger going to Multiplication Station.
+Go to Multiplication Station: west 1st left, 1st left, 1st right.
+Pickup a passenger going to Addition Alley.
+Go to Narrow Path Park: north 2nd left, 1st right, 4th left.
+Pickup a passenger going to Addition Alley.
+Pickup a passenger going to Addition Alley.
+Go to Addition Alley: west 1st left, 1st right, 1st left.
+Go to Narrow Path Park: north 1st right, 1st left, 1st right.
+Pickup a passenger going to Addition Alley.
+Pickup a passenger going to Addition Alley.
+Pickup a passenger going to Addition Alley.
+Go to Addition Alley: west 1st left, 1st right, 1st left.
+Pickup a passenger going to What's The Difference.
+Pickup a passenger going to What's The Difference.
+Go to What's The Difference: north 1st left.
+Pickup a passenger going to Divide and Conquer.
+Go to Go More: east 1st right, 3rd left.
+Go to Starchild Numerology: east 1st right, 1st left.
+Pickup a passenger going to Divide and Conquer.
+Go to Fueler Up: west 1st right, 2nd right, 1st right, 2nd left.
+Go to Divide and Conquer: north 2nd left.
+Pickup a passenger going to The Babelfishery.
+Go to The Babelfishery: east 1st right.
+Pickup a passenger going to Chop Suey.
+Go to Chop Suey: north 6th right, 1st left.
+Pickup a passenger going to KonKat's.
+Pickup a passenger going to KonKat's.
+Pickup a passenger going to KonKat's.
+Go to KonKat's: north 1st left, 1st left.
+Pickup a passenger going to KonKat's.
+Go to Chop Suey: north 1st right, 1st right.
+Pickup a passenger going to KonKat's.
+Pickup a passenger going to KonKat's.
+Go to KonKat's: north 1st left, 1st left.
+Pickup a passenger going to Post Office.
+Go to Post Office: south 3rd right, 1st left.
+Go to Taxi Garage: north 1st right, 1st left, 1st right.
