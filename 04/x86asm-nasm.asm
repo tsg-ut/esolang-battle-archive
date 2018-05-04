@@ -20,7 +20,7 @@ imul eax,edx
 mov dl,[a+21]
 lea eax,[eax+edx-30]
 mov[a+ebx],al
-movsx ebx,byte[x]
+mov bx,[x]
 mov cl,3
 movsx ax,bl
 mov edx,ebx
