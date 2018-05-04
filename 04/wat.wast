@@ -7,8 +7,6 @@ i32.load8_s offset=4096
 i32.const 10
 i32.mul
 i32.add
-i32.const 528
-i32.sub
 i32.store offset=12
 get_local 0
 get_local 0
