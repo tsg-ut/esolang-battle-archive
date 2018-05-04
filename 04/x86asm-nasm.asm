@@ -1,5 +1,4 @@
 SECTION .bss
-z resb 4
 x resb 4
 a rest 4
 SECTION .text
@@ -40,10 +39,10 @@ movsx ecx,byte[a+6]
 movsx ax,[a+9]
 mov edx,ebx
 imul edx,edi
-mov [z],ax
+mov [a],ax
 movsx eax, byte[a+7]
 mov [x],eax
-imul ebx,[z]
+imul bx,[a]
 imul eax,esi
 sub eax,edx
 movsx edx,byte[a+3]
@@ -53,7 +52,7 @@ sub ebx,esi
 movsx esi,byte[a+4]
 imul edx,eax
 mov eax,[x]
-imul eax,[z]
+imul ax,[a]
 imul ebx,esi
 movsx esi,byte[a+5]
 add ebx,edx
