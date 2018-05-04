@@ -1,91 +1,67 @@
-SECTION .bss
-x resb 4
-a rest 4
-SECTION .text
-B:mov bl,[x]
-cmp bl,11
-jg C
-push bx
-mov dx,3
-mov ecx,a+20
-mov bx,0
-mov ax,3
+sub esp,96
+mov esi,0
+mov ecx,esp
+mov eax,3
+mov ebx,0
+mov edx,36
 int 128
-pop bx
-movsx eax,byte[a+20]
-mov dl,10
-sub eax,48
-imul eax,edx
-mov dl,[a+21]
-lea eax,[eax+edx-30]
-mov[a+ebx],al
-mov bx,[x]
-mov cl,3
-movsx ax,bl
-mov edx,ebx
-idiv cl
-cmp bl,2
-movsx ecx,ah
-setg al
-inc dx
-mul byte[a+ecx]
-mov[x],dl
-sub[a+ebx],al
-jmp B
-C:movsx ebx,byte[a+8]
-movsx edi,byte[a+10]
-movsx esi,byte[a+11]
-movsx ecx,byte[a+6]
-movsx ax,[a+9]
-mov edx,ebx
-imul edx,edi
-mov [a],ax
-movsx eax, byte[a+7]
-mov [x],eax
-imul bx,[a]
-imul eax,esi
-sub eax,edx
-movsx edx,byte[a+3]
-imul esi,ecx
-imul ecx,edi
-sub ebx,esi
-movsx esi,byte[a+4]
-imul edx,eax
-mov eax,[x]
-imul ax,[a]
-imul ebx,esi
-movsx esi,byte[a+5]
-add ebx,edx
-sub ecx,eax
-imul ecx,esi
-lea eax,[ebx+ecx]
-cdq
-mov ecx,6
-idiv ecx
-push eax
-call w
-ret
-w:push ebp
-mov ebp,esp
-push ebx
-mov edx,[ebp+8]
-test dx,dx
-jz A
-mov ecx,10
+lea eax,[esp+1]
+A:movsx ecx,byte[eax-1]
+movsx edx,byte[eax]
+lea ecx,[5*ecx]
+lea ecx,[edx+2*ecx]
+mov[esp+4*esi+48],ecx
+sub[esp+4*esi+36],ecx
+inc esi
+add eax,3
+cmp esi,12
+jl A
+mov ecx,0
+mov edi,9
+B:lea eax,[edi+4]
+mov edx,0
+mov ebx,9
+div ebx
+mov esi,edx
+lea eax,[edi+2]
+mov edx,0
+div ebx
 mov eax,edx
-xor edx,edx
-div cx
-mov ebx,edx
-push eax
-call w
-lea ax,[ebx+48]
-mov[a],al
-mov dx,1
-mov ecx,a
-mov bx,1
-mov ax,4
+mov ebx,[esp+4*eax+48]
+imul ebx,[esp+4*esi+48]
+lea eax,[edi+1]
+mov edx,0
+mov esi,9
+div esi
+mov esi,edx
+lea eax,[edi+5]
+mov edx,0
+mov ebp,9
+div ebp
+mov edx,[esp+4*edx+48]
+imul edx,[esp+4*esi+48]
+sub ebx,edx
+imul ebx,[esp+4*edi+36]
+add ecx,ebx
+add edi,-3
+jg B
+mov edx,0
+mov ebx,6
+mov eax,ecx
+div ebx
+mov ecx,eax
+mov esi,5
+mov edi,10
+C:mov eax,ecx
+mov edx,0
+div edi
+mov ecx,eax
+lea eax,[edx+48]
+mov[esp+esi-1],al
+dec esi
+jne C
+lea ecx,[esp]
+mov eax,4
+mov ebx,1
+mov edx,5
 int 128
-add esp,16
-A:mov ebx,[ebp-4]
-leave
-ret
