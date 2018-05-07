@@ -1,1 +1,1 @@
-use std::io::*;fn main(){let mut b="".into();stdin().read_to_string(&mut b);let a:Vec<i32>=b.split_whitespace().map(|e|e.parse().unwrap()).collect();print!("{}",(0..24).fold(0,|s,i|s-(a[i/2]*a[8-i/12*6-i%3]*a[(i/6+1&2)*3+(i+3)/2%3+3]^-(i as i32%2)))/6-2)}
+use std::io::*;fn main(){let mut b="".into();stdin().read_to_string(&mut b);let a:Vec<i32>=b.split_whitespace().map(|e|e.parse().unwrap()).collect();print!("{}",(0..24).fold(0,|s,i|s+(i as i32%2*2-1)*a[i/2]*a[8-i/12*6-i%3]*a[(i/6+1&2)*3+(i+3)/2%3+3])/6)}
