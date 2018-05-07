@@ -1,0 +1,79 @@
+: $<
+(\d\d \d\d \d\d)\n(\d\d \d\d \d\d)\n(\d\d \d\d \d\d)\n(\d\d \d\d \d\d)\n: $($1with$2)hoge$($1with$3)hoge$($1with$4)
+(\d\d) (\d\d) (\d\d)with(\d\d) (\d\d) (\d\d): "$(sub($4,$1))to$(sub($5,$2))to$(sub($6,$3))"
+(-?\d+)to(-?\d+)to(-?\d+)hoge(-?\d+)to(-?\d+)to(-?\d+)hoge(-?\d+)to(-?\d+)to(-?\d+): div($(add($(add($(mul($(sub($(mul($5,$9)),$(mul($6,$8)))),$1)),$(mul($(sub($(mul($6,$7)),$(mul($4,$9)))),$2)))),$(mul($(sub($(mul($4,$8)),$(mul($5,$7)))),$3)))),6)
+
+
+add\(0*(\d+),0*(\d+)\): _num_add,$1,$2,;9876543210;9876543210
+add\(-0*(\d+),0*(\d+)\): sub($2,$1)
+add\(0*(\d+),-0*(\d+)\): sub($1,$2)
+add\(-0*(\d+),-0*(\d+)\): "-" add($1,$2)
+add\(.*\): "ERROR: add requires 2 digits\n"
+
+sub\(0*(\d+),0*(\d+)\): _num_retry_sub,$1,$2,$(_num_sub,$1,$2,;0123456789;9876543210)
+sub\(-0*(\d+),0*(\d+)\): "-" add($1,$2)
+sub\(0*(\d+),-0*(\d+)\): add($1,$2)
+sub\(-0*(\d+),-0*(\d+)\): sub($2,$1)
+sub\(.*\): "ERROR: sub requires 2 digits\n"
+
+mul\(0*(\d+),0*(\d+)\): _num_mul,$1,$2,0
+mul\(-0*(\d+),0*(\d+)\): "-" mul($1,$2)
+mul\(0*(\d+),-0*(\d+)\): "-" mul($1,$2)
+mul\(-0*(\d+),-0*(\d+)\): mul($1,$2)
+mul\(.*\): "ERROR: mul requires 2 digits\n"
+
+divmod\(0*(\d+),0*(\d+)\): _num_divmod,$1,$2,,
+divmod\(0*(\d+),0*-(\d+)\): _num_divmod_fix_sign,$(_num_divmod,$1,$2,,),-,
+divmod\(0*-(\d+),0*(\d+)\): _num_divmod_fix_sign,$(_num_divmod,$1,$2,,),-,-
+divmod\(0*-(\d+),0*-(\d+)\): _num_divmod_fix_sign,$(_num_divmod,$1,$2,,),,-
+divmod\(.*\): "ERROR: divmod requires 2 digits\n"
+
+div\((-?\d+),(-?\d+)\): _num_pick_first,$(divmod($1,$2))
+div\(.*\): "ERROR: div requires 2 digits\n"
+mod\((-?\d+),(-?\d+)\): _num_pick_second,$(divmod($1,$2))
+mod\(.*\): "ERROR: mod requires 2 digits\n"
+
+# Implementation
+
+_num_get_10th,.{10}(.).*: "$1"
+_num_get_carry,.{0,10}(.?).*: "$1"
+
+# _num_add(a,b,carry;helper)
+_num_add,(?\:(\d*),|,(\d*)),;.*: "$1$2"
+_num_add,(?\:(\d*),|,(\d*)),.(;.*): _num_add,1,$1$2,$3
+_num_add,(\d*)(\d),(\d*)(\d),(.?);.*?\2(.*?);.*?(\4.*): "$(_num_add,$1,$3,$(_num_get_carry,$5$6$7);9876543210;9876543210)$(_num_get_10th,$5$6$79876543210)"
+
+# _num_sub(a,b,carry;helper)
+_num_sub,(\d*),,;.*: "$1"
+_num_sub,,(\d*),.?;.*: "E"
+_num_sub,(\d*),,.(;.*): _num_sub,$1,1,$2
+_num_sub,(\d*)(\d),(\d*)(\d),(.?)(;.*?(\2.*?);.*?\4(.*)): "$(_num_sub,$1,$3,$(_num_get_carry,$5$8$7)$6)$(_num_get_10th,$5$8$70123456789)"
+
+_num_retry_sub,(\d+),(\d+),E\d+: "-" _num_sub,$2,$1,;0123456789;9876543210
+_num_retry_sub,\d+,\d+,0*(\d+): "$1"
+
+# _num_add_n_times(sum,a,n) => sum+a*n
+_num_add_n_times,(\d+),\d+,0: "$1"
+_num_add_n_times,(\d+),(\d+),(\d): _num_add_n_times,$(add($1,$2)),$2,$(sub($3,1))
+
+# _num_mul(a,b,sum)
+_num_mul,(\d+),(\d*)(\d),(\d+): _num_mul,$10,$2,$(_num_add_n_times,$4,$1,$3)
+_num_mul,\d+,,(\d+): "$1"
+
+# _num_divmod_sub(mod,b,div,prev_mod)
+_num_divmod_sub,-\d+,\d+,(\d),(\d*): "$1,$2"
+_num_divmod_sub,(\d+),(\d+),(-?\d),\d*: _num_divmod_sub,$(sub($1,$2)),$2,$(add($3,1)),$1
+
+# _num_divmod(a,b,div,mod)
+_num_divmod,(\d+),0.*: "ERROR: divided by 0\n"
+_num_divmod,,\d+,,0*(\d+): "0,$1"
+_num_divmod,,\d+,0*(\d+),0*(\d+): "$1,$2"
+_num_divmod,(\d)(\d*),(\d+),(\d*),(\d*): _num_divmod,$2,$3,$4$(_num_divmod_sub,$5$1,$3,-1,)
+
+# _num_divmod_fix_sign(a,b,a_sign,b_sign)
+_num_divmod_fix_sign,0,(\d+),-,(-?): _num_divmod_fix_sign,0,$1,,$2
+_num_divmod_fix_sign,(\d+),0,(-?),-: _num_divmod_fix_sign,$1,0,$2,
+_num_divmod_fix_sign,0*(\d+),0*(\d+),(-?),(-?): "$3$1,$4$2"
+
+_num_pick_first,(-?\d+),-?\d+: "$1"
+_num_pick_second,-?\d+,(-?\d+): "$1"
