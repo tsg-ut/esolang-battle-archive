@@ -1,1 +1,1 @@
-import std.stdio;void main(){int p,q,x,i;for(int[12]X;readf("%d ",p);)x+=i/9*(X[i]=p-X[i%3])*(X[p=++i%3+3]*X[q=-~i%3+6]-X[p+3]*X[q-3]);write(x/6);}
+import std.stdio;void main(){int p,x,i;for(int[12]X;readf("%d ",p);)x+=i/9*(X[i]=p-X[i%3])*(X[++i%3+3]*X[p=-~i%3+6]-X[i%3+6]*X[p-3]);write(x/6);}
