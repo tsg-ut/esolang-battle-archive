@@ -1,1 +1,1 @@
-use std::io::*;fn main(){let mut b=[0;36];let _=stdin().read_exact(&mut b);let mut m=[0;12];let mut x=0;for i in 0..12{m[i]=b[i*3]as i32*10+b[i*3+1]as i32-m[i%3];if i>8{x+=m[i]*(m[(i+1)%3+3]*m[(i+2)%3+6]-m[(i+1)%3+6]*m[(i+2)%3+3])}}print!("{}",x/6)}
+use std::io::*;fn main(){let mut b=[0;36];stdin().read(&mut b);let mut m=[0;12];print!("{}",(0..12).fold(0,|x,i|{m[i]=b[i*3]as i32*10+b[i*3+1]as i32-m[i%3];x+i as i32/9*m[i]*(m[(i+1)%3+3]*m[(i+2)%3+6]-m[(i+1)%3+6]*m[(i+2)%3+3])})/6)}
