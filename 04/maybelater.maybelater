@@ -1,0 +1,24 @@
+when q is 0{
+p=readall a
+x=(48-(ord p[1]))+10*(48-(ord p))
+y=(48-(ord p[4]))+10*(48-(ord p[3]))
+z=(48-(ord p[7]))+10*(48-(ord p[6]))
+a=x+((ord p[10])-48)+10*((ord p[9])-48)
+b=y+((ord p[13])-48)+10*((ord p[12])-48)
+c=z+((ord p[16])-48)+10*((ord p[15])-48)
+d=x+((ord p[19])-48)+10*((ord p[18])-48)
+e=y+((ord p[22])-48)+10*((ord p[21])-48)
+f=z+((ord p[25])-48)+10*((ord p[24])-48)
+g=x+((ord p[28])-48)+10*((ord p[27])-48)
+h=y+((ord p[31])-48)+10*((ord p[30])-48)
+i=z+((ord p[34])-48)+10*((ord p[33])-48)
+j=a*e*i
+m=a*f*h
+k=b*f*g
+n=b*d*i
+l=c*d*h
+o=c*e*g
+p=m+n+o
+q=(j+k+l-p)/6
+}
+print q=0
