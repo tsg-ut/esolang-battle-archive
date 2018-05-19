@@ -1,0 +1,1 @@
+c;main(i){for(;~scanf("%c\n",&c);i++)printf("%c",(c-65+i)%26+65);}
