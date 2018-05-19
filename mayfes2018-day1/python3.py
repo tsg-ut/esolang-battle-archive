@@ -1,0 +1,1 @@
+print(''.join([chr(ord(x)+i+1 if ord(x)+i+1<91 else ord(x)+i+1-26) for i, x in enumerate(input())]))
