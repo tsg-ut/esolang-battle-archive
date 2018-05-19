@@ -1,1 +1,1 @@
-print(''.join([chr((ord(x)+i-12)%26+65)for i,x in enumerate(input())]))
+print(''.join(chr((ord(x)+i-12)%26+65)for i,x in enumerate(input())))
