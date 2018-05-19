@@ -1,1 +1,1 @@
-print(''.join([chr(ord(x)+i+1 if ord(x)+i+1<91 else ord(x)+i+1-26) for i, x in enumerate(input())]))
+print(''.join([chr((ord(x)+i+1-13)%26+65) for i, x in enumerate(input())]))
