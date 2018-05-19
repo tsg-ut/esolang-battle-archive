@@ -1,1 +1,1 @@
-c;main(i){for(;c=getchar()-10;)putchar((c-55+i++)%26+65);}
+main(i){for(;i<27;)putchar((getchar()-13+i++)%26+65);}
