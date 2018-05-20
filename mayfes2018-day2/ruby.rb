@@ -1,1 +1,1 @@
-i=0;gets.chop.chars{|c|p i^=c.to_i}
+z=0;gets.chop.bytes{|c|p z^=c%2}
