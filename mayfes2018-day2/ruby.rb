@@ -1,1 +1,1 @@
-z=0;gets.chop.bytes{|c|p z^=c%2}
+p$.^=C.to_i while ?/<C=$<.getc
