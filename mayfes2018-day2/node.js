@@ -1,0 +1,1 @@
+console.log((""+require("fs").readFileSync(z=0)).replace(/./g,q=>z^=q%2))
