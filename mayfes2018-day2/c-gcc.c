@@ -1,1 +1,1 @@
-z=48;main(i){for(;i++<101;)putchar(z^=getchar()%2);}
+z=48;main(i){for(;i=getchar()-10;)putchar(z^=i%2);}
