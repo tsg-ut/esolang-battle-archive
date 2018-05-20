@@ -1,1 +1,1 @@
-p$.^=C.to_i while ?/<C=$<.getc
+100.times{p$.^=$<.getc.to_i}
