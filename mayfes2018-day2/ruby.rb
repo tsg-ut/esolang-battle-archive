@@ -1,1 +1,1 @@
-i=0;gets.chop.chars.map{|c|print i^=c.to_i}
+i=0;gets.chop.chars.map{|c|p i^=c.to_i}
