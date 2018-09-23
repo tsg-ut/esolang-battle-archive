@@ -1,1 +1,1 @@
-@user f ` (A,B) .@div A B .@if # .@outd 1 .@m A # .@outd 0 .@m A  ` .@user g ` (A,C,R) .@sub A 10 .@if # C A R # ` .@user m ` (M) .@inc .@g .@f M ` .@inc .@m 
+@user f ` (A,B) .@div A B .@if # .@outd 1 .@m A# .@outd 0 .@m A` .@user g ` (A,C,R) .@sub A 10 .@if # C A R#` .@user m ` (M) .@inc .@g .@f M` .@inc .@m 
