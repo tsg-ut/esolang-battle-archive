@@ -1,4 +1,3 @@
-h=int(input())
-w=int(input())
-s='*'*w+'\n'
-print(s+('*'+' '*(w-2)+'*\n')*(h-2)+s)
+y=int(input())-2
+x=int(input())
+print("*"*x+("\n*"+" "*(x-2)+"*")*y+"\n"+"*"*x)
