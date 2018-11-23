@@ -1,5 +1,4 @@
-y=int(input())
-x=int(input())
-print("*"*x)
-print(("*"+(" "*(x-2))+"*\n")*(y-2),end="")
-print("*"*x)
+h =int(input())
+w =int(input())
+s='*'*w+'\n'
+print (s+('*'+' '*(w-2)+'*\n')*(h-2)+s)
