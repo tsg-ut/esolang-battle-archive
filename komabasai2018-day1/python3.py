@@ -1,0 +1,5 @@
+y=int(input())
+x=int(input())
+print("*"*x)
+print(("*"+(" "*(x-2))+"*\n")*(y-2),end="")
+print("*"*x)
