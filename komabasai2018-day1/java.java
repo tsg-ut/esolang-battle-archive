@@ -1,1 +1,1 @@
-import java.util.*;interface A{static void main(String[]a){int i,j,w,h;Scanner s=new Scanner(System.in);h=s.nextInt();w=s.nextInt();String k="",q="*",p=" ",n="\n";for(i=0;i<w;i++)k+=q;k+=n;for(i=0;i<h-2;i++){k+=q;for(j=0;j<w-2;j++)k+=p;k+=q+n;}for(i=0;i<w;i++)k+=q;System.out.println(k);}}
+import java.util.*;interface A{static void main(String[]a){int i,j,w,h;Scanner s=new Scanner(System.in);h=s.nextInt();w=s.nextInt();String k="",q="*",p=" ",n="\n";for(i=0;i<w;i++)k+=q;k+=n;for(i=0;i<h-2;i++){k+=q;for(j=0;j++<w-2;)k+=p;k+=q+n;}for(i=0;i++<w;)k+=q;System.out.println(k);}}
