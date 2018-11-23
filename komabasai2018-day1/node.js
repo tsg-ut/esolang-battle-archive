@@ -2,6 +2,6 @@
 `
 s=a="*".repeat(w)+`
 `
-for(h--;--h;)s+=`*${" ".repeat(w-2)}*
-`
+s+=`*${" ".repeat(w-2)}*
+`.repeat(h-2)
 console.log(s+a)
