@@ -1,1 +1,1 @@
-import std.stdio;void main(){int i=0;for(string s=readln;i<50;i++)write(i<33?s[i]&s[i+5]&s[i+12]&s[i+17]&1:0);}
+import std.stdio;void main(){int i=0;for(auto s=readln;i<50;i++)write(i<33?s[i]&s[i+5]&s[i+12]&s[i+17]&1:0);}
