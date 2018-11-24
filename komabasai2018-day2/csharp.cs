@@ -1,1 +1,1 @@
-class M{static void Main(string[]a){string s=System.Console.ReadLine();for(int i=0;i<50;i++)System.Console.Write(i<33&&s[i]=='1'&&s[i+5]=='1'&&s[i+12]=='1'&&s[i+17]=='1'?1:0);}}
+class M{static void Main(string[]a){string s=System.Console.ReadLine();for(int i=0;i<50;i++)System.Console.Write(i<33&&s[i]>'0'&&s[i+5]>'0'&&s[i+12]>'0'&&s[i+17]>'0'?1:0);}}
