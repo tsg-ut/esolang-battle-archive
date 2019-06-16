@@ -1,3 +1,3 @@
 open String
-let l=ref 0
-let rec r z=r(read_line()|>fun s->let i=try index s 'K'with _->try l:=index s 'T';!l with _-> !l in print_endline(make i ' '^make(!l-i+1)'*'))let()=r()
+let rec f s t=try let t=read_line()in print_endline s;f s t with _->index s 'T'+1|>sub ((index t 'K'|>sub t 0)^make 99 '*') 0|>print_string
+let _=f(read_line())""
