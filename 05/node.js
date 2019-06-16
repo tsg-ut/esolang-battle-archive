@@ -1,5 +1,2 @@
 s=""+require("fs").readFileSync(0)
-i=s.search(/T/)
-s=s.replace(RegExp(`\n(.{${i}}).`,"g"),"\n$1#")
-s=s.replace(/K *#/,m=>`K${"#".repeat(m.length-1)}`)
-console.log(s)
+console.log(s.replace(RegExp(`\n(.{${s.search(/T/)}}).`,"g"),"\n$1#").replace(/K *#/,m=>`K${"#".repeat(m.length-1)}`))
