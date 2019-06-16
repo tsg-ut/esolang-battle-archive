@@ -1,6 +1,1 @@
-$s=`dd`;
-$s=~/T/;
-$i=length$`;
-$s=~s/(?<=\n.{$i}) /#/g;
-$s=~s/(?<=K) *(?=#)/"#"x length$&/ge;
-print$s
+print$a=$b=<>;$a=~tr/T/*/;<>;$c=$_,print$a for<>;$_=$a^$b^$c;s/\^ *K|K *\^/'*'x length($&)/e;print
