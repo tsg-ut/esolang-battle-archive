@@ -11,9 +11,9 @@ inspect s tallying t for leading " ".
 begin.
 display s.
 accept p.
-inspect p tallying k for leading " ".
+move 0 to k.
+inspect p tallying k for all " ".
 if k = 50 then go to begin end-if.
-if k = 0 then go to begin end-if.
 string p(1 : t) "T" into s.
 inspect s replacing all " " by "*" after initial "K" before initial "T".
 display s.
