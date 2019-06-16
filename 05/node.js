@@ -1,1 +1,2 @@
-a=require("fs").readFileSync(0);for(i=0;i+51<a.length;)a[i+51]|=a[i++];for(;a[++i]!=116;)a[i]|=a[i-1];console.log(""+a)
+l=(""+require('fs').readFileSync(0))
+console.log(l.replace(/((K|\s){50})./g,"$1T").replace(/(?<=K.*) (?=.*T)/g,"*"))
