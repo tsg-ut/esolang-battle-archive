@@ -1,2 +1,2 @@
-x=`dd`.split '
-';x[..-2].map{|s|puts s.sub(x[0]=~/T/||0,'T').sub /K *T/{|y|"K"*y.size}}
+s=`dd`
+puts s.gsub(/\n.{#{s=~/T/}}/,"\\0T").sub /K */{|y|"K"*y.size}
