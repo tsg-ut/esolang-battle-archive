@@ -1,1 +1,1 @@
-lines>>.&{given $=$_~|($!//=$_) {1 while s/k\s/kk/;.say}}
+lines».&{($=$_~|($ //=$_))~~{1 while s/k\s/kk/;.say}}
