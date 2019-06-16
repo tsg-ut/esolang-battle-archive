@@ -1,3 +1,2 @@
 a,*b,c=open(0)
-i=a.find("T")
-print(a+a*len(b)+(c.rstrip()+"*"*i)[:i+1])
+print(a+a*len(b)+(c.rstrip()+"*"*99)[:a.find("T")+1])
