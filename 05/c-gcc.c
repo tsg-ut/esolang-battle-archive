@@ -1,1 +1,1 @@
-b,c;main(d){for(;~(c=getchar());d=c%7?++d%51:1)putchar(!d|b?99:c),b=c&1|b*d;}
+x,k;main(c){for(;~(c=getchar());)putchar(c|=c&4?x=0:++x%51?k|=c&1:!(k=0));}
