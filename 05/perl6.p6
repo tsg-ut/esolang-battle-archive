@@ -1,1 +1,1 @@
-say $/=get;$!=.index('K'),say $!??.subst('K','R'x$/.index("T")-$!+1)!!$/for lines
+say $!=get;say m/K/??.subst('K','R'x$!.index("T")-$/.from+1)!!$! for lines
