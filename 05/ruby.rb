@@ -1,1 +1,1 @@
-a,*b,c=*$<;puts a,b.map{a},' '*(g=c=~/K/)+?a*(1-g-=a=~/T/)
+a,*b,c=*$<;puts a,b.map{a},(c.rstrip+?a*99)[0..a=~/T/]
