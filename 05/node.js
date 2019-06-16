@@ -1,1 +1,1 @@
-s=""+require("fs").readFileSync(0);console.log(s.replace(RegExp(`(\n.{${s.search(/T/)}}).`,"g"),"$1#").replace(/K */,m=>"K".repeat(m.length)))
+s=""+require("fs").readFileSync(0);console.log(s.replace(eval(`/(\\n.{${s.search(/T/)}})./g`),"$1T").replace(/K */,m=>"K".repeat(m.length)))
