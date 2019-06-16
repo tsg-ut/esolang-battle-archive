@@ -1,1 +1,2 @@
-a,*b,c=*$<;puts a,b.map{a},(c.rstrip+?a*99)[0..a=~/T/]
+#!ruby -np
+$_[I||=$_=~/T/]=?T;$_[/K */]&&=?K*$&.size
