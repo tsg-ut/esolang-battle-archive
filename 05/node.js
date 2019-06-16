@@ -1,1 +1,1 @@
-console.log((""+require('fs').readFileSync(0)).replace(/([K\s]{50})./g,"$1T").replace(/(?<=K.*) (?=.*T)/g,"*"))
+console.log((""+require('fs').readFileSync(0)).replace(/([K\s]{50})./g,"$1T").replace(/(?<=K.*) (?=.*T)/g,0))
