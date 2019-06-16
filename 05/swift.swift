@@ -1,4 +1,4 @@
-var b=false,c=0,d=1
+var b=false,d=1
 while let l=readLine(){print(String(
 l.map{c in
 if"T"==c{d=0}
