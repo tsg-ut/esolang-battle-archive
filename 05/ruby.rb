@@ -1,4 +1,1 @@
-s=`dd`
-s.gsub!(/^ {#{s[/^ *K/].size-1}}\K /,?#)
-s.gsub!(/# *(?=T)/){?#*$&.size}
-puts s
+s=`dd`;puts s.gsub(/^ {#{s[/^ *K/].size-1}}\K /,?#).gsub(/# *(?=T)/){?#*$&.size}
