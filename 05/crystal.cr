@@ -1,3 +1,5 @@
-x=`dd`.split '
-'
-x[..-2].map{|s|puts s.sub(x[0].index('T')||0,'T').sub /K *T/{|y|"K"*y.size}}
+x=STDIN.gets_to_end.lines
+a=x[0]+"
+"
+c=x[-1].gsub("K","a"*99)
+puts a*~-x.size,c[0..a=~/T/]
