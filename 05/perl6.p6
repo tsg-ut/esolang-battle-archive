@@ -1,1 +1,1 @@
-my $s=get;$s.say;lines.map({my $k=.index('K');say $k??.subst('K','R'x$s.index('T')-$k+1)!!$s;});
+my $s=get;$s.say;lines.map({my $k=.index('K');say $k??.subst('K','R'x$s.index("T")-$k+1)!!$s})
