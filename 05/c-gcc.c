@@ -1,1 +1,1 @@
-a,c[99];main(i){for(;putchar(a=c[i]|=getchar()|a&1)-117;i=i%51+1);}
+a,c[99];main(i){putchar(a=c[i]|=getchar()|a&1)-117&&main(i%51+1);}
