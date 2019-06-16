@@ -1,1 +1,1 @@
-$_=`dd`;/T/;s/^.{$-[0]}\K /T/mg;s/K */K x length$&/ge;print
+$_=`dd`;/T/;s/\n.{$-[0]}\K/T/g;s/K */K x length$&/ge;print
