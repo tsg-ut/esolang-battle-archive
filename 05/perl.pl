@@ -1,1 +1,1 @@
-$_=`dd`;/T/;s/(?<=\n.{@{[length$`]}}) /#/g;s/(?<=K) */"#"x length$&/ge;print
+print$a=<>;<>;$c=$_,print$a for<>;$_=$a^$c;tr/\0/ /;0while s/k /kk/;print
