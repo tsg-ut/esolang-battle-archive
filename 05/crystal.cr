@@ -1,2 +1,1 @@
-puts (s=`dd`).gsub(/
-.{#{s=~/T/}}/,"\\0T").sub /K */{|y|"K"*y.size}
+puts `dd`.gsub(/([^T]{50})./,"\\1T").gsub(/ (?= *T *\Z)/,"0")
