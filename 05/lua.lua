@@ -1,11 +1,7 @@
-o=io.read
-i=o"l"
-j=i
-r=i:find"T"
-while not j:find"K"do
-print(i)
-j=o"l"
-end
-l=j:find"K"-1
-f=i.rep
-print(f(" ",l)..f("K",r-l))
+a=0
+i=1
+c={}
+while a<117 do
+s=io.read(1)i=i%51+1
+c[i]=(c[i] or 0)|s:byte(1)a=c[i]|a&1
+io.write(string.char(a))end
