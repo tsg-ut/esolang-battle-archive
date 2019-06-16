@@ -1,10 +1,10 @@
 let f=stdin.ReadLine
 let w(x:string)=stdout.WriteLine x
 let T=f()
-let t=T.IndexOf 'T'
+let t=T.IndexOf"T"
 w(T)
 let mutable i=f()
-while i.IndexOf 'K'<0 do
+while i.IndexOf"K"<0 do
  w(T);i<-f()
-let k=i.IndexOf 'K'
+let k=i.IndexOf"K"
 w(i.[..k]+String.replicate(t-k)"K")
