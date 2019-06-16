@@ -3,23 +3,16 @@ character(len=50)::s
 read(*,'(a)')s
 print('(a)'),s
 j=index(s,'T')
-do
+k=0
+do while (k.eq.0)
 read(*, '(a)')s
 s(j:j)='R'
 k=index(s,'K')
-if(k>0)then
-do i=1,k-1
-write(*,'(a)',advance='no')' '
-end do
+if(k.gt.0)then
 do i=k,j
-write(*,'(a)',advance='no')'R'
+s(i:i)='R'
 end do
-do i=1,50
-write(*,'(a)',advance='no')' '
-end do
-exit
-else
-print('(a)'),s
 end if
+print('(a)'),s
 end do
 end program x
