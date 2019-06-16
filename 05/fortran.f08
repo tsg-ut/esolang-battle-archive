@@ -3,11 +3,11 @@ character(len=50)::s
 read(*,'(a)')s
 print('(a)'),s
 j=index(s,'T')
-do while (.true.)
+do
 read(*, '(a)')s
 s(j:j)='R'
 k=index(s,'K')
-if(k.gt.0)then
+if(k>0)then
 do i=1,k-1
 write(*,'(a)',advance='no')' '
 end do
