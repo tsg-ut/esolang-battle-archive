@@ -1,9 +1,14 @@
-i=io.read("*l")
+Y=print
+R=io.read
+Z="K"
+i=R("*l")
+K=i.rep
+F=i.find
 j=i
-r=i.find(i,"T")
-while not i.find(j,"K") do
-    print(i)
-    j=io.read("*l")
+r=F(i,"T")
+while not F(j,Z) do
+Y(i)
+j=R("*l")
 end
-l=i.find(j,"K")
-print(i.rep(" ",l-1)..i.rep("K",r-l+1)..i.rep(" ",i.len(i)-r))
+l=F(j,Z)
+Y(K(" ",l-1)..K(Z,r-l+1)..K(" ",i.len(i)-r))
