@@ -1,3 +1,3 @@
 [i]=strchr(l=fgetl(0),"T");
-do disp(l);until[t]=strchr(fgets(0),"K")
-disp([repmat([' '],1,t-1),repmat(['*'],1,1+i-t)])
+do disp(l);until[t]=strchr(k=fgets(0),"K")
+disp([substr(k,1,t),repmat(['*'],1,i-t)])
