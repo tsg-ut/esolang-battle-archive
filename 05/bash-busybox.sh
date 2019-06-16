@@ -1,5 +1,4 @@
-IFS= read -r a;
-while IFS= read -r b;do
+IFS= read -r a;while IFS= read -r b;do
 echo "$a"
 f="$b"
 g="$f"
