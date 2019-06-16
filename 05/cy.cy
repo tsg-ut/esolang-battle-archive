@@ -1,0 +1,1 @@
+"\\#{x=gets;t=1+x.index(?T);print x;while !u=gets.index(?K) do print x end;print (' '*u + ?= * (t-u))}"
