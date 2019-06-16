@@ -1,4 +1,3 @@
-t=l=fgetl(0);
-[i]=strchr(l,"T");
-do disp(l);until [t]=strchr(fgets(0),"K")
+[i]=strchr(l=fgetl(0),"T");
+do disp(l);until[t]=strchr(fgets(0),"K")
 disp([repmat([' '],1,t-1),repmat(['*'],1,1+i-t)])
