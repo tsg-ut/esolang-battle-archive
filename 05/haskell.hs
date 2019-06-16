@@ -1,2 +1,4 @@
-main=interact$unlines.s((s(\a b->max[a..'S'][b]!!0).).zipWith max).lines
+main=interact$unlines.s((s(!).).zipWith max).lines
+'K'!' '='K'
+_!c=c
 s=scanl1
