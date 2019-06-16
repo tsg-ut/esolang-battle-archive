@@ -1,1 +1,1 @@
-say $!=get;say m/K/??.subst('K','R'x$!.index("T")-$/.from+1)!!$! for lines
+say $!=get;say m|K|??S|K|{'K'x$!.index('T')-$/.from+1}|!!$! for lines
