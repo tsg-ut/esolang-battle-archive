@@ -1,1 +1,1 @@
-x;main(c){for(;~(c=getchar());putchar(c|=x<1))x=c&4?0:-~x%51-c%2*51;}
+x;main(c){for(;~(c=getchar());putchar(c|x<1))x=c&4?0:-~x%51-c%2*51;}
