@@ -1,14 +1,10 @@
-Y=print
-R=io.read
-Z="K"
-i=R("*l")
-K=i.rep
-F=i.find
+i=io.read"l"
 j=i
-r=F(i,"T")
-while not F(j,Z) do
-Y(i)
-j=R("*l")
+r=i:find"T"
+while not j:find"K"do
+print(i)
+j=io.read"l"
 end
-l=F(j,Z)
-Y(K(" ",l-1)..K(Z,r-l+1)..K(" ",i.len(i)-r))
+l=j:find"K"
+f=i.rep
+print(f(" ",l-1)..f("K",r-l+1)..f(" ",#i-r))
