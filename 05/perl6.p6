@@ -1,1 +1,1 @@
-say $!=get;say m|K|??S[K]='K'x$!.index('T')-$/.from+1!!$! for lines
+lines>>.&{given $=$_~|($!//=$_) {1 while s/k\s/kk/;.say}}
