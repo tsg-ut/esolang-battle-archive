@@ -1,2 +1,2 @@
 #!perl -p
-/T/?$r=$':s/.$r/T\n/;1while s/K /KK/
+$t=$_|=$t;1while s/k /kk/
