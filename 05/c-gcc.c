@@ -1,1 +1,1 @@
-b;char c[99],d[99];main(){gets(c);while(gets(d))puts(c);for(;d[++b]-75;);for(;c[b]-84;)++c[b++];puts(c);}
+b;char c[99],d[9];main(){gets(c);while(gets(d))puts(c);for(;d[++b]-75;);for(;c[b]-84;)++c[b++];puts(c);}
