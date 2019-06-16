@@ -1,9 +1,10 @@
-i=io.read"l"
+o=io.read
+i=o"l"
 j=i
 r=i:find"T"
 while not j:find"K"do
 print(i)
-j=io.read"l"
+j=o"l"
 end
 l=j:find"K"
 f=i.rep
