@@ -1,1 +1,1 @@
-s[90];main(p,i,q,r){gets(s);r=(int)s;p=strchr(s,84)-r;for(;gets(s),i=p;){for(;i--;)putchar(32);puts("*");q=strchr(s,75);if(q){for(i=q-r;i--;)putchar(32);for(r+=p-q;~r--;)putchar(42);break;}}}
+b;char c[99],d[99];main(){gets(c);while(gets(d))puts(c);for(;d[++b]-75;);for(;c[b]-84;)++c[b++];puts(c);}
