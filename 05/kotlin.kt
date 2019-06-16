@@ -1,4 +1,5 @@
 fun main(){var s=readLine()!!
-println(s)
-val l=s.indexOf('T')
-while(0<1)println(Regex("K *").replace(readLine()!!.replaceRange(l,l,"r"),{"r".repeat(it.value.length)}))}
+var d=0
+do{d=readLine()!!.indexOf('K')
+println(s)}while(d<0)
+println(" ".repeat(d)+"K".repeat(s.indexOf('T')-d+1))}
