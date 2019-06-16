@@ -1,1 +1,1 @@
-x,k;main(c){for(;~(c=getchar());)putchar(c|=c&4?x=0:++x%51?k|=c&1:!(k=0));}
+c;main(d,b){c=getchar();putchar(d*b?c:99),b|d&&main(c%7?++d%51:1,~c%2*b);}
