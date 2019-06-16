@@ -1,4 +1,4 @@
-IFS= read -r a;while IFS= read -r b;do
+IFS= read a;while IFS= read b;do
 echo "$a";f="$b";g="$f"
 done
 c=`echo "$a"|sed -r 's/T.+/T/'`
