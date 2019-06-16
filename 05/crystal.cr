@@ -1,5 +1,3 @@
-a=gets('_')||""
-t=a=~/T/||0
-h,k=(a=~/K/||0).divmod 51
-h.times{puts a.lines[0]}
-puts " "*k+"K"*(t-k+1)
+x=`dd`.split('
+')[..-2]
+x.map{|s|puts s.sub(x[0].index('T')||0,'T').sub(/K *T/){|y|"K"*y.size}}
