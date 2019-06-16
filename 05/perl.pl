@@ -1,1 +1,1 @@
-$_=`dd`;/T/;s/\n.{$-[0]}\K/T/g;s/K */K x length$&/ge;print
+$/=0;$_=<>;s/([^T]{50})./$1T/g;0while s/K /KK/g;print
