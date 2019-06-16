@@ -6,6 +6,6 @@ while not j:find"K"do
 print(i)
 j=o"l"
 end
-l=j:find"K"
+l=j:find"K"-1
 f=i.rep
-print(f(" ",l-1)..f("K",r-l+1))
+print(f(" ",l)..f("K",r-l))
