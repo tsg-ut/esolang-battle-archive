@@ -1,1 +1,1 @@
-b,c;main(d){for(;~(c=getchar());d=++d%51){if(c==84)d=0;b=c&1|b&&d;putchar(!d||b?99:c);}}
+b,c;main(d){for(;~(c=getchar());d=++d%51)d*=c!=84,b=c&1|b&&d,putchar(!d|b?99:c);}
