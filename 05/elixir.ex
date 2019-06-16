@@ -1,3 +1,6 @@
-a=String.split IO.read(:all),"
-",trim: true
-Enum.each a,fn x->IO.puts Regex.replace ~r/K *T/,String.slice(x,0,:binary.match(hd(a),"T")|>elem(0))<>"T",&(String.duplicate("K",byte_size(&1)))end
+import String
+f=fn s,x,t,f->case IO.gets x do
+:eof->IO.write slice trim_trailing(t)<>duplicate("*",99),0,String.length trim_trailing s
+t->f.(s,s,t,f)end
+end
+f.(IO.gets(""),"","",f)
