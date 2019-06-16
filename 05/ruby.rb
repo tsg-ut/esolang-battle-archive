@@ -1,1 +1,1 @@
-s=`dd`;puts s.gsub(/^.{#{s=~/T/}}\K /,?T).sub(/K */){?K*$&.size}
+a,*b,c=*$<;puts a,b.map{a};puts' '*(g=c=~/K/)+?a*(1-g+(a=~/T/))
