@@ -1,4 +1,3 @@
-open List
 open String
 let p=print_endline
 let l=ref 0
