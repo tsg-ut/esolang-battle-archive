@@ -1,1 +1,1 @@
-s=`dd`;puts s.gsub(/^(.{#{s=~/T/}}) /,'\1T').sub(/K */){?K*$&.size}
+s=`dd`;puts s.gsub(/^.{#{s=~/T/}}\K /,?T).sub(/K */){?K*$&.size}
