@@ -1,12 +1,2 @@
 <?php
-while($_=readline()){
-$t||$t=strpos($_,"T");
-$k=strpos($_,"K");
-if($k){
-echo str_repeat(" ",$k);
-echo str_repeat("K",$t-$k+1);
-}else{
-echo str_repeat(" ",$t);
-echo "T\n";
-}
-}
+$b=0;$d=1;while($c=fread(STDIN,1)){if($c=='T')$d=0;$b=$c=='K'||$b&&$d;echo(!$d||$b?'A':$c);$d=($d+1)%51;}
