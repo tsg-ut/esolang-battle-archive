@@ -1,1 +1,1 @@
-my $s=get;$s.say;my $k=.index('K'),say $k??.subst('K','R'x$s.index("T")-$k+1)!!$s for lines
+$/=get;$/.say;$!=.index('K'),say $!??.subst('K','R'x$/.index("T")-$!+1)!!$/ for lines
