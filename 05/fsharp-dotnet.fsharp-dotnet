@@ -5,11 +5,11 @@ let T=f()
 let t=T.IndexOf 'T'
 [<EntryPoint>]
 let main v =
-    w(T)
-    let mutable i=f()
-    while i.IndexOf 'K'<0 do
-        w(T)
-        i<-f()
-    let k=i.IndexOf 'K'
-    w (i.[..k]+String.replicate (t-k) "K")
-    0
+ w(T)
+ let mutable i=f()
+ while i.IndexOf 'K'<0 do
+  w(T)
+  i<-f()
+ let k=i.IndexOf 'K'
+ w(i.[..k]+String.replicate (t-k) "K")
+ 0
