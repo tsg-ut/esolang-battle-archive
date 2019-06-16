@@ -1,0 +1,1 @@
+s[90];main(p,i,q){gets(s);p=strchr(s,'T')-(int)s;for(;gets(s),i=p;){for(;i--;)putchar(32);puts("*");q=strchr(s,'K');if(q){for(i=q-(int)s;i--;)putchar(32);for(i=p-(q-(int)s)+1;i--;)putchar(42);break;}}}
