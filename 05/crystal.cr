@@ -1,1 +1,1 @@
-puts `dd`.gsub(/([^T]{50})./,"\\1T").gsub(/ (?= *T *\Z)/,"0")
+puts `dd`.gsub(/[^T]{50}\K./,"T").sub /K */{|y|"K"*y.size}
