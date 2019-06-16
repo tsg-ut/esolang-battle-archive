@@ -1,1 +1,1 @@
-$_=`dd`;/T/;s/(?<=\n.{$-[0]}) /#/g;s/(?<=K) */"#"x length$&/ge;print
+$_=`dd`;/T/;s/(?<=\n.{$-[0]}) /T/g;s/K */"K"x length$&/ge;print
