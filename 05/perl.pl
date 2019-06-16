@@ -1,1 +1,1 @@
-print$a=<>;<>;$c=$_,print$a for<>;$_=$a^$c;tr/\0/ /;0while s/k /kk/;print
+$_=`dd`;/T/;s/(?<=\n.{$-[0]}) /#/g;s/(?<=K) */"#"x length$&/ge;print
