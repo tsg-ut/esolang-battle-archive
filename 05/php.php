@@ -1,2 +1,2 @@
 <?php
-$b=0;for($d=1;$c=fread(STDIN,1);$d=($d+1)%51){$d*=$c!='T';$b=$c=='K'|$b*$d;echo!$d|$b?'A':$c;}
+while($c=fgetc(STDIN)){$x++;echo$c!=T?$x%51-$t?$c!=K?$f!=1?$c:1:$f=1:($f=0)+1:($t=$x)*0+1;}
