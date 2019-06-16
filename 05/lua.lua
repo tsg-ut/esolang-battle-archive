@@ -8,4 +8,4 @@ j=o"l"
 end
 l=j:find"K"
 f=i.rep
-print(f(" ",l-1)..f("K",r-l+1)..f(" ",#i-r))
+print(f(" ",l-1)..f("K",r-l+1))
