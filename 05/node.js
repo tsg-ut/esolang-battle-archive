@@ -1,1 +1,1 @@
-a=require("fs").readFileSync(0);for(i=51;a[i-1]!=117;)a[i]|=a[i-51]|a[i++-1]&1;console.log(""+a)
+a=require("fs").readFileSync(0);for(i=51;a[i++]!=117;)a[i]|=a[i-51]|a[i-1]&1;console.log(""+a)
