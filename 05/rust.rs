@@ -1,2 +1,1 @@
-use std::io::*;
-fn main(){let mut b=String::new();let mut c=String::new();stdin().read_line(&mut b);while!c.contains('K'){c=String::new();stdin().read_line(&mut c);print!("{}",b);}let t=c.trim_end();print!("{}{}",t,"=".repeat(b.trim_end().len()-t.len()));}
+use std::io::*;fn main(){let mut a:[u8;999]=[0;999];let m=stdin().read(&mut a).unwrap();let mut i=51;while a[i-1]!=117{a[i]=a[i]|a[i-51]|a[i-1]&1;i+=1;}stdout().write(&a[0..m]);}
