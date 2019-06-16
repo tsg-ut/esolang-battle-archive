@@ -1,1 +1,2 @@
-$/=0;$_=<>;s/([^T]{50})./$1T/g;0while s/K /KK/g;print
+#!perl -p
+/T/?$r=$':s/.$r/T\n/,s/K */K x length$&/e
