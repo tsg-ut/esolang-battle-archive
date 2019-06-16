@@ -1,3 +1,2 @@
-main=interact$unlines.s(((f.span(<'J')).).zipWith max).lines
-f(x,y)=x++s max y
-s=scanr1
+main=interact$unlines.s((((++"T").fst.span(<'T').s max).).zipWith max).lines
+s=scanl1
