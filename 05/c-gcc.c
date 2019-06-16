@@ -1,1 +1,1 @@
-b;char c[99],d[9];main(){for(gets(c);gets(d);)puts(c);for(;d[++b]-75;);for(;c[b]-84;)++c[b++];puts(c);}
+b,c;main(d){for(;~(c=getchar());d=++d%51){if(c==84)d=0;b=c&1|b&&d;putchar(!d||b?99:c);}}
