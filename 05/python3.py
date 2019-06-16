@@ -2,5 +2,5 @@ a,*b,c=open(0)
 i=a.find("T")
 x=a
 for l in b:x+=a
-j=c.find("K")
-print(x+" "*j+"*"*(1+i-j))
+d=c.rstrip()+"*"*i
+print(x+d[:i+1])
