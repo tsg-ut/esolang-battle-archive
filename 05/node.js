@@ -1,1 +1,1 @@
-a=require("fs").readFileSync(0);for(i=51;i<a.length;i+=51)for(j=0;j<50;j++)a[i+j]+=a[j]-32;i-=51;while(a[++i]!=84)a[i]+=a[i-1]-32;console.log(""+a);
+s=""+require("fs").readFileSync(0);console.log(s.replace(RegExp(`(\n.{${s.search(/T/)}}).`,"g"),"$1#").replace(/K */,m=>"K".repeat(m.length)))
