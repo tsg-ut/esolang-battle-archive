@@ -1,0 +1,1 @@
+"#{a,*b,c=$stack[0].to_s.lines;puts a,b.map{a},(c.rstrip+?a*99)[0..a=~/T/]}";;
