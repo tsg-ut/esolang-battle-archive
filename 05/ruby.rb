@@ -1,1 +1,1 @@
-a=gets;puts$<.map{|l|$_=l;a};$_[a=~/T/]=?A;0while$_.sub!'K ','KK';print
+s=`dd`;puts s.gsub(/^(.{#{s=~/T/}}) /,'\1T').sub(/K */){?K*$&.size}
