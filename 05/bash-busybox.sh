@@ -1,7 +1,7 @@
 IFS= read a;while IFS= read b;do
 echo "$a";f="$b";g="$f"
 done
-c=`echo "$a"|sed -r 's/T.+/T/'`
-d=`echo "$g"|sed -r 's/K.+/K/'`
+c=`sed -r 's/T.+/T/'<<<"$a"`
+d=`sed -r 's/K.+/K/'<<<"$g"`
 printf "$d"
 printf "*%.s" `eval echo {1..$[${#c}-${#d}]}`
