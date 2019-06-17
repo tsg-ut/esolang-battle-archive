@@ -1,0 +1,11 @@
+PUT 0 IN k
+FOR i IN {1..50}:
+	READ s RAW
+	FOR j IN {1..50}:
+		IF s@j|1 = "T":PUT j IN t
+		IF s@j|1 = "K":PUT j IN k
+	SELECT:
+		k<>0:
+			WRITE " "^^k-1,"K"^^t-k+1
+		ELSE:
+			WRITE " "^^t-1,"T"/
