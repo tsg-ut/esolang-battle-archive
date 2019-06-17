@@ -1,1 +1,1 @@
-NR==1{sub("T(.+)","T");t=$0}NR>1{print t}END{sub("K(.+)","K");while(length($0)<length(t)){sub("K","KK")};print}
+NR==1{sub("T.+","T");t=$0}NR>1{print t}END{sub("K.+","K");while(length($0)<length(t)){sub("K","KK")};print}
