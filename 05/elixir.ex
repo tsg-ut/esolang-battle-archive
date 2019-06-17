@@ -1,4 +1,14 @@
-i=IO.read :all
-{t,_}=:binary.match i,"T"
-{k,_}=:binary.match i,"K"
-IO.puts for c<-0..byte_size(i)-1,do: (k<=c&&c<(k-(rem k,51)+t)||(rem c,51)==t)&&"T"||String.at(i,c)
+defmodule M do
+def f(x)do
+c=IO.read(1)
+x=case c do
+:eof->exit(0)
+"T"->51
+"K"->x-50
+_->rem(x+1,51)
+end
+IO.write(if x<1,do: "@",else: c)
+f(x)
+end
+end
+M.f(0)
