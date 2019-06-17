@@ -1,1 +1,1 @@
-/T/{t=index($0,"T");s=$0}/K/{for(s=substr($0,1,t);sub(/K /,"KK",s););}$0=s
+{sub(/ +$/,z);if($0){for(;t&&length($0)-length(t);)$0=$0"K";t=$0}print t}
