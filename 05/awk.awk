@@ -1,0 +1,1 @@
+NR==1{gsub("T(.+)","T");t=$0}NR>1{print t}END{gsub("K(.+)","K");while(length($0)<length(t)){sub("K","KK")}print $0}
