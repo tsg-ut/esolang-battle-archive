@@ -1,6 +1,6 @@
 read s
 set t (string split \  (string match -nr T $s))[1]
-while read p;
+while read p
 echo $s
 set k (string match -r " *K" $p)
 [ $k ]&&echo $k(string repeat -n (math $t-(string length $k)) @)&&exit
