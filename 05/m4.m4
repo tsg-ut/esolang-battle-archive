@@ -1,12 +1,1 @@
-m4wrap(`syscmd(`sed "1h
-\${:1
-x
-s/ \$//
-t1
-x
-:2
-s/K /KK/
-t2
-h
-}
-g"')')
+syscmd(awk '$1{for($0=$0t;sub(/K /,"KK");)sub(/ {50}/,z);t=$0}$0=t')
