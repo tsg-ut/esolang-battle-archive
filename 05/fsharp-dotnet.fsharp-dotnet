@@ -1,2 +1,2 @@
-let rec f x=let c=stdin.Read()in stdout.Write(if x<(c+1)/(c+1)then 'x'else char c);f((match c with|84->1|75->x-50|_->x+1)%51)
+let rec f x=let c=stdin.Read()in printf"%c"(if x<(c+1)/(c+1)then 'x'else char c);f((match c with|84->1|75->x-50|_->x+1)%51)
 f 1
