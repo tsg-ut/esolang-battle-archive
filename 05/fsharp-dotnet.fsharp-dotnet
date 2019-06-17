@@ -1,8 +1,1 @@
-let f=stdin.ReadLine
-let w=printfn"%s">>f
-let T=f()
-let t=T.IndexOf"T"
-let mutable i=w T
-while i.IndexOf"K"<0 do i<-w T
-let k=i.IndexOf"K"
-i<-w(i.[..k]+String.replicate(t-k)"K")
+let rec f x=let c=stdin.Read()in let x=(match c with -1->exit 0|84->51|75->x-50|_->x+1)%51 in stdout.Write(if x<1 then 'x'else char c);f x in f 0
