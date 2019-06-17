@@ -1,1 +1,1 @@
-[inputs]as$i|$i[-1]as$k|(.+"\n")*($i|length)+($k|gsub(" +$";""))+"@"*((.|index("T"))-($k|index("K")))
+[inputs]as$i|(.+"\n")*($i|length)+($i[-1]|gsub(" +$";""))+"@"*((.|index("T"))-($i[-1]|index("K")))
