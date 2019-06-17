@@ -1,4 +1,3 @@
-var x=0
-while let l=readLine(){var s=""
-l.map{x=$0>"S" ?0:$0>"J" ?x-49:(x+1)%50;s+="\(x<1 ?"x":$0)"}
-print(s)}
+var d=1
+while let l=readLine(){print(String(l.map{d=$0=="T" ?0:(d-($0=="K" ?49:-1))%50
+return d<1 ?"a":$0}))}
