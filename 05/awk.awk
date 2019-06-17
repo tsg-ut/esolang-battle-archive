@@ -1,1 +1,1 @@
-{sub(/ +$/,z);if($0){for(;length($0)<length(t);)$0=$0"K";t=$0}}$0=t
+t+=index($0,"T"){$0=substr($0,1,t-1)"T";for(;sub(/K /,"KK"););}1
