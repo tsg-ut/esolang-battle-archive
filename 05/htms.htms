@@ -1,1 +1,1 @@
-<htms id="htms"><q><code><q>eval</q></code><sub><q>constructor</q></sub><ins><q>return stdin.replace(eval(`/(\\n.{${stdin.search(/T/)}})./g`),"$1T").replace(/K */,m=>"K".repeat(m.length))</q></ins><ins></ins></q></htms>
+<htms id="htms"><q><code><q>eval</q></code><sub><q>constructor</q></sub><ins><q>return stdin.replace(/([^T]{50})./g,"$1T").replace(/K */,m=>"K".repeat(m.length))</q></ins><ins></ins></q></htms>
