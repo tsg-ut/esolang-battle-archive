@@ -1,1 +1,1 @@
-{sub(/ +$/,z);if($0){for(;t&&length($0)-length(t);)$0=$0"K";t=$0}print t}
+{sub(/ +$/,z);if($0){for(;t&&length($0)-length(t);)$0=$0"K";t=$0}}$0=t
