@@ -1,1 +1,1 @@
-t+=index($0,"T"){for($0=substr($0,1,t-1)"T";sub(/K /,"KK"););}1
+{sub(/ +$/,z)}$0{for(;length($0)<length(t);)$0=$0"K";t=$0}$0=t
