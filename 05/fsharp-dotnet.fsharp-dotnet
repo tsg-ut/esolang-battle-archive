@@ -1,5 +1,5 @@
 let f=stdin.ReadLine
-let w=string>>stdout.WriteLine>>f
+let w=printfn"%s">>f
 let T=f()
 let t=T.IndexOf"T"
 let mutable i=w T
