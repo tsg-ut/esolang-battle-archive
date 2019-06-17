@@ -1,9 +1,8 @@
 let f=stdin.ReadLine
-let w=string>>stdout.WriteLine
+let w=string>>stdout.WriteLine>>f
 let T=f()
 let t=T.IndexOf"T"
-w T
-let mutable i=f()
-while i.IndexOf"K"<0 do w T;i<-f()
+let mutable i=w T
+while i.IndexOf"K"<0 do i<-w T
 let k=i.IndexOf"K"
-w(i.[..k]+String.replicate(t-k)"K")
+i<-w(i.[..k]+String.replicate(t-k)"K")
