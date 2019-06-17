@@ -1,8 +1,4 @@
 print(t=gets())
 while gets()
-if k=$_.index("K")
-print(" "*k+"a"*(t.index("T")-k+1))
-else
-print(t)
-end
+print((k=$_.index("K"))&&" "*k+"a"*(t.index("T")-k+1)||t)
 end
