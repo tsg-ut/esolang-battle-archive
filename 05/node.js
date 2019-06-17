@@ -1,1 +1,1 @@
-a=require("fs").readFileSync(0);for(i=51;a[i++]-117;)a[i]|=a[i-51]|a[i-1]&1;console.log(""+a)
+console.log(""+require("fs").readFileSync(x=0).map(c=>c|(x=c&4?0:-~x%51-c%2*51)<1))
