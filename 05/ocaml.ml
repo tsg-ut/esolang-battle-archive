@@ -1,3 +1,3 @@
-open String
-let rec r s=let t=read_line()in s^"
-"^try let p=index t 'K'in make p ' '^make(index s 'T'-p+1)'*'with _->r s;;print_string(r(read_line()))
+let rec f x=let c=input_char stdin in
+let x=if c='T' then 51 else if c='K' then x-50 else (x+1)mod 51 in
+print_char(if x<1 then 'x' else c);f x;;f 0
