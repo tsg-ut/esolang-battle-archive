@@ -1,5 +1,3 @@
 %%!
-f(S,I)->case string:chr(io:get_line(""),$K)of
-0->io:format(S),f(S,I);J->io:format("~*c~*c",[J-1,$ ,2+I-J,$*])
-end.
-main(_)->io:format(S=io:get_line("")),f(S,string:chr(S,$T)-1).
+main(_)->f(0).
+f(X)->C=io:get_chars("",1),Y=case C of"T"->0;"K"->X-50;eof->halt(0);_->X+1 end rem 51,io:put_chars(if Y<1->"@";true->C end),f(Y).
