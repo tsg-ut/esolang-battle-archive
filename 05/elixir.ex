@@ -1,6 +1,5 @@
-import String
-f=fn s,x,t,f->case IO.gets x do
-:eof->IO.write slice trim_trailing(t)<>duplicate("*",99),0,String.length trim_trailing s
-t->f.(s,s,t,f)end
-end
-f.(IO.gets(""),"","",f)
+i=IO.read :all
+x="T"
+{t,_}=:binary.match i,x
+{k,_}=:binary.match i,"K"
+IO.puts for c<-0..byte_size(i)-1,do: (k<=c&&c<(k-(rem k,51)+t)||(rem c,51)==t)&&x||String.at(i,c)
