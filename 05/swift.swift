@@ -1,8 +1,3 @@
-var b=false,d=1
-while let l=readLine(){print(String(
-l.map{c in
-if"T"==c{d=0}
-b="K"==c||b&&d>0
-d=(d+1)%50
-return d==1||b ?"a":c
-}))}
+var x=0
+while let l=readLine(){l.forEach{x=$0=="T" ?0:$0=="K" ?x-49:(x+1)%50;print(x<1 ?"x":$0,terminator:"")}
+print()}
