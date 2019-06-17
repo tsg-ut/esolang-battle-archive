@@ -1,0 +1,13 @@
+read "s" =
+s p
+s "T" find "t" =
+1 while
+read "K" find "k" =
+k if
+" " k 1 - rep w
+"K" t k - 1 + rep p
+exit
+end
+s p
+1
+end
