@@ -6,6 +6,6 @@ F	OUTPUT = T
 	DIFFER(S,K)	:S(S) F(F)
 S 	K = TRIM(K)
 H	EQ(SIZE(K),SIZE(TRIM(T)))	:S(T)
-	K = K '*'	:S(H)
+	K = K '*'	:(H)
 T	OUTPUT = K
 END
