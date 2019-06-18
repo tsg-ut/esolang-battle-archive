@@ -1,1 +1,1 @@
-class A{public static void main(String[]a)throws Exception{for(int d=1,c;(c=System.in.read())>0;d=c>83?1:(d-c%2*51+1)%51)System.out.print(d<1?"A":(char)c+"");}}
+interface A{static void main(String[]a)throws Exception{for(int d=1,c;(c=System.in.read())>0;d=c>83?1:(d-c%2*51+1)%51)System.out.print(d<1?"A":(char)c+"");}}
