@@ -1,4 +1,4 @@
-character(len=50) a,b
+character(50)a,b
 read 2,b
 i=index(b,'T')
 print 2,b
