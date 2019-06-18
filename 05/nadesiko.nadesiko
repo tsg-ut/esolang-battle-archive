@@ -1,1 +1,1 @@
-JS{{{var x=0;console.log(""+require("fs").readFileSync(0).map(c=>c|(x=c&4?0:-~x%51-c%2*51)<1))
+JS{{{let x;console.log(""+require("fs").readFileSync(0).map(c=>c|(x=c&4?0:-~x%51-c%2*51)<1))
