@@ -1,9 +1,6 @@
-defmodule M do
-def f(x)do
-""<>c=IO.read(1)
-IO.write(if x<1,do: "@",else: c)
-f(case c do"T"->1
-"K"->x-50
-_->rem(x+1,51)end)end
+f=fn s,i,j,f->case IO.getn(s,1) do
+:eof->a=1
+t->
+f.((i==50||i*j>0)&&1||t,i<50&&t !="T"&&i+1||0,t=="K"&&1||i*j,f)end
 end
-M.f(1)
+f.("",0,0,f)
