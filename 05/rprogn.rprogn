@@ -1,13 +1,7 @@
-read "s" =
-s p
-s "T" f "t" =
-1 w{
-read "K" f "k" =
-k if
-" " k 1 - m w
-"K" t k - 1 + m p
-exit
-end
-s p
-1
+read x =
+x w{
+x p
+read " K" f
+] !
 }
+] " " \ m w x "T" f \ - "*" \ m w
