@@ -1,9 +1,3 @@
-module c;integer b=0,c=0,i;initial begin
-while(c-84)begin
-$write("%c",c);c=$fgetc(1<<31);end
-while(!b)begin
-for(i=0;i<51;i++)begin
-$write("%c",c+b);c=$fgetc(1<<31);if(c==75)b=1;end
-$write("+");end
-end
+module c;reg[407:0]b=(1<<405)+10,c,i;initial begin
+for(i=49;i!=0;i--)b|=b>>8;c=$fgets(i,1<<31);while($fgets(c,1<<31))$write("%s",i);i^=b;c^=b;while(!(i&c))i|=i<<8;$write("%s",i);end
 endmodule
