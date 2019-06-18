@@ -1,1 +1,1 @@
-import std.stdio;void main(){char c;for(int x;c.readf!"%s";write(c|=x<1))x=c&4?0:-~x%51-c%2*51;}
+import std.stdio;void main(){for(int c,d;~(c=getchar());putchar(c+=d<1))d=c%7?++d%51-c%2*51:0;}
