@@ -1,10 +1,9 @@
-character(50)a,b
-read 2,b
-i=index(b,'T')
-1 print 2,b
-read 2,a
-2 format(a)
-j=index(a,'K')
-if(j<1)goto 1
-print 2,a(1:j)//repeat('*',i-j)
+1 format(a)
+character(51)t,l
+read 1,t
+2 print 1,t
+read 1,l
+if(llt(l,t))goto 2
+l(len_trim(l):len_trim(t))=repeat("@",99)
+print 1,l
 end
