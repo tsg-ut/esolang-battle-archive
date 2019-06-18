@@ -5,6 +5,6 @@ i=index(b,'T')
 read 2,a
 2 format(a)
 j=index(a,'K')
-if(j==0)goto 1
+if(j<1)goto 1
 print 2,a(1:j)//repeat('*',i-j)
 end
