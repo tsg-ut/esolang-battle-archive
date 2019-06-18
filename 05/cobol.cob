@@ -1,3 +1,13 @@
-       >>SOURCE FORMAT IS FREE
-program-id.a.data division.working-storage section. 1 s pic x(50). 1 p pic x(50). 1 t pic 99. 1 k pic 99.
-procedure division.accept s.inspect s tallying t for leading" ".b.display s.accept p.move 0 to k.inspect p tallying k for all" ".if k=50 go b.string p(1:t)"T"into s.inspect s replacing all" "by"K"after initial"K"before initial"T".display s.
+	PROGRAM-ID.A.DATA DIVISION.LOCAL-STORAGE SECTION. 1 L PIC X(51).
+	1 T PIC X(51). 1 I PIC 99. 1 K PIC 9. PROCEDURE DIVISION.
+	A.
+	ACCEPT L
+	PERFORM VARYING I FROM 1 BY 1 UNTIL I > 50
+	IF L(I:1)="T" MOVE L TO T END-IF
+	IF L(I:1)="K" MOVE 1 TO K END-IF
+	IF K=1 IF T(I:1)="T" DISPLAY T STOP RUN
+	ELSE MOVE "K" TO T(I:1) END-IF END-IF
+	END-PERFORM.
+	DISPLAY T
+	GO TO A.
+	STOP RUN.
