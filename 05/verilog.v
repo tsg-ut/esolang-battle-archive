@@ -1,8 +1,11 @@
-module c;integer c,i=0,s=0,e=0;initial begin
-c=$fgetc(1<<31);for(i=0;c+1;i++)begin if(c[4])s=i;if(c[6])e=i;c=$fgetc(1<<31);end
-for(i=0;i<=e/51;i++)begin
-for(c=0;c<51;c++)begin
-if(c==s%51||(i==e/51&&c>=e%51&&c<=s%51)) $write("*");else $write(" ");end
-$write("\n");end
+module c;integer b,c,i;initial begin
+begin:a
+while(1)begin
+c=$fgetc(1<<31);$write("%c",c);if(c==8'h54)disable a;end
+end
+b=0;while(b==0)begin
+for(i=0;i<51;i++)begin
+if(c==8'h4b)b=1;$write("%c",(c+b-84?c+b:32));c=$fgetc(1<<31);end
+$write("+");end
 end
 endmodule
