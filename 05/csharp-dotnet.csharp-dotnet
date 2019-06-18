@@ -1,0 +1,1 @@
+using C=System.Console;class I{static void Main(){for(int c,x=0;(c=C.Read())>0;C.Write(x<1?'#':(char)c))x=c>83?0:-~x%51-c%2*51;}}
