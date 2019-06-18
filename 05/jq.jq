@@ -1,2 +1,1 @@
-[inputs|sub("K +";"")]as$i|"\(.)
-"*($i|length)+$i[-1]+"@"*((.|index("T"))-($i[-1]|length)+1)
+. as$t|[inputs]as$i|($i[]|$t),($i[-1]+$t|sub(" "*50;"")|until(test("KT");sub("K ";"KK")))
