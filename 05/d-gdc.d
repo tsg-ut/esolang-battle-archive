@@ -1,1 +1,1 @@
-import std.stdio;void main(){for(int c,d;~(c=getchar());putchar(c+=d<1))d=c%7?++d%51-c%2*51:0;}
+import std.stdio;void main(){int[99]c;for(int a,i;putchar(a=c[++i%51]|=getchar()|a&1)%9;){}}
