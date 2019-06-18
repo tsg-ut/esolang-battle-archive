@@ -2,15 +2,14 @@ I have P
 I have 75 K
 I have 84 T
 I have O
-I have no Z
 I have 50 X
-I have 51 W
+I have 52 W
 O
 Uh! Pick-P
 Uh! Compare-P-K-K!
 Uh! Compare-P-T-T!
 Uh! Rip-X-O
-Uh! Superior-X-Z-P!
+Uh! Superior-X-O-P!
 Uh! Append-P-O
 T
 Uh! Replace-X-W
@@ -20,4 +19,4 @@ Uh! Jump-O
 K
 Uh! Put-P
 Uh! Rip-X-O
-Uh! Superior-X-Z-K!
+Uh! Superior-X-O-K!
