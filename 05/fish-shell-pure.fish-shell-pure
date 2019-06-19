@@ -1,7 +1,8 @@
+set S string
 read s
-set t (string length (string trim -r $s))
+set t ($S length ($S trim -r $s))
 while read p
 echo $s
-set k (string trim -r $p)
-[ $k ]&&echo $k(string repeat -n(math $t-(string length $k)) @)
+set k ($S trim -r $p)
+[ $k ]&&echo $k($S repeat -n(math $t-($S length $k)) @)
 end
