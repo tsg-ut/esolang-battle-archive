@@ -1,3 +1,3 @@
 f={case[p,q]->p}
-g={case[i,s]->if(i==0)"" else g([i-1,s])+s}
-stdin|reduce(["",""],{case[c,d],s->if(c.length==0){[s,s]}else{if(s.split("K").length>=2){d+"\n"+f(s.split("K"))+g([f(c.split("T")).length-f(s.split("K")).length+1,"A"])}else{[c,d+"\n"+c]}}})|stdout
+g={case[i,s]->if(i==0)""else g([i-1,s])+s}
+stdin|reduce(["",""],{case[c,d],s->if(c.length>0){v=s.split("K");if(v.length>=2)d+"\n"+f(v)+g([f(c.split("T")).length-f(v).length+1,"A"])else[c,d+"\n"+c]}else[s,s]})|stdout
