@@ -1,0 +1,27 @@
+# stdin | map({x -> [1,x]}) | stdout
+# stdin | map({x -> [1,x.split("K").length]}) | stdout
+# stdin | map({x -> "H" + x + "R"}) | stdout
+# stdin | map({x -> x.chars}) | stdout
+
+# stdin | reduce(0,{x,y -> [1,x]}) | stdout
+# stdin | reduce(0,{x,y -> [2,y]}) | stdout
+
+fst = {case [p,q] -> p}
+snd = {case [p,q] -> q}
+addc = {case [i,s] -> if(i==0){ "" }else{ addc([i-1,s])+s }}
+
+stdin | reduce([0,"",""],{
+  case [b,c,d],s -> if(b==0){
+     [1,s,s]
+  }else{
+     if(s.split("K").length >= 2){
+       lt = fst(c.split("T")).length;
+       lk = fst(s.split("K")).length;
+       la = addc([lt-lk+1,"A"]);
+       tc = d+"\n"+fst(s.split("K"))+la;
+       tc
+     }else{
+       [1,c,d+"\n"+c]
+     }
+  }
+}) | stdout
