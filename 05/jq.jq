@@ -1,1 +1,1 @@
-. as$t|[inputs]as$i|($i[]|$t),($i[-1]+$t|sub(" "*50;"")|until(test("KT");sub("K ";"KK")))
+. as$t|[inputs]|(.[]|$t),(last+$t|sub(" "*50;"")|until(test("KT");sub("K ";"KK")))
