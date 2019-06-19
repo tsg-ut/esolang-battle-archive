@@ -1,1 +1,1 @@
-get s p=substr(s,"T")while p{get t?s q=substr(t,"K")if q{?copy(" ",q-1)+copy("1",p-q+1)p=0}}
+get s p=substr(s,"T")while p{get t?s q=substr(t,"K")if q{?copy(" ",q--)+copy("1",p-q)p=0}}
