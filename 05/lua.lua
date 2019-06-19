@@ -1,2 +1,5 @@
-R=io.read"*a"
-print((R:gsub((" "):rep(50),R:sub(1,50)):gsub("K",("*"):rep(1+R:find"T"-R:find"K"%51))))
+d=io.read
+f=d(51)
+h=d'*a'
+p,c=h:gsub(' *\n','')
+print(f:rep(c)..p..f.rep(0,f:find"T"-p:find"K"))
