@@ -1,2 +1,2 @@
 d=io.read
-f=d(51)h=d'*a'p,c=h:gsub(' *\n','')print(f:rep(c)..p..f.rep(0,f:find"T"-#p))
+f=d(51)l,c=d'*a':gsub(' *\n','')print(f:rep(c)..l..f.rep(0,f:find"T"-#l))
