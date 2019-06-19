@@ -1,0 +1,1 @@
+"[(lambda x: globals().__setitem__('q',x) if 'T' in x else (exit(__import__('sys').stdout.write(q+'\n'+x.rstrip()+(len(q.rstrip())-len(x.rstrip()))*'*')) if 'K' in x else __import__('sys').stdout.write(q+'\n')))(raw_input()) for _ in range(100)]"~
