@@ -1,1 +1,10 @@
-sed -E ":a;s/(T.{50}) /\1T/;s/K /KK/;ta;N;ba"
+sed '1h
+${:1
+x
+s/ $//
+t1
+x
+s/K /KK/
+t1
+h}
+g'
