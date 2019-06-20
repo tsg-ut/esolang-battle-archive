@@ -1,10 +1,6 @@
-READaRAW
-PUTaINb
-WHILE "K"#b=0:
-	READbRAW
-	WRITEa/
-WHILEa|1=" ":
-	WRITEb|1
-	PUTa@2INa
-	IFb|1=" ":PUTb@2INb
-WRITEb
+WHILEe>0:
+	READsRAW
+	FORjIN{1..50}:
+		IFs@j|1="T":PUTjINt
+		IFs@j|1<>" ":PUTjINk
+	WRITE 10**(t-k)>>t/
