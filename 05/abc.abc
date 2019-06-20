@@ -1,10 +1,10 @@
 READaRAW
 PUTaINb
 WHILE "K"#b=0:
-  READbRAW
-  WRITEa/
+	READbRAW
+	WRITEa/
 WHILEa|1=" ":
-  WRITEb|1
-  PUTa@2INa
-  IFb|1=" ":PUTb@2INb
+	WRITEb|1
+	PUTa@2INa
+	IFb|1=" ":PUTb@2INb
 WRITEb
