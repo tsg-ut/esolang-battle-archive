@@ -1,11 +1,11 @@
-READ a RAW
-PUT "" IN b
+READaRAW
+PUT ""INb
 WHILE "K"#b=0:
-  READ b RAW
-  WRITE a/
-WHILE a|1=" ":
-  WRITE b|1
-  PUT a@2 IN a
-  IF b|1=" ":
-    PUT b@2 IN b
-WRITE b
+  READbRAW
+  WRITEa/
+WHILEa|1=" ":
+  WRITEb|1
+  PUTa@2INa
+  IFb|1=" ":
+    PUTb@2INb
+WRITEb
