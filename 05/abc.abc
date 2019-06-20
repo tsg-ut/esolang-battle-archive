@@ -1,8 +1,11 @@
-FOR i IN {1..50}:
-	READ s RAW
-	FOR j IN {1..50}:
-		IF s@j|1 = "T":PUT j IN t
-		IF s@j|1 = "K":
-			WRITE " "^^j-1,"K"^^t-j+1
-			QUIT
-	WRITE " "^^t-1,"T"/
+READ a RAW
+PUT "" IN b
+WHILE "K"#b=0:
+  READ b RAW
+  WRITE a/
+WHILE a|1=" ":
+  WRITE b|1
+  PUT a@2 IN a
+  IF b|1=" ":
+    PUT b@2 IN b
+WRITE b
