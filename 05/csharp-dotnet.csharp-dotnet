@@ -1,1 +1,1 @@
-using C=System.Console;class I{static void Main(){for(int c,x=0;(c=C.Read())>0;C.Write(x<1?'#':(char)c))x=c>83?0:-~x%51-c%2*51;}}
+using S=System.Console;class A{static void Main(){for(int d=1,c;;S.Write("#\n "[d<1?0:c%3]),d=c>83?1:++d%51-c%2*51)c=S.Read();}}
