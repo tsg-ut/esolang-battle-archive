@@ -1,1 +1,1 @@
-$_~|($||=$_)~~{say S[k\s+]='k'x$/.codes}for lines
+$_~|($||=$_)~~{say S[k\s+]=1 x$/.codes}for lines
