@@ -1,2 +1,2 @@
 #!racket
-(define(main t l)(if(string>? l t)(main(string-replace t" T""TT")l)(begin(display t)(newline)(main t(read-line)))))(main(read-line)"")
+(define(m t l)(if(string>? l t)(m(string-replace t" T""TT")l)(begin(display t)(newline)(m t(read-line)))))(m(read-line)"")
