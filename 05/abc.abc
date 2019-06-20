@@ -1,6 +1,6 @@
 WHILEe>0:
 	READsRAW
 	FORjIN{1..50}:
-		IFs@j|1="T":PUTjINt
-		IFs@j|1<>" ":PUTjINk
+		IFs@j>"S":PUTjINt
+		IFs@j>"J":PUTjINk
 	WRITE 10**(t-k)>>t/
