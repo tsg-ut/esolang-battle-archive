@@ -1,27 +1,7 @@
-X
-read
-]
-]
-w{
-[
-]
-p
-read
-]
-]
-$
-E
+read x =
+x w{
+x p
+read " K" f
+] !
 }
-\
-"T"
-f
-\
-" K"
-f
-]
-" "
-\
-m
-w
--
-m
+" " \ m a . 1 x "T" f q
