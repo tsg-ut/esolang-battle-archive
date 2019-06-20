@@ -1,1 +1,1 @@
-1{3{i1+o1c}2{sdi+do75=+s1s-d3 2b}50 2c}0{ido32=1 0b}0dc
+2{0{}1{1n1+d51>c}1+id84>rr*sdr75=cd51>*d0=rr+o2c}2dc
