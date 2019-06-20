@@ -1,1 +1,1 @@
-($=$_~|($||=$_))~~{1 while s/k\s/kk/;.say}for lines
+$_~|($||=$_)~~{say S[k\s+]='k'x$/.codes}for lines
