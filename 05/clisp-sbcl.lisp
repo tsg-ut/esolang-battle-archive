@@ -1,1 +1,1 @@
-(setq b nil)(setq e 1)(loop(setq c(read-char))(setq b(or(char= c #\K)(and b(> e 0))))(princ(if(or(= e 0)b)#\a c))(setq e(if(char= c #\T)1(mod(1+ e)51))))
+(defun m(u k i)(let((c(read-char))(j(mod(1+ i)51)))(princ(or k(= u i)c))(case c(#\T(m i k j))(#\K(m u c j))(t(or(if k(= u i))(m u k j))))))(m 0 nil 1)
