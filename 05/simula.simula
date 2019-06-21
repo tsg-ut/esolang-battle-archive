@@ -1,12 +1,1 @@
-begin
-character c;
-integer i,t,k;
-t:=-1;
-a:
-c:=inchar;
-if c='T'then t:=i;
-if c='K'then k:=1;
-outchar(if t=i or k=1 then'T'else c);
-i:=i-i//80*80+1;
-if i<=t or k=0 then goto a;
-end
+begin character c;integer i,t,k;t:=-1;a:c:=inchar;if c='T'then t:=i;if c='K'then k:=1;outchar(if t=i or k=1then'T'else c);i:=i-i//80*80+1;if i<=t or k=0then goto a;end
